@@ -8,18 +8,43 @@ public class DialogueTrigger : MonoBehaviour
     public Message[] messages;
     public Actor[] actors;
 
+    public DialogueTrigger previousDialogueTrigger;
+
+    private bool isTriggerEnabled = true;
+
     public void StartDialogue()
     {
-        // Disable the button
+        if (!isTriggerEnabled)
+        {
+            Debug.Log("Dialogue trigger is disabled.");
+            return;
+        }
+
+        if (previousDialogueTrigger != null && !previousDialogueTrigger.HasCompletedDialogue())
+        {
+            Debug.Log("Cannot start dialogue. Previous dialogue not completed.");
+            return;
+        }
+
         Button dialogueButton = GetComponentInChildren<Button>();
         if (dialogueButton != null)
         {
             dialogueButton.interactable = false;
             gameObject.SetActive(false);
+            Debug.Log("Dialogue State: " + HasCompletedDialogue());
         }
 
-        // Start the dialogue
         FindObjectOfType<DialogueManager>().OpenDialogue(messages, actors);
+    }
+
+    public bool HasCompletedDialogue()
+    {
+        return isTriggerEnabled;
+    }
+
+    public void SetTriggerEnabled(bool isEnabled)
+    {
+        isTriggerEnabled = isEnabled;
     }
 }
 

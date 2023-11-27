@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour
     int activeMessage = 0;
     public static bool isActive = false;
 
-    private Coroutine textAnimationCoroutine; // Added to store reference to the coroutine
+    private Coroutine textAnimationCoroutine;
 
     public void OpenDialogue(Message[] messages, Actor[] actors)
     {
@@ -30,31 +30,29 @@ public class DialogueManager : MonoBehaviour
 
     void DisplayMessages()
     {
-        // Stop any existing text animation coroutine
         if (textAnimationCoroutine != null)
         {
             StopCoroutine(textAnimationCoroutine);
         }
 
         Message messageToDisplay = currentMessages[activeMessage];
-        actorName.text = messageToDisplay.message; // Display name instantly
+        actorName.text = messageToDisplay.message;
 
         Actor actorToDisplay = currentActors[messageToDisplay.actorID];
         actorName.text = actorToDisplay.name;
         actorImage.sprite = actorToDisplay.sprite;
 
-        // Animate text reveal
         textAnimationCoroutine = StartCoroutine(AnimateTextReveal(messageToDisplay.message));
     }
 
     IEnumerator AnimateTextReveal(string text)
     {
-        messageText.text = ""; // Clear the text
+        messageText.text = "";
 
         foreach (char letter in text)
         {
-            messageText.text += letter; // Add one letter at a time
-            yield return new WaitForSeconds(0.01f); // Adjust the delay between letters
+            messageText.text += letter;
+            yield return new WaitForSeconds(0.01f);
         }
     }
 

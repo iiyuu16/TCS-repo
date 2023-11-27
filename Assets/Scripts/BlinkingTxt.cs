@@ -16,11 +16,9 @@ public class BlinkingText : MonoBehaviour
     {
         while (true)
         {
-            // Toggle the visibility of the text
             textMesh.enabled = !textMesh.enabled;
 
-            // Wait for a short duration
-            yield return new WaitForSeconds(1.0f); // Adjust the duration based on your preference
+            yield return new WaitForSeconds(1.0f);
         }
     }
 }
