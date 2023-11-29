@@ -16,9 +16,14 @@ public class SceneSwitch : MonoBehaviour
         Application.Quit();
     }
 
-    public void toMainMenu()
+    public void VNPtoMainMenu()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    public void SPtoMainMenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 
     IEnumerator DelayedLoadScene()
@@ -26,5 +31,16 @@ public class SceneSwitch : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Trigger entered by: " + other.gameObject.name);
+
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Player entered trigger, loading scene...");
+            SPtoMainMenu();
+        }
     }
 }
