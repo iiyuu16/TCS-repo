@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VisNovPhase.unity
     guid: b98fcd404d1654b45ad7697cdc651dfc
+  - enabled: 1
+    path: Assets/Scenes/ShooterPhase.unity
+    guid: db45a4ef5efac5f469830265b8b3b63e
   m_configObjects: {}
