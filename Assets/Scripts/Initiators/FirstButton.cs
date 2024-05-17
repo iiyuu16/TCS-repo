@@ -5,6 +5,8 @@ public class FirstButton : MonoBehaviour
 {
     public TextMeshProUGUI pressToContinueText;
     public GameObject[] buttonsToEnable;
+    public GameObject ToDisable;
+    public AudioSource clicksfx;
 
     private bool buttonsEnabled = false;
 
@@ -21,7 +23,7 @@ public class FirstButton : MonoBehaviour
         }
     }
 
-    void EnableButtons()
+    public void EnableButtons()
     {
         foreach (var button in buttonsToEnable)
         {
@@ -30,7 +32,8 @@ public class FirstButton : MonoBehaviour
         pressToContinueText.gameObject.SetActive(false);
 
         buttonsEnabled = true;
-
+        ToDisable.SetActive(false);
+        clicksfx.Play();
         enabled = false;
     }
 
@@ -50,5 +53,7 @@ public class FirstButton : MonoBehaviour
         {
             button.SetActive(false);
         }
+        ToDisable.SetActive(true);
+
     }
 }
