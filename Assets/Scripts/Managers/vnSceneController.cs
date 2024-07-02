@@ -4,9 +4,25 @@ using UnityEngine.SceneManagement;
 
 public class vnSceneController : MonoBehaviour
 {
+    private ParticleTransition particleTransition;
+    public float delayTime;
+
+    private void Awake()
+    {
+        particleTransition = FindObjectOfType<ParticleTransition>();
+        if (particleTransition == null)
+        {
+            Debug.Log("No ParticleTransition found in the scene.");
+        }
+    }
+
     public void Play()
     {
         Debug.Log("Play");
+        if (particleTransition != null)
+        {
+            particleTransition.TriggerTransition();
+        }
         StartCoroutine(DelayedLoadScene());
     }
 
@@ -18,20 +34,17 @@ public class vnSceneController : MonoBehaviour
 
     public void toMainMenu()
     {
-        SceneManager.GetSceneByName("MainMenu");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void toVisNov()
     {
-        SceneManager.GetSceneByName("VisNov");
+        SceneManager.LoadScene("VisNov");
     }
 
-
-    //misc
     IEnumerator DelayedLoadScene()
     {
-        yield return new WaitForSeconds(1f);
-
+        yield return new WaitForSeconds(delayTime);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

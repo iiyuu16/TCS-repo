@@ -6,59 +6,116 @@ public class vnGameManager : MonoBehaviour
     public DialogueTrigger shopTrigger;
     public DialogueTrigger hubTrigger;
 
-    public GameObject blockerPlaceholder;
+    public bool baseConvoDone = false;
+    public bool shopConvoDone = false;
+    public bool hubConvoDone = false;
 
+    public GameObject[] baseObjectsToEnable;
+    public GameObject[] baseObjectsToDisable;
 
-    private bool baseConvoDone = false;
-    private bool shopConvoDone = false;
-    private bool hubConvoDone = false;
+    public GameObject[] shopObjectsToEnable;
+    public GameObject[] shopObjectsToDisable;
+
+    public GameObject[] hubObjectsToEnable;
+    public GameObject[] hubObjectsToDisable;
+
+    private DialogueManager dialogueManager;
 
     void Start()
     {
-        baseInteraction();
+        dialogueManager = FindObjectOfType<DialogueManager>();
+        dialogueManager.OnDialogueCompleted += OnDialogueCompleted;
     }
 
+    void Update()
+    {
+        UpdateObjectives();
+    }
+
+    void UpdateObjectives()
+    {
+        if (baseConvoDone)
+        {
+            EnableDisableObjects(baseObjectsToEnable, baseObjectsToDisable);
+        }
+
+        if (shopConvoDone && baseConvoDone)
+        {
+            EnableDisableObjects(shopObjectsToEnable, shopObjectsToDisable);
+        }
+
+        if (hubConvoDone && shopConvoDone && baseConvoDone)
+        {
+            EnableDisableObjects(hubObjectsToEnable, hubObjectsToDisable);
+        }
+    }
+
+    void EnableDisableObjects(GameObject[] objectsToEnable, GameObject[] objectsToDisable)
+    {
+        foreach (GameObject obj in objectsToEnable)
+        {
+            obj.SetActive(true);
+        }
+
+        foreach (GameObject obj in objectsToDisable)
+        {
+            obj.SetActive(false);
+        }
+    }
 
     public void baseInteraction()
     {
-        blockerPlaceholder.SetActive(false);
         if (!baseConvoDone)
         {
             baseTrigger.SetTriggerEnabled(true);
             baseTrigger.StartDialogue();
-            baseConvoDone = true;
         }
-        else
-            blockerPlaceholder.SetActive(true);
     }
 
     public void shopInteraction()
     {
-        blockerPlaceholder.SetActive(false);
         if (!shopConvoDone && baseConvoDone)
         {
             shopTrigger.SetTriggerEnabled(true);
             shopTrigger.StartDialogue();
-            shopConvoDone = true;
-        }
-        else
-        {
-            blockerPlaceholder.SetActive(true);
         }
     }
 
     public void hubInteraction()
     {
-        blockerPlaceholder.SetActive(false);
         if (!hubConvoDone && shopConvoDone && baseConvoDone)
         {
             hubTrigger.SetTriggerEnabled(true);
             hubTrigger.StartDialogue();
-            hubConvoDone = true;
         }
-        else
+    }
+
+    private void OnDialogueCompleted()
+    {
+        Debug.Log("Dialogue completed event triggered");
+
+        if (!baseConvoDone && baseTrigger.HasCompletedDialogue())
         {
-            blockerPlaceholder.SetActive(true);
+            baseConvoDone = true;
+            Debug.Log("base convo done");
+        }
+        else if (!shopConvoDone && shopTrigger.HasCompletedDialogue())
+        {
+            shopConvoDone = true;
+            Debug.Log("shop convo done");
+        }
+        else if (!hubConvoDone && hubTrigger.HasCompletedDialogue())
+        {
+            hubConvoDone = true;
+            Debug.Log("hub convo done");
+        }
+    }
+
+    void OnDestroy()
+    {
+        if (dialogueManager != null)
+        {
+            dialogueManager.OnDialogueCompleted -= OnDialogueCompleted;
         }
     }
 }

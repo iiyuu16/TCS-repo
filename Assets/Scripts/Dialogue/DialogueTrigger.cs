@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-
 public class DialogueTrigger : MonoBehaviour
 {
     public Message[] messages;
@@ -9,6 +8,12 @@ public class DialogueTrigger : MonoBehaviour
     public DialogueTrigger previousDialogueTrigger;
 
     private bool isTriggerEnabled = true;
+    private DialogueManager dialogueManager;
+
+    private void Start()
+    {
+        dialogueManager = FindObjectOfType<DialogueManager>();
+    }
 
     public void StartDialogue()
     {
@@ -32,12 +37,12 @@ public class DialogueTrigger : MonoBehaviour
             Debug.Log("Dialogue State: " + HasCompletedDialogue());
         }
 
-        FindObjectOfType<DialogueManager>().OpenDialogue(messages, actors);
+        dialogueManager.OpenDialogue(messages, actors);
     }
 
     public bool HasCompletedDialogue()
     {
-        return isTriggerEnabled;
+        return dialogueManager.DialogueCompleted;
     }
 
     public void SetTriggerEnabled(bool isEnabled)
