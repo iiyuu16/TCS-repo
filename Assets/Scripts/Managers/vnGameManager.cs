@@ -18,6 +18,7 @@ public class vnGameManager : MonoBehaviour
         baseInteraction();
     }
 
+
     public void baseInteraction()
     {
         blockerPlaceholder.SetActive(false);
