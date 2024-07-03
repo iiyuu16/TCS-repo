@@ -28,7 +28,7 @@ public class DialogueManager : MonoBehaviour
         currentMessages = messages;
         currentActors = actors;
         activeMessage = 0;
-        dialogueCompleted = false;
+        dialogueCompleted = false; // Reset at the start of dialogue
 
         Debug.Log("Started Convo! Loaded messages: " + messages.Length);
         DisplayMessages();

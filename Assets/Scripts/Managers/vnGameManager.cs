@@ -2,22 +2,27 @@ using UnityEngine;
 
 public class vnGameManager : MonoBehaviour
 {
+    [Space]
     public DialogueTrigger baseTrigger;
     public DialogueTrigger shopTrigger;
     public DialogueTrigger hubTrigger;
-
+    [Space]
     public bool baseConvoDone = false;
     public bool shopConvoDone = false;
     public bool hubConvoDone = false;
+    [Space]
 
     public GameObject[] baseObjectsToEnable;
     public GameObject[] baseObjectsToDisable;
+    [Space]
 
     public GameObject[] shopObjectsToEnable;
     public GameObject[] shopObjectsToDisable;
+    [Space]
 
     public GameObject[] hubObjectsToEnable;
     public GameObject[] hubObjectsToDisable;
+    [Space]
 
     private DialogueManager dialogueManager;
 
@@ -30,6 +35,7 @@ public class vnGameManager : MonoBehaviour
     void Update()
     {
         UpdateObjectives();
+        OnDialogueCompleted();
     }
 
     void UpdateObjectives()
@@ -39,12 +45,12 @@ public class vnGameManager : MonoBehaviour
             EnableDisableObjects(baseObjectsToEnable, baseObjectsToDisable);
         }
 
-        if (shopConvoDone && baseConvoDone)
+        if (shopConvoDone)
         {
             EnableDisableObjects(shopObjectsToEnable, shopObjectsToDisable);
         }
 
-        if (hubConvoDone && shopConvoDone && baseConvoDone)
+        if (hubConvoDone)
         {
             EnableDisableObjects(hubObjectsToEnable, hubObjectsToDisable);
         }
@@ -74,7 +80,7 @@ public class vnGameManager : MonoBehaviour
 
     public void shopInteraction()
     {
-        if (!shopConvoDone && baseConvoDone)
+        if (!shopConvoDone)
         {
             shopTrigger.SetTriggerEnabled(true);
             shopTrigger.StartDialogue();
@@ -83,7 +89,7 @@ public class vnGameManager : MonoBehaviour
 
     public void hubInteraction()
     {
-        if (!hubConvoDone && shopConvoDone && baseConvoDone)
+        if (!hubConvoDone)
         {
             hubTrigger.SetTriggerEnabled(true);
             hubTrigger.StartDialogue();
@@ -99,15 +105,29 @@ public class vnGameManager : MonoBehaviour
             baseConvoDone = true;
             Debug.Log("base convo done");
         }
-        else if (!shopConvoDone && shopTrigger.HasCompletedDialogue())
+        else
+        {
+            Debug.Log("base convo already done");
+        }
+
+        if (!shopConvoDone && shopTrigger.HasCompletedDialogue())
         {
             shopConvoDone = true;
             Debug.Log("shop convo done");
         }
-        else if (!hubConvoDone && hubTrigger.HasCompletedDialogue())
+        else
+        {
+            Debug.Log("shop convo already done");
+        }
+
+        if (!hubConvoDone && hubTrigger.HasCompletedDialogue())
         {
             hubConvoDone = true;
             Debug.Log("hub convo done");
+        }
+        else
+        {
+            Debug.Log("hub convo already done");
         }
     }
 
