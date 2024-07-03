@@ -1167,9 +1167,9 @@ MonoBehaviour:
   - name: V.I.R.U.S
     sprite: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   - name: ???
-    sprite: {fileID: 21300000, guid: 8bce1cd238f52a741bb92fc88d254053, type: 3}
+    sprite: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
   - name: Roux
-    sprite: {fileID: 21300000, guid: 8bce1cd238f52a741bb92fc88d254053, type: 3}
+    sprite: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
   - name: 
     sprite: {fileID: 21300000, guid: 44a490bb0c84c6f4c9b1ccdf6f13c5ab, type: 3}
 --- !u!114 &527319324

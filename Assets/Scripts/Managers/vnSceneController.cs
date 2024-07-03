@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 public class vnSceneController : MonoBehaviour
 {
     private ParticleTransition particleTransition;
-    public float delayTime;
+    public float delayTimeToPlay;
+    public float delayTimeToTransition;
+
+    public GameObject objTransition;
 
     private void Awake()
     {
@@ -24,6 +27,7 @@ public class vnSceneController : MonoBehaviour
             particleTransition.TriggerTransition();
         }
         StartCoroutine(DelayedLoadScene());
+        StartCoroutine(DelayedTransition());
     }
 
     public void Quit()
@@ -44,7 +48,14 @@ public class vnSceneController : MonoBehaviour
 
     IEnumerator DelayedLoadScene()
     {
-        yield return new WaitForSeconds(delayTime);
+        yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    IEnumerator DelayedTransition()
+    {
+        yield return new WaitForSeconds(delayTimeToTransition);
+        objTransition.SetActive(true);
+    }
+
 }
