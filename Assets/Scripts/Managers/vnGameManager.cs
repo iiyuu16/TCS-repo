@@ -7,35 +7,40 @@ public class vnGameManager : MonoBehaviour
     public DialogueTrigger TriggerConvo2;
     public DialogueTrigger TriggerConvo3;
     public DialogueTrigger TriggerConvo4;
-    public DialogueTrigger TriggerConvo5;
+    public DialogueTrigger TriggerConvo5a1;
+    public DialogueTrigger TriggerConvo5a2;
+    public DialogueTrigger TriggerConvo5b;
     public DialogueTrigger TriggerConvo6;
     [Space]
     public bool Convo1Done = false;
     public bool Convo2Done = false;
     public bool Convo3Done = false;
     public bool Convo4Done = false;
-    public bool Convo5Done = false;
+    public bool Convo5a1Done = false;
+    public bool Convo5a2Done = false;
+    public bool Convo5bDone = false;
     public bool Convo6Done = false;
     [Space]
-
     public GameObject[] Convo1ObjectsToEnable;
     public GameObject[] Convo1ObjectsToDisable;
     [Space]
-
     public GameObject[] Convo2ObjectsToEnable;
     public GameObject[] Convo2ObjectsToDisable;
     [Space]
-
     public GameObject[] Convo3ObjectsToEnable;
     public GameObject[] Convo3ObjectsToDisable;
     [Space]
-
     public GameObject[] Convo4ObjectsToEnable;
     public GameObject[] Convo4ObjectsToDisable;
     [Space]
-
-    public GameObject[] Convo5ObjectsToEnable;
-    public GameObject[] Convo5ObjectsToDisable;
+    public GameObject[] Convo5a1ObjectsToEnable;
+    public GameObject[] Convo5a1ObjectsToDisable;
+    [Space]
+    public GameObject[] Convo5a2ObjectsToEnable;
+    public GameObject[] Convo5a2ObjectsToDisable;
+    [Space]
+    public GameObject[] Convo5bObjectsToEnable;
+    public GameObject[] Convo5bObjectsToDisable;
     [Space]
     public GameObject[] Convo6ObjectsToEnable;
     public GameObject[] Convo6ObjectsToDisable;
@@ -76,9 +81,19 @@ public class vnGameManager : MonoBehaviour
             EnableDisableObjects(Convo4ObjectsToEnable, Convo4ObjectsToDisable);
         }
 
-        if (Convo5Done)
+        if (Convo5a1Done)
         {
-            EnableDisableObjects(Convo5ObjectsToEnable, Convo5ObjectsToDisable);
+            EnableDisableObjects(Convo5a1ObjectsToEnable, Convo5a1ObjectsToDisable);
+        }
+
+        if (Convo5a2Done)
+        {
+            EnableDisableObjects(Convo5a2ObjectsToEnable, Convo5a2ObjectsToDisable);
+        }
+
+        if (Convo5bDone)
+        {
+            EnableDisableObjects(Convo5bObjectsToEnable, Convo5bObjectsToDisable);
         }
 
         if (Convo6Done)
@@ -136,12 +151,30 @@ public class vnGameManager : MonoBehaviour
         }
     }
 
-    public void convo5Interaction()
+    public void convo5a1Interaction()
     {
-        if (!Convo5Done)
+        if (!Convo5a1Done)
         {
-            TriggerConvo5.SetTriggerEnabled(true);
-            TriggerConvo5.StartDialogue();
+            TriggerConvo5a1.SetTriggerEnabled(true);
+            TriggerConvo5a1.StartDialogue();
+        }
+    }
+
+    public void convo5a2Interaction()
+    {
+        if (!Convo5a2Done)
+        {
+            TriggerConvo5a2.SetTriggerEnabled(true);
+            TriggerConvo5a2.StartDialogue();
+        }
+    }
+
+    public void convo5bInteraction()
+    {
+        if (!Convo5bDone)
+        {
+            TriggerConvo5b.SetTriggerEnabled(true);
+            TriggerConvo5b.StartDialogue();
         }
     }
 
@@ -181,9 +214,19 @@ public class vnGameManager : MonoBehaviour
             Convo4Done = true;
         }
 
-        if (!Convo5Done && TriggerConvo5.HasCompletedDialogue())
+        if (!Convo5a1Done && TriggerConvo5a1.HasCompletedDialogue())
         {
-            Convo5Done = true;
+            Convo5a1Done = true;
+        }
+
+        if (!Convo5a2Done && TriggerConvo5a2.HasCompletedDialogue())
+        {
+            Convo5a2Done = true;
+        }
+
+        if (!Convo5bDone && TriggerConvo5b.HasCompletedDialogue())
+        {
+            Convo5bDone = true;
         }
 
 
