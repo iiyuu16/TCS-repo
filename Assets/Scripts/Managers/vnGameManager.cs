@@ -3,27 +3,43 @@ using UnityEngine;
 public class vnGameManager : MonoBehaviour
 {
     [Space]
-    public DialogueTrigger baseTrigger;
-    public DialogueTrigger shopTrigger;
-    public DialogueTrigger hubTrigger;
+    public DialogueTrigger TriggerConvo1;
+    public DialogueTrigger TriggerConvo2;
+    public DialogueTrigger TriggerConvo3;
+    public DialogueTrigger TriggerConvo4;
+    public DialogueTrigger TriggerConvo5;
+    public DialogueTrigger TriggerConvo6;
     [Space]
-    public bool baseConvoDone = false;
-    public bool shopConvoDone = false;
-    public bool hubConvoDone = false;
-    [Space]
-
-    public GameObject[] baseObjectsToEnable;
-    public GameObject[] baseObjectsToDisable;
-    [Space]
-
-    public GameObject[] shopObjectsToEnable;
-    public GameObject[] shopObjectsToDisable;
+    public bool Convo1Done = false;
+    public bool Convo2Done = false;
+    public bool Convo3Done = false;
+    public bool Convo4Done = false;
+    public bool Convo5Done = false;
+    public bool Convo6Done = false;
     [Space]
 
-    public GameObject[] hubObjectsToEnable;
-    public GameObject[] hubObjectsToDisable;
+    public GameObject[] Convo1ObjectsToEnable;
+    public GameObject[] Convo1ObjectsToDisable;
     [Space]
 
+    public GameObject[] Convo2ObjectsToEnable;
+    public GameObject[] Convo2ObjectsToDisable;
+    [Space]
+
+    public GameObject[] Convo3ObjectsToEnable;
+    public GameObject[] Convo3ObjectsToDisable;
+    [Space]
+
+    public GameObject[] Convo4ObjectsToEnable;
+    public GameObject[] Convo4ObjectsToDisable;
+    [Space]
+
+    public GameObject[] Convo5ObjectsToEnable;
+    public GameObject[] Convo5ObjectsToDisable;
+    [Space]
+    public GameObject[] Convo6ObjectsToEnable;
+    public GameObject[] Convo6ObjectsToDisable;
+    [Space]
     private DialogueManager dialogueManager;
 
     void Start()
@@ -40,19 +56,34 @@ public class vnGameManager : MonoBehaviour
 
     void UpdateObjectives()
     {
-        if (baseConvoDone)
+        if (Convo1Done)
         {
-            EnableDisableObjects(baseObjectsToEnable, baseObjectsToDisable);
+            EnableDisableObjects(Convo1ObjectsToEnable, Convo1ObjectsToDisable);
         }
 
-        if (shopConvoDone)
+        if (Convo2Done)
         {
-            EnableDisableObjects(shopObjectsToEnable, shopObjectsToDisable);
+            EnableDisableObjects(Convo2ObjectsToEnable, Convo2ObjectsToDisable);
         }
 
-        if (hubConvoDone)
+        if (Convo3Done)
         {
-            EnableDisableObjects(hubObjectsToEnable, hubObjectsToDisable);
+            EnableDisableObjects(Convo3ObjectsToEnable, Convo3ObjectsToDisable);
+        }
+
+        if (Convo4Done)
+        {
+            EnableDisableObjects(Convo4ObjectsToEnable, Convo4ObjectsToDisable);
+        }
+
+        if (Convo5Done)
+        {
+            EnableDisableObjects(Convo5ObjectsToEnable, Convo5ObjectsToDisable);
+        }
+
+        if (Convo6Done)
+        {
+            EnableDisableObjects(Convo6ObjectsToEnable, Convo6ObjectsToDisable);
         }
     }
 
@@ -69,30 +100,57 @@ public class vnGameManager : MonoBehaviour
         }
     }
 
-    public void baseInteraction()
+    public void convo1Interaction()
     {
-        if (!baseConvoDone)
+        if (!Convo1Done)
         {
-            baseTrigger.SetTriggerEnabled(true);
-            baseTrigger.StartDialogue();
+            TriggerConvo1.SetTriggerEnabled(true);
+            TriggerConvo1.StartDialogue();
         }
     }
 
-    public void shopInteraction()
+    public void convo2Interaction()
     {
-        if (!shopConvoDone)
+        if (!Convo2Done)
         {
-            shopTrigger.SetTriggerEnabled(true);
-            shopTrigger.StartDialogue();
+            TriggerConvo2.SetTriggerEnabled(true);
+            TriggerConvo2.StartDialogue();
         }
     }
 
-    public void hubInteraction()
+    public void convo3Interaction()
     {
-        if (!hubConvoDone)
+        if (!Convo3Done)
         {
-            hubTrigger.SetTriggerEnabled(true);
-            hubTrigger.StartDialogue();
+            TriggerConvo3.SetTriggerEnabled(true);
+            TriggerConvo3.StartDialogue();
+        }
+    }
+
+    public void convo4Interaction()
+    {
+        if (!Convo4Done)
+        {
+            TriggerConvo4.SetTriggerEnabled(true);
+            TriggerConvo4.StartDialogue();
+        }
+    }
+
+    public void convo5Interaction()
+    {
+        if (!Convo5Done)
+        {
+            TriggerConvo5.SetTriggerEnabled(true);
+            TriggerConvo5.StartDialogue();
+        }
+    }
+
+    public void convo6Interaction()
+    {
+        if (!Convo6Done)
+        {
+            TriggerConvo6.SetTriggerEnabled(true);
+            TriggerConvo6.StartDialogue();
         }
     }
 
@@ -100,34 +158,38 @@ public class vnGameManager : MonoBehaviour
     {
         Debug.Log("Dialogue completed event triggered");
 
-        if (!baseConvoDone && baseTrigger.HasCompletedDialogue())
+        if (!Convo1Done && TriggerConvo1.HasCompletedDialogue())
         {
-            baseConvoDone = true;
-            Debug.Log("base convo done");
-        }
-        else
-        {
-            Debug.Log("base convo already done");
+            Convo1Done = true;
         }
 
-        if (!shopConvoDone && shopTrigger.HasCompletedDialogue())
+
+        if (!Convo2Done && TriggerConvo2.HasCompletedDialogue())
         {
-            shopConvoDone = true;
-            Debug.Log("shop convo done");
-        }
-        else
-        {
-            Debug.Log("shop convo already done");
+            Convo2Done = true;
         }
 
-        if (!hubConvoDone && hubTrigger.HasCompletedDialogue())
+
+        if (!Convo3Done && TriggerConvo3.HasCompletedDialogue())
         {
-            hubConvoDone = true;
-            Debug.Log("hub convo done");
+            Convo3Done = true;
         }
-        else
+
+
+        if (!Convo4Done && TriggerConvo4.HasCompletedDialogue())
         {
-            Debug.Log("hub convo already done");
+            Convo4Done = true;
+        }
+
+        if (!Convo5Done && TriggerConvo5.HasCompletedDialogue())
+        {
+            Convo5Done = true;
+        }
+
+
+        if (!Convo6Done && TriggerConvo6.HasCompletedDialogue())
+        {
+            Convo6Done = true;
         }
     }
 
