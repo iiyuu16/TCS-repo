@@ -43,7 +43,7 @@ public class vnSceneController : MonoBehaviour
 
     public void toVisNov()
     {
-        SceneManager.LoadScene("VisNov");
+        SceneManager.LoadScene("VisNovV2");
     }
 
     IEnumerator DelayedLoadScene()
