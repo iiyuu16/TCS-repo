@@ -36,7 +36,7 @@ namespace DialogueEditor
         private float m_hoverT = 0.0f;
         private eHoverState m_hoverState;
         private bool Hovering { get { return (m_hoverState == eHoverState.animatingOn || m_hoverState == eHoverState.animatingOff); } }
-        private Vector3 BigSize { get { return Vector3.one * 1.2f; } }
+        private Vector3 BigSize { get { return Vector3.one * 1.1f; } }
 
 
         //--------------------------------------
@@ -165,7 +165,7 @@ namespace DialogueEditor
         {
             Color c_image = OptionBackgroundImage.color;
             Color c_text = TextMesh.color;
-            c_image.a = a;
+            c_image.a = .7f;
             c_text.a = a;
             OptionBackgroundImage.color = c_image;
             TextMesh.color = c_text;
