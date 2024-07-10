@@ -41,9 +41,9 @@ public class vnSceneController : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void toVisNov()
+    public void toVisNovPrologue()
     {
-        SceneManager.LoadScene("VisNovV2");
+        SceneManager.LoadScene("VisNovV2_Prologue");
     }
 
     IEnumerator DelayedLoadScene()

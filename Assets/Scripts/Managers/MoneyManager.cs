@@ -8,7 +8,6 @@ public class MoneyManager : MonoBehaviour
 
     void Start()
     {
-        currentMoney = 0;
         UpdateMoneyText();
     }
 
@@ -47,9 +46,17 @@ public class MoneyManager : MonoBehaviour
         return currentMoney;
     }
 
-    private void UpdateMoneyText()
+    public void UpdateMoneyText()
     {
         string moneyString = currentMoney.ToString();
-        moneyText.text = "FRGz: " +moneyString;
+        moneyText.text = "FRGz: " + moneyString;
+    }
+
+    private void OnValidate()
+    {
+        if (moneyText != null)
+        {
+            UpdateMoneyText();
+        }
     }
 }
