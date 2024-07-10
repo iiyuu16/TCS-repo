@@ -49,7 +49,7 @@ public class MoneyManager : MonoBehaviour
 
     private void UpdateMoneyText()
     {
-        string moneyString = "FRGz: " + currentMoney.ToString().PadLeft(9, '0');
-        moneyText.text = moneyString;
+        string moneyString = currentMoney.ToString();
+        moneyText.text = "FRGz: " +moneyString;
     }
 }

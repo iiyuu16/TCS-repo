@@ -296,7 +296,7 @@ namespace DialogueEditor
 
                 case eState.ScrollingText:
                     {
-                        SetColorAlpha(DialogueText, 1);
+                        SetColorAlpha(DialogueText, .7f);
                     }
                     break;
 
