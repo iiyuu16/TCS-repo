@@ -19,6 +19,14 @@ public class vnSceneController : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "LoadingScreen")
+        {
+            toVisNov_FLM();
+        }
+    }
+
     public void Play()
     {
         Debug.Log("Play");
@@ -26,8 +34,8 @@ public class vnSceneController : MonoBehaviour
         {
             particleTransition.TriggerTransition();
         }
-        StartCoroutine(DelayedLoadScene());
-        StartCoroutine(DelayedTransition());
+        StartCoroutine(DelayedSceneTransition());
+        StartCoroutine(DelayedObjTransition());
     }
 
     public void Quit()
@@ -46,16 +54,39 @@ public class vnSceneController : MonoBehaviour
         SceneManager.LoadScene("VisNovV2_Prologue");
     }
 
-    IEnumerator DelayedLoadScene()
+    public void toLoadingScene()
+    {
+        StartCoroutine(DelayToLoadingScene());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    public void toVisNov_FLM()
+    {
+        StartCoroutine(DelayToFLM());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    IEnumerator DelayToLoadingScene()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("LoadingScreen");
+    }
+
+    IEnumerator DelayToFLM()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("VisNov_FLM");
+    }
+
+    IEnumerator DelayedSceneTransition()
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    IEnumerator DelayedTransition()
+    IEnumerator DelayedObjTransition()
     {
         yield return new WaitForSeconds(delayTimeToTransition);
         objTransition.SetActive(true);
     }
-
 }
