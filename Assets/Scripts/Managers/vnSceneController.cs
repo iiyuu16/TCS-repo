@@ -66,6 +66,12 @@ public class vnSceneController : MonoBehaviour
         StartCoroutine(DelayedObjTransition());
     }
 
+    public void toVisNov_FLM_gamemode()
+    {
+        StartCoroutine(DelayToFLM_gamemode());
+        StartCoroutine(DelayedObjTransition());
+    }
+
     IEnumerator DelayToLoadingScene()
     {
         yield return new WaitForSeconds(delayTimeToPlay);
@@ -76,6 +82,12 @@ public class vnSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("VisNov_FLM");
+    }
+
+    IEnumerator DelayToFLM_gamemode()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("s&dGM");
     }
 
     IEnumerator DelayedSceneTransition()

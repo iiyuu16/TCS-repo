@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MainScenes/VisNov_FLM.unity
     guid: 6ddf6d3eedb7c29428e0330d83ce79ea
+  - enabled: 1
+    path: Assets/s&d_Assets/Scenes/s&dGM.unity
+    guid: 558ceffb457887d4ab8b6393b191edd4
   m_configObjects: {}

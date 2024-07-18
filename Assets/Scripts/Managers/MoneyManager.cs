@@ -3,10 +3,23 @@ using TMPro;
 
 public class MoneyManager : MonoBehaviour
 {
+    public static MoneyManager instance;
     public int currentMoney;
     public TextMeshProUGUI moneyText;
 
-    void Start()
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void Start()
     {
         UpdateMoneyText();
     }
@@ -50,6 +63,13 @@ public class MoneyManager : MonoBehaviour
     {
         string moneyString = currentMoney.ToString();
         moneyText.text = "FRGz: " + moneyString;
+    }
+
+    public void UpdateMoneyFrom_FLM(int score)
+    {
+        int moneyFromScore = score;
+        AddMoney(moneyFromScore);
+        Debug.Log("Money updated from score: " + moneyFromScore);
     }
 
     private void OnValidate()

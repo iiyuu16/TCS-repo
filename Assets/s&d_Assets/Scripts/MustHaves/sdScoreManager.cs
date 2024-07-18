@@ -4,7 +4,7 @@ using TMPro;
 public class sdScoreManager : MonoBehaviour
 {
     public static sdScoreManager instance;
-    public int score = 0;
+    private int score = 0;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI obtainedScoreText;
 
@@ -25,6 +25,16 @@ public class sdScoreManager : MonoBehaviour
         score += points;
         UpdateScoreText();
         UpdateObtainedScoreText();
+
+        if (MoneyManager.instance != null)
+        {
+            MoneyManager.instance.UpdateMoneyFrom_FLM(score);
+            Debug.Log("Score sent to MoneyManager: " + score);
+        }
+        else
+        {
+            Debug.LogError("MoneyManager instance is null.");
+        }
     }
 
     private void UpdateScoreText()
@@ -39,7 +49,7 @@ public class sdScoreManager : MonoBehaviour
     {
         if (obtainedScoreText != null)
         {
-            obtainedScoreText.text = "Obtained " + FormatScore(score) + " Fr.";
+            obtainedScoreText.text = "Obtained " + FormatScore(score) + " Frgz.";
         }
     }
 
