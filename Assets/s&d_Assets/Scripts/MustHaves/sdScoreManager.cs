@@ -49,13 +49,14 @@ public class sdScoreManager : MonoBehaviour
     {
         if (obtainedScoreText != null)
         {
-            obtainedScoreText.text = FormatScore(score) + " Frgz.";
+            obtainedScoreText.text = "Got " + FormatScore(score) + " Frgz.";
         }
     }
 
     private string FormatScore(int score)
     {
         string scoreStr = score.ToString();
-        return scoreStr.PadLeft(8, ' ');
+        int paddingLength = Mathf.Max(1, scoreStr.Length);
+        return scoreStr.PadRight(paddingLength);
     }
 }

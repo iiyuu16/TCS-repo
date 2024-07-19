@@ -12,6 +12,7 @@ public class MoneyManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject); // Optional: To keep the MoneyManager across scenes
         }
         else
         {
@@ -21,7 +22,21 @@ public class MoneyManager : MonoBehaviour
 
     private void Start()
     {
+        LoadMoney();
         UpdateMoneyText();
+    }
+
+    private void OnApplicationQuit()
+    {
+        SaveMoney();
+    }
+
+    private void OnApplicationPause(bool pause)
+    {
+        if (pause)
+        {
+            SaveMoney();
+        }
     }
 
     public void AddMoney(int amount)
@@ -67,7 +82,7 @@ public class MoneyManager : MonoBehaviour
 
     public void UpdateMoneyFrom_FLM(int score)
     {
-        int moneyFromScore = score;
+        int moneyFromScore = score / 6;
         AddMoney(moneyFromScore);
         Debug.Log("Money updated from score: " + moneyFromScore);
     }
@@ -78,5 +93,16 @@ public class MoneyManager : MonoBehaviour
         {
             UpdateMoneyText();
         }
+    }
+
+    private void SaveMoney()
+    {
+        PlayerPrefs.SetInt("CurrentMoney", currentMoney);
+        PlayerPrefs.Save();
+    }
+
+    private void LoadMoney()
+    {
+        currentMoney = PlayerPrefs.GetInt("CurrentMoney", 0);
     }
 }
