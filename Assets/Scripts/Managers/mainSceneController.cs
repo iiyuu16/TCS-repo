@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class vnSceneController : MonoBehaviour
+public class mainSceneController : MonoBehaviour
 {
     private ParticleTransition particleTransition;
     public float delayTimeToPlay;
@@ -51,7 +51,13 @@ public class vnSceneController : MonoBehaviour
 
     public void toVisNovPrologue()
     {
-        SceneManager.LoadScene("VisNovV2_Prologue");
+        SceneManager.LoadScene("VisNov_Prologue");
+    }
+
+    public void toVisNovMain()
+    {
+        StartCoroutine(DelayToLoadingScene());
+        StartCoroutine(DelayToVNMain());
     }
 
     public void toLoadingScene()
@@ -70,6 +76,12 @@ public class vnSceneController : MonoBehaviour
     {
         StartCoroutine(DelayToFLM_gamemode());
         StartCoroutine(DelayedObjTransition());
+    }
+
+    IEnumerator DelayToVNMain()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("VisNov_Main");
     }
 
     IEnumerator DelayToLoadingScene()

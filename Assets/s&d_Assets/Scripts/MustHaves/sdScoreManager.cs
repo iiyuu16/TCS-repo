@@ -49,7 +49,7 @@ public class sdScoreManager : MonoBehaviour
     {
         if (obtainedScoreText != null)
         {
-            obtainedScoreText.text = "Obtained " + FormatScore(score) + " Frgz.";
+            obtainedScoreText.text = FormatScore(score) + " Frgz.";
         }
     }
 
