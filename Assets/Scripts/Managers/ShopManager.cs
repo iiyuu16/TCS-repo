@@ -6,7 +6,7 @@ public class ShopManager : MonoBehaviour
 
     public ShopAugmentItem insuranceItem;
     public ShopAugmentItem multiplyingItem;
-    public ShopAugmentItem reversalItem;
+    public ShopAugmentItem hollowingItem;
 
     void Start()
     {
@@ -23,8 +23,8 @@ public class ShopManager : MonoBehaviour
         multiplyingItem.Purchase();
     }
 
-    public void PurchaseReversal()
+    public void PurchaseHollowing()
     {
-        reversalItem.Purchase();
+        hollowingItem.Purchase();
     }
 }

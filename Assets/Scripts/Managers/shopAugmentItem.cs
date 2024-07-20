@@ -17,7 +17,8 @@ public class ShopAugmentItem : MonoBehaviour
         if (moneyManager.SpendMoney(augmentPrice))
         {
             Debug.Log("Purchased augment: " + augmentName);
-            // Additional logic for when the augment is purchased
+            PlayerPrefs.SetInt(augmentName, 1);  // Mark augment as bought
+            PlayerPrefs.Save();  // Save PlayerPrefs changes
         }
         else
         {

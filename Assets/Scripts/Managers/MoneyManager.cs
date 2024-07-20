@@ -12,7 +12,7 @@ public class MoneyManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // Optional: To keep the MoneyManager across scenes
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -26,22 +26,10 @@ public class MoneyManager : MonoBehaviour
         UpdateMoneyText();
     }
 
-    private void OnApplicationQuit()
-    {
-        SaveMoney();
-    }
-
-    private void OnApplicationPause(bool pause)
-    {
-        if (pause)
-        {
-            SaveMoney();
-        }
-    }
-
     public void AddMoney(int amount)
     {
         currentMoney += amount;
+        SaveMoney();
         UpdateMoneyText();
         Debug.Log("Added money: " + amount + ". Current money: " + currentMoney);
     }
@@ -49,6 +37,7 @@ public class MoneyManager : MonoBehaviour
     public void SubtractMoney(int amount)
     {
         currentMoney -= Mathf.Abs(amount);
+        SaveMoney();
         UpdateMoneyText();
         Debug.Log("Subtracted money: " + amount + ". Current money: " + currentMoney);
     }
@@ -58,6 +47,7 @@ public class MoneyManager : MonoBehaviour
         if (currentMoney >= amount)
         {
             currentMoney -= amount;
+            SaveMoney();
             UpdateMoneyText();
             Debug.Log("Spent money: " + amount + ". Current money: " + currentMoney);
             return true;
@@ -82,9 +72,27 @@ public class MoneyManager : MonoBehaviour
 
     public void UpdateMoneyFrom_FLM(int score)
     {
-        int moneyFromScore = score / 6;
+        int moneyFromScore = score;
         AddMoney(moneyFromScore);
         Debug.Log("Money updated from score: " + moneyFromScore);
+    }
+
+    private void SaveMoney()
+    {
+        PlayerPrefs.SetInt("CurrentMoney", currentMoney);
+    }
+
+    private void LoadMoney()
+    {
+        currentMoney = PlayerPrefs.GetInt("CurrentMoney", 0);
+    }
+
+    public void ResetMoney()
+    {
+        currentMoney = 0;
+        SaveMoney();
+        UpdateMoneyText();
+        Debug.Log("Money has been reset. Current money: " + currentMoney);
     }
 
     private void OnValidate()
@@ -93,16 +101,5 @@ public class MoneyManager : MonoBehaviour
         {
             UpdateMoneyText();
         }
-    }
-
-    private void SaveMoney()
-    {
-        PlayerPrefs.SetInt("CurrentMoney", currentMoney);
-        PlayerPrefs.Save();
-    }
-
-    private void LoadMoney()
-    {
-        currentMoney = PlayerPrefs.GetInt("CurrentMoney", 0);
     }
 }
