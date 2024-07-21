@@ -41,7 +41,6 @@ public class sdTimer : MonoBehaviour
 
     private void gameOverTrigger()
     {
-        Time.timeScale = 0;
         if (gameOverScreen != null)
         {
             gameOverScreen.SetActive(true);

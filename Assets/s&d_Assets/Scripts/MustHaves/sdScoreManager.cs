@@ -37,6 +37,14 @@ public class sdScoreManager : MonoBehaviour
         }
     }
 
+    public void MultiplyScore(float multiplier)
+    {
+        score = Mathf.RoundToInt(score * multiplier);
+        UpdateScoreText();
+        UpdateObtainedScoreText();
+        Debug.Log("Score multiplied by " + multiplier + ". New score: " + score);
+    }
+
     private void UpdateScoreText()
     {
         if (scoreText != null)

@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MoneyManager : MonoBehaviour
 {
@@ -16,13 +17,31 @@ public class MoneyManager : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject);  // Destroy duplicate instance
+            return;
         }
     }
 
     private void Start()
     {
         LoadMoney();
+        UpdateMoneyText();
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        SetupSceneReferences();
+    }
+
+    public void SetupSceneReferences()
+    {
+        moneyText = GameObject.Find("MoneyText")?.GetComponent<TextMeshProUGUI>();
         UpdateMoneyText();
     }
 
@@ -66,8 +85,10 @@ public class MoneyManager : MonoBehaviour
 
     public void UpdateMoneyText()
     {
-        string moneyString = currentMoney.ToString();
-        moneyText.text = "FRGz: " + moneyString;
+        if (moneyText != null)
+        {
+            moneyText.text = "FRGz: " + currentMoney.ToString();
+        }
     }
 
     public void UpdateMoneyFrom_FLM(int score)
@@ -80,6 +101,7 @@ public class MoneyManager : MonoBehaviour
     private void SaveMoney()
     {
         PlayerPrefs.SetInt("CurrentMoney", currentMoney);
+        PlayerPrefs.Save();
     }
 
     private void LoadMoney()

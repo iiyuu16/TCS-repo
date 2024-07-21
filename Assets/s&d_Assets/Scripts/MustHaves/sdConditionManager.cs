@@ -15,7 +15,6 @@ public class sdWinConditionManager : MonoBehaviour
             if (winScreen != null)
             {
                 winScreen.SetActive(true);
-                Time.timeScale = 0f;
             }
 
             DisableGameObjects();
