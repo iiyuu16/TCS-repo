@@ -4,7 +4,7 @@ using TMPro;
 public class AugmentManager : MonoBehaviour
 {
     public static AugmentManager instance;
-    public TextMeshProUGUI augStatusText;
+    public TextMeshProUGUI[] augStatusTexts;
 
     [Header("Insurance Augment")]
     public bool isInsuranceBought;
@@ -80,7 +80,6 @@ public class AugmentManager : MonoBehaviour
         PlayerPrefs.SetInt("Augmentless", isAugmentless ? 1 : 0);
 
         PlayerPrefs.Save();
-        DisplayCurrentAugments();
     }
 
     public void ResetAugments()
@@ -112,19 +111,21 @@ public class AugmentManager : MonoBehaviour
         PlayerPrefs.DeleteKey("HollowingOnEffect");
 
         PlayerPrefs.DeleteKey("Augmentless");
-
-        DisplayCurrentAugments();
     }
 
     public void ActivateAugment(string augmentName)
     {
+        isAugmentless = false;
+
         switch (augmentName)
         {
             case "Insurance Augment":
                 if (isInsuranceBought)
                 {
                     isInsuranceActive = true;
-                    isInsuranceOnEffect = false;
+                    isMultiplyingBought = false;
+                    isHollowingBought = false;
+                    isAugmentless = false;
                 }
                 break;
 
@@ -132,7 +133,9 @@ public class AugmentManager : MonoBehaviour
                 if (isMultiplyingBought)
                 {
                     isMultiplyingActive = true;
-                    isMultiplyingOnEffect = false;
+                    isInsuranceBought = false;
+                    isHollowingBought = false;
+                    isAugmentless = false;
                 }
                 break;
 
@@ -140,39 +143,55 @@ public class AugmentManager : MonoBehaviour
                 if (isHollowingBought)
                 {
                     isHollowingActive = true;
-                    isHollowingOnEffect = false;
+                    isInsuranceBought = false;
+                    isMultiplyingBought = false;
+                    isAugmentless = false;
                 }
                 break;
         }
 
+        if (!isInsuranceActive && !isMultiplyingActive && !isHollowingActive)
+        {
+            isAugmentless = true;
+        }
+
         SaveAugments();
-        DisplayCurrentAugments();
     }
 
     public void DisplayCurrentAugments()
     {
-        if (augStatusText == null)
+        if (augStatusTexts == null || augStatusTexts.Length == 0)
         {
-            Debug.LogError("AugmentStatusText reference is null. Cannot update text.");
+            Debug.LogError("AugmentStatusText array is null or empty. Cannot update text.");
             return;
         }
 
-        string currentStatus = "Augmentless";
+        string currentStatus = "";
 
-        if (isInsuranceBought)
+        if (isInsuranceActive)
         {
-            currentStatus = "Insurance Augment: Active";
+            currentStatus += "Insurance Augment: Active\n";
         }
-        else if (isMultiplyingBought)
+        if (isMultiplyingActive)
         {
-            currentStatus = "Multiplying Augment: Active";
+            currentStatus += "Multiplying Augment: Active\n";
         }
-        else if (isHollowingBought)
+        if (isHollowingActive)
         {
-            currentStatus = "Hollowing Augment: Active";
+            currentStatus += "Hollowing Augment: Active\n";
+        }
+        if (string.IsNullOrEmpty(currentStatus))
+        {
+            currentStatus = "Augmentless";
         }
 
-        augStatusText.text = currentStatus;
+        foreach (var augStatusText in augStatusTexts)
+        {
+            if (augStatusText != null)
+            {
+                augStatusText.text = currentStatus.TrimEnd('\n');
+            }
+        }
         Debug.Log("Text updated to: " + currentStatus);
     }
 }

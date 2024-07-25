@@ -1,10 +1,6 @@
 using UnityEngine;
 using TMPro;
 
-
-//note: this script is not up to date!
-
-
 public class sdRewardsManager : MonoBehaviour
 {
     public GameObject winScreen;
@@ -17,7 +13,13 @@ public class sdRewardsManager : MonoBehaviour
 
     void Start()
     {
-        augmentManager = FindObjectOfType<AugmentManager>();
+        augmentManager = AugmentManager.instance;
+        if (augmentManager == null)
+        {
+            Debug.LogError("AugmentManager instance is not found in the scene.");
+            return;
+        }
+
         DetermineActiveScreen();
     }
 
@@ -41,49 +43,60 @@ public class sdRewardsManager : MonoBehaviour
         }
     }
 
-  
-
     public string ApplyInsuranceEffect()
     {
-        if (loseScreenActive && !winScreenActive)
+        if (augmentManager.isInsuranceActive)
         {
-            return "Insurance Augment in effect! : No punishments received!";
-        }
-        else if (winScreenActive && !loseScreenActive)
-        {
-            return "Insurance Augment is active. : Augment prices are reduced by 30%!";
+            if (loseScreenActive && !winScreenActive)
+            {
+                return "Insurance Augment in effect! : No punishments received!";
+            }
+            else if (winScreenActive && !loseScreenActive)
+            {
+                return "Insurance Augment is active. : Augment prices are reduced by 30%!";
+            }
         }
         return "";
     }
 
     public string ApplyMultiplyingEffect()
     {
-        if (loseScreenActive && !winScreenActive)
+        if (augmentManager.isMultiplyingActive)
         {
-            return "Multiplying Augment is active. : Augment prices are increased by 70%!";
-        }
-        else if (winScreenActive && !loseScreenActive)
-        {
-            sdScoreManager.instance.MultiplyScore(1.2f);
-            return "Multiplying Augment in effect! : Obtained additional Fragments!";
+            if (loseScreenActive && !winScreenActive)
+            {
+                return "Multiplying Augment is active. : Augment prices are increased by 70%!";
+            }
+            else if (winScreenActive && !loseScreenActive)
+            {
+                sdScoreManager.instance.MultiplyScore(1.2f);
+                return "Multiplying Augment in effect! : Obtained additional Fragments!";
+            }
         }
         return "";
     }
 
     public string ApplyHollowingEffect()
     {
-        return "Hollowing Augment in effect! : No buffs or debuffs granted!";
+        if (augmentManager.isHollowingActive)
+        {
+            return "Hollowing Augment in effect! : No buffs or debuffs granted!";
+        }
+        return "";
     }
 
     public string defaultEffects()
     {
-        if (winScreenActive && !loseScreenActive)
+        if (augmentManager.isAugmentless)
         {
-            return "Augmentless : Augment prices are reduced by 30%!";
-        }
-        else if (loseScreenActive && !winScreenActive)
-        {
-            return "Augmentless : Augment prices are increased by 70%!";
+            if (winScreenActive && !loseScreenActive)
+            {
+                return "Augmentless : Augment prices are reduced by 30%!";
+            }
+            else if (loseScreenActive && !winScreenActive)
+            {
+                return "Augmentless : Augment prices are increased by 70%!";
+            }
         }
         return "";
     }

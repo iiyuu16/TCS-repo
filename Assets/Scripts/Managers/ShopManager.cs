@@ -1,3 +1,4 @@
+using DialogueEditor;
 using UnityEngine;
 
 public class ShopManager : MonoBehaviour
@@ -7,6 +8,10 @@ public class ShopManager : MonoBehaviour
 
     public float priceMultiplier = 1;
 
+    public GameObject notEnoughMoneyObject;
+    public GameObject transactionDeniedObject;
+    public GameObject convoManagerObj;
+
     void Start()
     {
         moneyManager = FindObjectOfType<MoneyManager>();
@@ -15,47 +20,132 @@ public class ShopManager : MonoBehaviour
 
     public void PurchaseInsurance()
     {
-        if (CanAfford(2000))
-        {
-            moneyManager.SpendMoney(GetAdjustedPrice(2000));
+        int price = GetAdjustedPrice(2000);
+        Debug.Log("Attempting to purchase Insurance Augment. Price: " + price + ", Current Money: " + moneyManager.GetCurrentMoney());
 
+        if (augmentManager.isInsuranceBought)
+        {
+            ShowTransactionDenied();
+            return;
+        }
+
+        if (CanAfford(price))
+        {
+            moneyManager.SpendMoney(price);
             augmentManager.isInsuranceBought = true;
+
+            augmentManager.isMultiplyingActive = false;
+            augmentManager.isHollowingActive = false;
+
             augmentManager.isAugmentless = false;
             augmentManager.SaveAugments();
+
         }
+        else
+        {
+            ShowNotEnoughMoney();
+        }
+
+        convoManagerObj.SetActive(true);
     }
 
     public void PurchaseMultiplying()
     {
-        if (CanAfford(1200))
-        {
-            moneyManager.SpendMoney(GetAdjustedPrice(1200));
+        int price = GetAdjustedPrice(1200);
+        Debug.Log("Attempting to purchase Multiplying Augment. Price: " + price + ", Current Money: " + moneyManager.GetCurrentMoney());
 
+        if (augmentManager.isMultiplyingBought)
+        {
+            ShowTransactionDenied();
+            return;
+        }
+
+        if (CanAfford(price))
+        {
+            moneyManager.SpendMoney(price);
             augmentManager.isMultiplyingBought = true;
+
+            augmentManager.isInsuranceActive = false;
+            augmentManager.isHollowingActive = false;
+
             augmentManager.isAugmentless = false;
             augmentManager.SaveAugments();
         }
+        else
+        {
+            ShowNotEnoughMoney();
+        }
+
+        convoManagerObj.SetActive(true);
+
     }
 
     public void PurchaseHollowing()
     {
-        if (CanAfford(1500))
-        {
-            moneyManager.SpendMoney(GetAdjustedPrice(1500));
+        int price = GetAdjustedPrice(1500);
+        Debug.Log("Attempting to purchase Hollowing Augment. Price: " + price + ", Current Money: " + moneyManager.GetCurrentMoney());
 
+        if (augmentManager.isHollowingBought)
+        {
+            ShowTransactionDenied();
+            return;
+        }
+
+        if (CanAfford(price))
+        {
+            moneyManager.SpendMoney(price);
             augmentManager.isHollowingBought = true;
+
+            augmentManager.isMultiplyingActive = false;
+            augmentManager.isInsuranceActive = false;
+
             augmentManager.isAugmentless = false;
             augmentManager.SaveAugments();
         }
+        else
+        {
+            ShowNotEnoughMoney();
+        }
+
+        convoManagerObj.SetActive(true);
+
     }
 
-    private bool CanAfford(int basePrice)
+    private bool CanAfford(int price)
     {
-        return moneyManager.GetCurrentMoney() >= GetAdjustedPrice(basePrice);
+        return moneyManager.GetCurrentMoney() >= price;
     }
 
     private int GetAdjustedPrice(int basePrice)
     {
         return Mathf.RoundToInt(basePrice * priceMultiplier);
+    }
+
+    private void ShowNotEnoughMoney()
+    {
+        if (notEnoughMoneyObject != null)
+        {
+            convoManagerObj.SetActive(false);
+
+            notEnoughMoneyObject.SetActive(true);
+        }
+        if (transactionDeniedObject != null)
+        {
+            transactionDeniedObject.SetActive(false);
+        }
+    }
+
+    private void ShowTransactionDenied()
+    {
+        if (notEnoughMoneyObject != null)
+        {
+            notEnoughMoneyObject.SetActive(false);
+        }
+        if (transactionDeniedObject != null)
+        {
+            convoManagerObj.SetActive(false);
+
+            transactionDeniedObject.SetActive(true);
+        }
     }
 }
