@@ -40,13 +40,14 @@ public class ShopManager : MonoBehaviour
             augmentManager.isAugmentless = false;
             augmentManager.SaveAugments();
 
+            convoManagerObj.SetActive(true);
+            augmentManager.DisplayCurrentAugments();
         }
         else
         {
             ShowNotEnoughMoney();
+            convoManagerObj.SetActive(false);
         }
-
-        convoManagerObj.SetActive(true);
     }
 
     public void PurchaseMultiplying()
@@ -70,14 +71,16 @@ public class ShopManager : MonoBehaviour
 
             augmentManager.isAugmentless = false;
             augmentManager.SaveAugments();
+
+            convoManagerObj.SetActive(true);
+            augmentManager.DisplayCurrentAugments();
         }
         else
         {
             ShowNotEnoughMoney();
+            convoManagerObj.SetActive(false);
+
         }
-
-        convoManagerObj.SetActive(true);
-
     }
 
     public void PurchaseHollowing()
@@ -101,14 +104,16 @@ public class ShopManager : MonoBehaviour
 
             augmentManager.isAugmentless = false;
             augmentManager.SaveAugments();
+
+            convoManagerObj.SetActive(true);
+            augmentManager.DisplayCurrentAugments();
         }
         else
         {
             ShowNotEnoughMoney();
+            convoManagerObj.SetActive(false);
+
         }
-
-        convoManagerObj.SetActive(true);
-
     }
 
     private bool CanAfford(int price)
