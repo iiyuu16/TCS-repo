@@ -34,6 +34,7 @@ public class ShopManager : MonoBehaviour
             moneyManager.SpendMoney(price);
             augmentManager.isInsuranceBought = true;
 
+            augmentManager.isInsuranceActive = true; // Mark insurance as active
             augmentManager.isMultiplyingActive = false;
             augmentManager.isHollowingActive = false;
 
@@ -66,6 +67,7 @@ public class ShopManager : MonoBehaviour
             moneyManager.SpendMoney(price);
             augmentManager.isMultiplyingBought = true;
 
+            augmentManager.isMultiplyingActive = true; // Mark multiplying as active
             augmentManager.isInsuranceActive = false;
             augmentManager.isHollowingActive = false;
 
@@ -79,7 +81,6 @@ public class ShopManager : MonoBehaviour
         {
             ShowNotEnoughMoney();
             convoManagerObj.SetActive(false);
-
         }
     }
 
@@ -99,6 +100,7 @@ public class ShopManager : MonoBehaviour
             moneyManager.SpendMoney(price);
             augmentManager.isHollowingBought = true;
 
+            augmentManager.isHollowingActive = true; // Mark hollowing as active
             augmentManager.isMultiplyingActive = false;
             augmentManager.isInsuranceActive = false;
 
@@ -112,7 +114,6 @@ public class ShopManager : MonoBehaviour
         {
             ShowNotEnoughMoney();
             convoManagerObj.SetActive(false);
-
         }
     }
 
@@ -131,7 +132,6 @@ public class ShopManager : MonoBehaviour
         if (notEnoughMoneyObject != null)
         {
             convoManagerObj.SetActive(false);
-
             notEnoughMoneyObject.SetActive(true);
         }
         if (transactionDeniedObject != null)
@@ -149,7 +149,6 @@ public class ShopManager : MonoBehaviour
         if (transactionDeniedObject != null)
         {
             convoManagerObj.SetActive(false);
-
             transactionDeniedObject.SetActive(true);
         }
     }

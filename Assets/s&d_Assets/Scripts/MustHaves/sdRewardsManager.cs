@@ -5,11 +5,13 @@ public class sdRewardsManager : MonoBehaviour
 {
     public GameObject winScreen;
     public GameObject loseScreen;
+    public TextMeshProUGUI statusText;
+
     private bool winScreenActive = false;
     private bool loseScreenActive = false;
 
     private AugmentManager augmentManager;
-    public TextMeshProUGUI statusText;
+    private ShopManager shopManager;
 
     void Start()
     {
@@ -17,6 +19,13 @@ public class sdRewardsManager : MonoBehaviour
         if (augmentManager == null)
         {
             Debug.LogError("AugmentManager instance is not found in the scene.");
+            return;
+        }
+
+        shopManager = FindObjectOfType<ShopManager>();
+        if (shopManager == null)
+        {
+            Debug.LogError("ShopManager instance is not found in the scene.");
             return;
         }
 
@@ -36,6 +45,7 @@ public class sdRewardsManager : MonoBehaviour
         if (winScreenActive || loseScreenActive)
         {
             statusText.gameObject.SetActive(true);
+            ApplyAugmentEffects();
         }
         else
         {
@@ -43,59 +53,82 @@ public class sdRewardsManager : MonoBehaviour
         }
     }
 
-    public string ApplyInsuranceEffect()
+    private void ApplyAugmentEffects()
+    {
+        string effectMessage = "";
+
+        // Apply each effect and break early if an effect is applied
+        effectMessage = ApplyInsuranceEffect();
+        if (string.IsNullOrEmpty(effectMessage)) effectMessage = ApplyMultiplyingEffect();
+        if (string.IsNullOrEmpty(effectMessage)) effectMessage = ApplyHollowingEffect();
+        if (string.IsNullOrEmpty(effectMessage)) effectMessage = defaultEffects();
+
+        statusText.text = effectMessage.Trim();
+    }
+
+    private string ApplyInsuranceEffect()
     {
         if (augmentManager.isInsuranceActive)
         {
+            augmentManager.isInsuranceOnEffect = true;
             if (loseScreenActive && !winScreenActive)
             {
-                return "Insurance Augment in effect! : No punishments received!";
+                shopManager.priceMultiplier = 1.0f; // No change to price
+                return "Insurance Augment in effect! : No punishments received!\n";
             }
             else if (winScreenActive && !loseScreenActive)
             {
-                return "Insurance Augment is active. : Augment prices are reduced by 30%!";
+                shopManager.priceMultiplier = 0.7f; // Reduce price by 30%
+                return "Insurance Augment is active! : No punishments triggered!\n";
             }
         }
         return "";
     }
 
-    public string ApplyMultiplyingEffect()
+    private string ApplyMultiplyingEffect()
     {
         if (augmentManager.isMultiplyingActive)
         {
+            augmentManager.isMultiplyingOnEffect = true;
             if (loseScreenActive && !winScreenActive)
             {
-                return "Multiplying Augment is active. : Augment prices are increased by 70%!";
+                shopManager.priceMultiplier = 1.7f; // Increase price by 70%
+                return "Multiplying Augment is active. : No punishments triggered!\n";
             }
             else if (winScreenActive && !loseScreenActive)
             {
-                sdScoreManager.instance.MultiplyScore(1.2f);
-                return "Multiplying Augment in effect! : Obtained additional Fragments!";
+                //sdScoreManager.instance.MultiplyScore(1.2f);
+                shopManager.priceMultiplier = 1.0f; // No change to price
+                return "Multiplying Augment in effect! : Obtained additional Fragments!\n";
             }
         }
         return "";
     }
 
-    public string ApplyHollowingEffect()
+    private string ApplyHollowingEffect()
     {
         if (augmentManager.isHollowingActive)
         {
-            return "Hollowing Augment in effect! : No buffs or debuffs granted!";
+            augmentManager.isHollowingOnEffect = true;
+            shopManager.priceMultiplier = 1.0f; // No change to price
+            return "Hollowing Augment in effect! : No buffs or debuffs granted!\n";
         }
         return "";
     }
 
-    public string defaultEffects()
+    private string defaultEffects()
     {
         if (augmentManager.isAugmentless)
         {
             if (winScreenActive && !loseScreenActive)
             {
-                return "Augmentless : Augment prices are reduced by 30%!";
+                shopManager.priceMultiplier = 0.7f; // Reduce price by 30%
+                return "Augmentless : No punishments triggered!\n";
             }
             else if (loseScreenActive && !winScreenActive)
             {
-                return "Augmentless : Augment prices are increased by 70%!";
+                shopManager.priceMultiplier = 1.7f; // Increase price by 70%
+                return "Augmentless : Punishments triggered!\n";
             }
         }
         return "";

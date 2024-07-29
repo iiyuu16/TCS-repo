@@ -125,6 +125,8 @@ public class AugmentManager : MonoBehaviour
                     isInsuranceActive = true;
                     isMultiplyingBought = false;
                     isHollowingBought = false;
+                    isMultiplyingActive = false;
+                    isHollowingActive = false;
                     isAugmentless = false;
                 }
                 break;
@@ -135,6 +137,8 @@ public class AugmentManager : MonoBehaviour
                     isMultiplyingActive = true;
                     isInsuranceBought = false;
                     isHollowingBought = false;
+                    isInsuranceActive = false;
+                    isHollowingActive = false;
                     isAugmentless = false;
                 }
                 break;
@@ -145,6 +149,8 @@ public class AugmentManager : MonoBehaviour
                     isHollowingActive = true;
                     isInsuranceBought = false;
                     isMultiplyingBought = false;
+                    isInsuranceActive = false;
+                    isMultiplyingActive = false;
                     isAugmentless = false;
                 }
                 break;
