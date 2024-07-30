@@ -19,6 +19,7 @@ public class sdWinConditionManager : MonoBehaviour
 
             DisableGameObjects();
             hasWon = true;
+
         }
     }
 

@@ -9,6 +9,7 @@ public class mainSceneController : MonoBehaviour
     public float delayTimeToTransition;
 
     public GameObject objTransition;
+    public string targetSceneName;
 
     private void Awake()
     {
@@ -23,7 +24,15 @@ public class mainSceneController : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "LoadingScreen")
         {
-            toVisNov_FLM();
+            if (!string.IsNullOrEmpty(targetSceneName))
+            {
+                StartCoroutine(DelayedSceneTransition());
+                StartCoroutine(DelayedObjTransition());
+            }
+            else
+            {
+                Debug.LogError("Target scene name is empty.");
+            }
         }
     }
 
@@ -105,7 +114,17 @@ public class mainSceneController : MonoBehaviour
     IEnumerator DelayedSceneTransition()
     {
         yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        if (!string.IsNullOrEmpty(targetSceneName))
+        {
+            SceneManager.LoadScene(targetSceneName);
+        }
+        else
+        {
+            Debug.LogError("Target scene name is empty.");
+        }
+
     }
 
     IEnumerator DelayedObjTransition()

@@ -25,24 +25,20 @@ public class sdScoreManager : MonoBehaviour
         score += points;
         UpdateScoreText();
         UpdateObtainedScoreText();
-
-        if (MoneyManager.instance != null)
-        {
-            MoneyManager.instance.UpdateMoneyFrom_FLM(score);
-            Debug.Log("Score sent to MoneyManager: " + score);
-        }
-        else
-        {
-            Debug.LogError("MoneyManager instance is null.");
-        }
     }
 
-    public void MultiplyScore(float multiplier)
+    public void MultiplierEffect()
     {
-        score = Mathf.RoundToInt(score * multiplier);
-        UpdateScoreText();
+        float multiplier = 1.2f;
+        int newScore = Mathf.RoundToInt(score * multiplier);
+        Debug.Log("Base score: " + score);
+        score = newScore;
+
         UpdateObtainedScoreText();
-        Debug.Log("Score multiplied by " + multiplier + ". New score: " + score);
+        Debug.Log("Multiplied score: " + score);
+
+        MoneyManager.instance.UpdateMoneyFromFLM(newScore);
+
     }
 
     private void UpdateScoreText()

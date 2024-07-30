@@ -13,6 +13,8 @@ public class sdRewardsManager : MonoBehaviour
     private AugmentManager augmentManager;
     private ShopManager shopManager;
 
+    public sdMultiScore[] multiScoreEffects;
+
     void Start()
     {
         augmentManager = AugmentManager.instance;
@@ -57,7 +59,6 @@ public class sdRewardsManager : MonoBehaviour
     {
         string effectMessage = "";
 
-        // Apply each effect and break early if an effect is applied
         effectMessage = ApplyInsuranceEffect();
         if (string.IsNullOrEmpty(effectMessage)) effectMessage = ApplyMultiplyingEffect();
         if (string.IsNullOrEmpty(effectMessage)) effectMessage = ApplyHollowingEffect();
@@ -97,7 +98,16 @@ public class sdRewardsManager : MonoBehaviour
             }
             else if (winScreenActive && !loseScreenActive)
             {
-                //sdScoreManager.instance.MultiplyScore(1.2f);
+                if (multiScoreEffects != null)
+                {
+                    foreach (var multiScore in multiScoreEffects)
+                    {
+                        if (multiScore != null)
+                        {
+                            multiScore.enabled = true;
+                        }
+                    }
+                }
                 shopManager.priceMultiplier = 1.0f; // No change to price
                 return "Multiplying Augment in effect! : Obtained additional Fragments!\n";
             }
