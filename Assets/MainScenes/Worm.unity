@@ -1089,10 +1089,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2836ccdeafdad5a4f86fb22ecf49d2f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 3
   rotationSpeed: 150
-  acceleration: 5
-  deceleration: 10
+  acceleration: 1
+  deceleration: 5
   boostSpeed: 10
   boostCD: 3
   recoveryTime: 5
