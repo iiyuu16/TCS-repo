@@ -80,7 +80,7 @@ public class sdRewardsManager : MonoBehaviour
             else if (winScreenActive && !loseScreenActive)
             {
                 shopManager.priceMultiplier = 0.7f; // Reduce price by 30%
-                return "Insurance Augment is active! : No punishments triggered!\n";
+                return "Insurance Augment is active! : Augment skill is not triggered.\n";
             }
         }
         return "";
@@ -94,7 +94,7 @@ public class sdRewardsManager : MonoBehaviour
             if (loseScreenActive && !winScreenActive)
             {
                 shopManager.priceMultiplier = 1.7f; // Increase price by 70%
-                return "Multiplying Augment is active. : No punishments triggered!\n";
+                return "Multiplying Augment is active. : Augment skill is not triggered.\n";
             }
             else if (winScreenActive && !loseScreenActive)
             {
