@@ -5,11 +5,12 @@ using System.Collections.Generic;
 
 public class PopUpManager : MonoBehaviour
 {
-    public GameObject[] popUpPrefabs;
-    public GameObject canvas;
-    public float spawnInterval = 12f;
-    public int numPopUpsToShow = 3;
-    private List<GameObject> activePopUps = new List<GameObject>();
+    [SerializeField] private GameObject[] popUpPrefabs;
+    [SerializeField] private GameObject canvas;
+    [SerializeField] private float spawnInterval = 12f;
+    [SerializeField] private int numPopUpsToShow = 3;
+    [SerializeField] private int maxPopUpCount = 12;
+    [SerializeField] private List<GameObject> activePopUps = new List<GameObject>();
 
     void Start()
     {
@@ -20,7 +21,7 @@ public class PopUpManager : MonoBehaviour
     {
         while (true)
         {
-            if (activePopUps.Count < 12)
+            if (activePopUps.Count < maxPopUpCount)
             {
                 for (int i = 0; i < numPopUpsToShow; i++)
                 {
@@ -34,13 +35,9 @@ public class PopUpManager : MonoBehaviour
                     activePopUps.Add(popUp);
                 }
             }
+            activePopUps.RemoveAll(popUp => popUp == null);
+
             yield return new WaitForSeconds(spawnInterval);
         }
-    }
-
-    public void ClosePopUp(GameObject popUp)
-    {
-        activePopUps.Remove(popUp);
-        Destroy(popUp);
     }
 }

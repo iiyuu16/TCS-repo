@@ -65,13 +65,19 @@ public class mainSceneController : MonoBehaviour
 
     public void toVisNovMain()
     {
-        StartCoroutine(DelayToLoadingScene());
         StartCoroutine(DelayToVNMain());
+        StartCoroutine(DelayedObjTransition());
     }
 
-    public void toLoadingScene()
+    public void toLoadingSceneFLM()
     {
-        StartCoroutine(DelayToLoadingScene());
+        StartCoroutine(DelayToLoadingSceneFLM());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    public void toLoadingSceneADWARE()
+    {
+        StartCoroutine(DelayToLoadingSceneFLM());
         StartCoroutine(DelayedObjTransition());
     }
 
@@ -87,16 +93,34 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayedObjTransition());
     }
 
+    public void toVisNov_ADWARE()
+    {
+        StartCoroutine(DelayToADWARE());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    public void toVisNov_ADWARE_gamemode()
+    {
+        StartCoroutine(DelayToADWARE_gamemode());
+        StartCoroutine(DelayedObjTransition());
+    }
+
     IEnumerator DelayToVNMain()
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("VisNov_Main");
     }
 
-    IEnumerator DelayToLoadingScene()
+    IEnumerator DelayToLoadingSceneFLM()
     {
         yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("LoadingScreen");
+        SceneManager.LoadScene("LoadingScreenToFLM");
+    }
+
+    IEnumerator DelayToLoadingSceneADWARE()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("LoadingScreenToADWARE");
     }
 
     IEnumerator DelayToFLM()
@@ -109,6 +133,18 @@ public class mainSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("s&dGM");
+    }
+
+    IEnumerator DelayToADWARE()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("VisNov_ADWARE");
+    }
+
+    IEnumerator DelayToADWARE_gamemode()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("rhythmGM");
     }
 
     IEnumerator DelayedSceneTransition()

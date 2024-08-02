@@ -12400,10 +12400,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sortie Menu
       objectReference: {fileID: 0}
-    - target: {fileID: 828484913333409883, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1361908834651244528, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -12440,9 +12436,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1575412928}
-    - target: {fileID: 6267773433799566668, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
-      propertyPath: m_Name
-      value: augStatusText
+    - target: {fileID: 5534993690779873579, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1020631579}
+    - target: {fileID: 5534993690779873579, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: toVisNov_ADWARE
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534993690779873579, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: mainSceneController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534993690779873579, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6433306497930042225, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -12512,6 +12520,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1575412928}
+    - target: {fileID: 8341224345545595344, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

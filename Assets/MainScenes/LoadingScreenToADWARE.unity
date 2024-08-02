@@ -418,7 +418,7 @@ MonoBehaviour:
   delayTimeToPlay: 6
   delayTimeToTransition: 5
   objTransition: {fileID: 465120268}
-  targetSceneName: s&dGM
+  targetSceneName: rhythmGM
 --- !u!82 &315770321
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1603,5 +1603,5 @@ SceneRoots:
   - {fileID: 315770318}
   - {fileID: 483064069}
   - {fileID: 2053544553}
-  - {fileID: 692563927}
   - {fileID: 1098718212}
+  - {fileID: 692563927}
