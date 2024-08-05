@@ -1,69 +1,85 @@
 using UnityEngine;
 using TMPro;
 
-public class sdRewardsManager : MonoBehaviour
+public class rhythmRewardsManager : MonoBehaviour
 {
+    public TextMeshProUGUI statusText;
+    private rhythmScoreManager _rhythmScoreManager;
+
+    private AugmentManager augmentManager;
+    public GameObject failTrigger;
+
     public GameObject winScreen;
     public GameObject loseScreen;
-    public TextMeshProUGUI statusText;
-
     private bool winScreenActive = false;
     private bool loseScreenActive = false;
 
-    private AugmentManager augmentManager;
-    private ShopManager shopManager;
+    public rhythmMultiScore[] multiScoreEffects;
 
-    public sdMultiScore[] multiScoreEffects;
+    private bool scoreTriggered = false;
 
     void Start()
     {
         augmentManager = AugmentManager.instance;
+
         if (augmentManager == null)
         {
-            Debug.LogError("AugmentManager instance is not found in the scene.");
+            Debug.LogError("AugmentManager instance not found in the scene.");
             return;
         }
 
-        shopManager = FindObjectOfType<ShopManager>();
-        if (shopManager == null)
+        _rhythmScoreManager = rhythmScoreManager.instance;
+
+        if (_rhythmScoreManager == null)
         {
-            Debug.LogError("ShopManager instance is not found in the scene.");
+            Debug.LogError("RhythmScoreManager instance not found in the scene.");
             return;
         }
+
+        statusText.gameObject.SetActive(false);
     }
 
     void Update()
     {
-        DetermineActiveScreen();
+        if (rhythmSongManager.Instance.isSongFinished)
+        {
+            DetermineActiveScreen();
+            ApplyAugmentEffects();
+        }
     }
 
     public void DetermineActiveScreen()
     {
+        if (failTrigger.activeInHierarchy)
+        {
+            winScreen.SetActive(false);
+            loseScreen.SetActive(true);
+        }
+        else if (!failTrigger.activeInHierarchy)
+        {
+            winScreen.SetActive(true);
+            loseScreen.SetActive(false);
+        }
+
         winScreenActive = winScreen.activeInHierarchy;
         loseScreenActive = loseScreen.activeInHierarchy;
-
-        if (winScreenActive || loseScreenActive)
-        {
-            statusText.gameObject.SetActive(true);
-            ApplyAugmentEffects();
-            sdScoreManager.instance.obtainedScoreText.gameObject.SetActive(true);
-        }
-        else
-        {
-            statusText.gameObject.SetActive(false);
-        }
+        statusText.gameObject.SetActive(true);
     }
 
     private void ApplyAugmentEffects()
     {
-        string effectMessage = "";
+        if (!scoreTriggered)
+        {
+            string effectMessage = "";
 
-        effectMessage = ApplyInsuranceEffect();
-        if (string.IsNullOrEmpty(effectMessage)) effectMessage = ApplyMultiplyingEffect();
-        if (string.IsNullOrEmpty(effectMessage)) effectMessage = ApplyHollowingEffect();
-        if (string.IsNullOrEmpty(effectMessage)) effectMessage = defaultEffects();
+            effectMessage = ApplyInsuranceEffect();
+            if (string.IsNullOrEmpty(effectMessage)) effectMessage = ApplyMultiplyingEffect();
+            if (string.IsNullOrEmpty(effectMessage)) effectMessage = ApplyHollowingEffect();
+            if (string.IsNullOrEmpty(effectMessage)) effectMessage = defaultEffects();
 
-        statusText.text = effectMessage.Trim();
+            statusText.text = effectMessage.Trim();
+            scoreTriggered = true;
+        }
     }
 
     private string ApplyInsuranceEffect()
@@ -73,12 +89,12 @@ public class sdRewardsManager : MonoBehaviour
             augmentManager.isInsuranceOnEffect = true;
             if (loseScreenActive && !winScreenActive)
             {
-                shopManager.priceMultiplier = 1.0f; // No change to price
+                _rhythmScoreManager.BaseScoring();
                 return "Insurance Augment in effect! : No punishments received!\n";
             }
             else if (winScreenActive && !loseScreenActive)
             {
-                shopManager.priceMultiplier = 0.7f; // Reduce price by 30%
+                _rhythmScoreManager.BaseScoring();
                 return "Insurance Augment is active! : Augment skill is not triggered.\n";
             }
         }
@@ -92,12 +108,13 @@ public class sdRewardsManager : MonoBehaviour
             augmentManager.isMultiplyingOnEffect = true;
             if (loseScreenActive && !winScreenActive)
             {
-                shopManager.priceMultiplier = 1.7f; // Increase price by 70%
+                _rhythmScoreManager.BaseScoring();
+                GetRhythmDebuff();
                 return "Multiplying Augment is active. : Augment conditions is not triggered.\n";
             }
             else if (winScreenActive && !loseScreenActive)
             {
-   /*             if (multiScoreEffects != null)
+                if (multiScoreEffects != null)
                 {
                     foreach (var multiScore in multiScoreEffects)
                     {
@@ -106,8 +123,8 @@ public class sdRewardsManager : MonoBehaviour
                             multiScore.enabled = true;
                         }
                     }
-                }*/
-                shopManager.priceMultiplier = 1.0f; // No change to price
+                }
+                _rhythmScoreManager.MultiplierEffect();
                 return "Multiplying Augment in effect! : Obtained additional Fragments!\n";
             }
         }
@@ -119,7 +136,7 @@ public class sdRewardsManager : MonoBehaviour
         if (augmentManager.isHollowingActive)
         {
             augmentManager.isHollowingOnEffect = true;
-            shopManager.priceMultiplier = 1.0f; // No change to price
+            _rhythmScoreManager.BaseScoring();
             return "Hollowing Augment in effect! : No buffs or debuffs granted!\n";
         }
         return "";
@@ -131,15 +148,23 @@ public class sdRewardsManager : MonoBehaviour
         {
             if (winScreenActive && !loseScreenActive)
             {
-                shopManager.priceMultiplier = 0.7f; // Reduce price by 30%
+                _rhythmScoreManager.BaseScoring();
                 return "Augmentless : No punishments triggered!\n";
             }
             else if (loseScreenActive && !winScreenActive)
             {
-                shopManager.priceMultiplier = 1.7f; // Increase price by 70%
+                GetRhythmDebuff();
+                _rhythmScoreManager.BaseScoring();
                 return "Augmentless : Punishments triggered!\n";
             }
         }
+
         return "";
+    }
+
+    public void GetRhythmDebuff()
+    {
+        PopUpManager.instance.isDebuffTriggered = true;
+        Debug.Log("pop-ups are now enabled");
     }
 }

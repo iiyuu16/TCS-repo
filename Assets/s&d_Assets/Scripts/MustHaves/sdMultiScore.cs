@@ -4,7 +4,7 @@ public class sdMultiScore : MonoBehaviour
 {
     void OnEnable()
     {
-        Debug.Log("onenable is triggered");
+        Debug.Log("on enable is triggered");
 
         if (sdScoreManager.instance != null)
         {

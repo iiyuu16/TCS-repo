@@ -41,7 +41,6 @@ public class AugmentManager : MonoBehaviour
     private void Start()
     {
         LoadAugments();
-        DisplayCurrentAugments();
     }
 
     public void LoadAugments()
@@ -168,7 +167,7 @@ public class AugmentManager : MonoBehaviour
     {
         if (augStatusTexts == null || augStatusTexts.Length == 0)
         {
-            Debug.LogError("AugmentStatusText array is null or empty. Cannot update text.");
+            Debug.Log("AugmentStatusText array is null or empty. Cannot update text.");
             return;
         }
 

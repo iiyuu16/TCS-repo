@@ -91,11 +91,11 @@ public class MoneyManager : MonoBehaviour
         }
     }
 
-    public void UpdateMoneyFromFLM(int score)
+    public void UpdateMoneyFromGamemode(int score)
     {
         int moneyFromScore = score;
         AddMoney(moneyFromScore);
-        Debug.Log("added " +moneyFromScore+ " from FLM");
+        Debug.Log("added " +moneyFromScore+ " from gamemode");
     }
 
     private void SaveMoney()

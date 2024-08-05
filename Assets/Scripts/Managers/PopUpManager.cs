@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class PopUpManager : MonoBehaviour
@@ -12,9 +11,44 @@ public class PopUpManager : MonoBehaviour
     [SerializeField] private int maxPopUpCount = 12;
     [SerializeField] private List<GameObject> activePopUps = new List<GameObject>();
 
-    void Start()
+    [SerializeField] public bool isDebuffTriggered = false;
+
+    public static PopUpManager instance;
+
+    private float spawnCooldown = 0f;
+
+    private void Awake()
     {
-        StartCoroutine(SpawnPopUps());
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
+
+    void Update()
+    {
+        if (isDebuffTriggered && spawnCooldown <= 0f)
+        {
+            StartCoroutine(SpawnPopUps());
+            spawnCooldown = spawnInterval;
+        }
+
+        spawnCooldown -= Time.deltaTime;
+    }
+
+    public void OnThisManager()
+    {
+        isDebuffTriggered = true;
+    }
+
+    public void OffThisManager()
+    {
+        isDebuffTriggered = false;
     }
 
     IEnumerator SpawnPopUps()

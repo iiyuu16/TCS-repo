@@ -20,6 +20,12 @@ public class sdScoreManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        UpdateScoreText();
+        UpdateObtainedScoreText();
+    }
+
     public void AddScore(int points)
     {
         score += points;
@@ -33,12 +39,9 @@ public class sdScoreManager : MonoBehaviour
         int newScore = Mathf.RoundToInt(score * multiplier);
         Debug.Log("Base score: " + score);
         score = newScore;
-
-        UpdateObtainedScoreText();
         Debug.Log("Multiplied score: " + score);
-
-        MoneyManager.instance.UpdateMoneyFromFLM(newScore);
-
+        MoneyManager.instance.UpdateMoneyFromGamemode(newScore);
+        UpdateObtainedScoreText();
     }
 
     private void UpdateScoreText()

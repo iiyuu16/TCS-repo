@@ -33,7 +33,7 @@ public class rhythmSongManager : MonoBehaviour
 
     public static MidiFile midiFile;
 
-    private bool isSongFinished = false;
+    public bool isSongFinished = false;
     public GameObject resultsGameObject;
 
     void Start()
@@ -111,7 +111,7 @@ public class rhythmSongManager : MonoBehaviour
     }
 
 
-    private void SongFinished()
+    public void SongFinished()
     {
         Debug.Log("Song finished!");
         isSongFinished = true;
