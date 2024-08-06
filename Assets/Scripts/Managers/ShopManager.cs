@@ -34,7 +34,7 @@ public class ShopManager : MonoBehaviour
             moneyManager.SpendMoney(price);
             augmentManager.isInsuranceBought = true;
 
-            augmentManager.isInsuranceActive = true; // Mark insurance as active
+            augmentManager.isInsuranceActive = true;
             augmentManager.isMultiplyingActive = false;
             augmentManager.isHollowingActive = false;
 
@@ -67,7 +67,7 @@ public class ShopManager : MonoBehaviour
             moneyManager.SpendMoney(price);
             augmentManager.isMultiplyingBought = true;
 
-            augmentManager.isMultiplyingActive = true; // Mark multiplying as active
+            augmentManager.isMultiplyingActive = true;
             augmentManager.isInsuranceActive = false;
             augmentManager.isHollowingActive = false;
 
@@ -100,7 +100,7 @@ public class ShopManager : MonoBehaviour
             moneyManager.SpendMoney(price);
             augmentManager.isHollowingBought = true;
 
-            augmentManager.isHollowingActive = true; // Mark hollowing as active
+            augmentManager.isHollowingActive = true;
             augmentManager.isMultiplyingActive = false;
             augmentManager.isInsuranceActive = false;
 

@@ -11,7 +11,7 @@ public class sdRewardsManager : MonoBehaviour
     private bool loseScreenActive = false;
 
     private AugmentManager augmentManager;
-    private ShopManager shopManager;
+    private StatusManager statusManager;
 
     public sdMultiScore[] multiScoreEffects;
 
@@ -24,10 +24,10 @@ public class sdRewardsManager : MonoBehaviour
             return;
         }
 
-        shopManager = FindObjectOfType<ShopManager>();
-        if (shopManager == null)
+        statusManager = FindObjectOfType<StatusManager>();
+        if (statusManager == null)
         {
-            Debug.LogError("ShopManager instance is not found in the scene.");
+            Debug.LogError("StatusManager instance is not found in the scene.");
             return;
         }
     }
@@ -73,15 +73,14 @@ public class sdRewardsManager : MonoBehaviour
             augmentManager.isInsuranceOnEffect = true;
             if (loseScreenActive && !winScreenActive)
             {
-                shopManager.priceMultiplier = 1.0f; // No change to price
                 return "Insurance Augment in effect! : No punishments received!\n";
             }
             else if (winScreenActive && !loseScreenActive)
             {
-                shopManager.priceMultiplier = 0.7f; // Reduce price by 30%
                 return "Insurance Augment is active! : Augment skill is not triggered.\n";
             }
         }
+        statusManager.shopDebuffOff();
         return "";
     }
 
@@ -92,22 +91,22 @@ public class sdRewardsManager : MonoBehaviour
             augmentManager.isMultiplyingOnEffect = true;
             if (loseScreenActive && !winScreenActive)
             {
-                shopManager.priceMultiplier = 1.7f; // Increase price by 70%
+                statusManager.shopDebuffOn();
                 return "Multiplying Augment is active. : Augment conditions is not triggered.\n";
             }
             else if (winScreenActive && !loseScreenActive)
             {
-   /*             if (multiScoreEffects != null)
-                {
-                    foreach (var multiScore in multiScoreEffects)
-                    {
-                        if (multiScore != null)
-                        {
-                            multiScore.enabled = true;
-                        }
-                    }
-                }*/
-                shopManager.priceMultiplier = 1.0f; // No change to price
+                /*             if (multiScoreEffects != null)
+                             {
+                                 foreach (var multiScore in multiScoreEffects)
+                                 {
+                                     if (multiScore != null)
+                                     {
+                                         multiScore.enabled = true;
+                                     }
+                                 }
+                             }*/
+                statusManager.shopDebuffOff();
                 return "Multiplying Augment in effect! : Obtained additional Fragments!\n";
             }
         }
@@ -119,7 +118,7 @@ public class sdRewardsManager : MonoBehaviour
         if (augmentManager.isHollowingActive)
         {
             augmentManager.isHollowingOnEffect = true;
-            shopManager.priceMultiplier = 1.0f; // No change to price
+            statusManager.shopDebuffOff();
             return "Hollowing Augment in effect! : No buffs or debuffs granted!\n";
         }
         return "";
@@ -131,12 +130,12 @@ public class sdRewardsManager : MonoBehaviour
         {
             if (winScreenActive && !loseScreenActive)
             {
-                shopManager.priceMultiplier = 0.7f; // Reduce price by 30%
+                statusManager.shopDebuffOff();
                 return "Augmentless : No punishments triggered!\n";
             }
             else if (loseScreenActive && !winScreenActive)
             {
-                shopManager.priceMultiplier = 1.7f; // Increase price by 70%
+                statusManager.shopDebuffOn();
                 return "Augmentless : Punishments triggered!\n";
             }
         }
