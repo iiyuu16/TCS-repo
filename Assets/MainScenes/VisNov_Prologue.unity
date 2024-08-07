@@ -4966,6 +4966,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816199804}
   m_CullTransparentMesh: 1
+--- !u!1 &871203201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 871203202}
+  - component: {fileID: 871203203}
+  m_Layer: 0
+  m_Name: SortieManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &871203202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871203201}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1619461892}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &871203203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871203201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d25de3055b875e4aa20f3b3f5bae9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filelessMalwareDone: 0
+  adwareDone: 0
+  filelessMalwareButton: {fileID: 903447688271273870}
+  adwareButton: {fileID: 903447688271273869}
+  enabledColor: {r: 0.23529412, g: 0.37254903, b: 0.37254903, a: 1}
+  disabledColor: {r: 0.35686275, g: 0.13725491, b: 0.14117648, a: 1}
+  enabledTextColor: {r: 0, g: 0, b: 0, a: 0}
+  disabledTextColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &908641752
 GameObject:
   m_ObjectHideFlags: 0
@@ -10076,6 +10128,7 @@ Transform:
   - {fileID: 1020631578}
   - {fileID: 972850541}
   - {fileID: 1921838815}
+  - {fileID: 871203202}
   - {fileID: 531383324}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12577,6 +12630,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sortie Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 828484913333409883, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1361908834651244528, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -12717,6 +12774,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &903447688271273869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2806600747933647581, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+  m_PrefabInstance: {fileID: 903447688271273867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &903447688271273870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8310732089396420444, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+  m_PrefabInstance: {fileID: 903447688271273867}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3796526535323968488
 PrefabInstance:
   m_ObjectHideFlags: 0
