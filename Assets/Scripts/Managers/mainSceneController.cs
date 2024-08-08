@@ -77,7 +77,7 @@ public class mainSceneController : MonoBehaviour
 
     public void toLoadingSceneADWARE()
     {
-        StartCoroutine(DelayToLoadingSceneFLM());
+        StartCoroutine(DelayToLoadingSceneADWARE());
         StartCoroutine(DelayedObjTransition());
     }
 

@@ -7511,40 +7511,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1042759754069303253, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: json
-      value: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":258.5,"yPos":284},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[20],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":true,"xPos":12,"yPos":-275},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah
-        crap, the network''s has been breached! The computer won''t respond anymore!","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":251.5,"yPos":-277},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"...Huh?
-        The computer is back to normal! Could this be a bogus breach? Are we being
-        trolled by someone?","parentUIDs":[0],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":14.5,"yPos":-168},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Something''s
-        off. The network breach suddenly went silent. Also, I don''t think this is
-        just a prank by someone. Probably a DDoS attack that is targetted to the
-        area.","parentUIDs":[10],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":244.5,"yPos":-175},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
-        my gut is telling me that was just bogus signals! DDoS attacks can''t be
-        this fast, it could take days or weeks! ","parentUIDs":[11],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":14.5,"yPos":57},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Even
-        so, we gotta be carefulllllllllllllll-","parentUIDs":[15],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":16.5,"yPos":-46},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Unless
-        if its being run with a large corpo servers... Then we are doomed, it could
-        affect the area in a long term too.","parentUIDs":[12],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":245.5,"yPos":-52},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Bogus
-        or not, we could detect that instantly! I''ve checked the network again and
-        it seems clean.","parentUIDs":[14],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":250,"yPos":61},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Woah
-        Vi! You ok? What''s happening?","parentUIDs":[13],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":9,"yPos":169},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"tTHheEe
-        nEettwO0orRkkKK!11 bBBuUrrrSstT oO0ffF daaAtaAAAAaaa","parentUIDs":[17],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":251,"yPos":168},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Eventually,
-        the network in Wolf''s area has been disrupted. Leading a cataclysm of data
-        that crashed devices.","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":2,"yPos":270},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"V.I.R.U.S.
-        stopped responding....temporarily.","parentUIDs":[19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042759754069303253, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 1087546460549241418, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
+      propertyPath: Icon
       value: 
-      objectReference: {fileID: 524550233}
-    - target: {fileID: 1042759754069303253, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      objectReference: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
+    - target: {fileID: 1087546460549241418, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
+      propertyPath: TMPFont
       value: 
-      objectReference: {fileID: 1346864305}
-    - target: {fileID: 1999669968423780200, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
     - target: {fileID: 1999669968423780200, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -7553,57 +7527,23 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1346864305}
-    - target: {fileID: 1999669968423780200, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: toVisNovMain
-      objectReference: {fileID: 0}
-    - target: {fileID: 1999669968423780200, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 1999669968423780200, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: mainSceneController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1999669968423780200, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1999669968423780200, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1999669968423780200, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1999669968423780200, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 2618815705460946842, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
       propertyPath: json
-      value: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":172,\"yPos\":371},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"-<Continue>-\",\"parentUIDs\":[8],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":57,\"yPos\":-39},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Vi!
+      value: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":165,\"yPos\":455},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"-<Continue>-\",\"parentUIDs\":[8],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":50,\"yPos\":45},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Vi!
         It seems the network breach is dissipating! The coputer's back to normal
-        too!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":281.5,\"yPos\":-34},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Good!
-        Don't let your guard down yet, that network breach was something else.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":49.5,\"yPos\":64},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"For
-        now, let's strengthen our network defenses in case this happens again.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":289.5,\"yPos\":67},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
-        most of all... DO. NOT. PRESS. WEIRD. SITES. WILL. YA? Especially with \\\"SALES\\\"!\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":56.5,\"yPos\":164},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"This
+        too!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":274.5,\"yPos\":50},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Good!
+        Don't let your guard down yet, that network breach was something else.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-175.5,\"yPos\":151},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"For
+        now, let's strengthen our network defenses in case this happens again.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":282.5,\"yPos\":151},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
+        most of all... DO. NOT. PRESS. WEIRD. SITES. WILL. YA? Especially with \\\"SALES\\\"!\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":49.5,\"yPos\":248},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"This
         has happened a lot now! It's hella weird that you as a hacker, can get into
-        these kinds of traps! Are you really braindead into discounts or something?\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":287.5,\"yPos\":166},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hehe,
+        these kinds of traps! Are you really braindead into discounts or something?\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":280.5,\"yPos\":250},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hehe,
         can't help it, sorry. Sales and discounts are rare nowadays. I'll totally
-        be careful next time!\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":55.5,\"yPos\":265},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Whatever,
-        you keep saying that, and I am not helping you next time! \",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":281.5,\"yPos\":265},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(
-        \xB4 \u03C9 ` )\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0}]}"
+        be careful next time!\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":48.5,\"yPos\":349},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Whatever,
+        you keep saying that, and I am not helping you next time! \",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":274.5,\"yPos\":349},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(
+        \xB4 \u03C9 ` )\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":50,\"yPos\":155},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Also,
+        we've got to close or block unwanted ads probably from secured third-party
+        softwares just to be safe.\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0}]}"
       objectReference: {fileID: 0}
-    - target: {fileID: 2618815705460946842, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 524550233}
-    - target: {fileID: 2618815705460946842, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1346864305}
     - target: {fileID: 7046226687840454700, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
       propertyPath: m_Name
       value: rhythmConvoElements

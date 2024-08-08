@@ -10,6 +10,7 @@ public class sdRewardsManager : MonoBehaviour
     private bool winScreenActive = false;
     private bool loseScreenActive = false;
 
+    private GameModeManager _gameModeManager;
     private AugmentManager augmentManager;
     private StatusManager statusManager;
 
@@ -73,10 +74,12 @@ public class sdRewardsManager : MonoBehaviour
             augmentManager.isInsuranceOnEffect = true;
             if (loseScreenActive && !winScreenActive)
             {
+                _gameModeManager.UpdateFilelessButton();
                 return "Insurance Augment in effect! : No punishments received!\n";
             }
             else if (winScreenActive && !loseScreenActive)
             {
+                _gameModeManager.UpdateFilelessButton();
                 return "Insurance Augment is active! : Augment skill is not triggered.\n";
             }
         }
@@ -92,6 +95,7 @@ public class sdRewardsManager : MonoBehaviour
             if (loseScreenActive && !winScreenActive)
             {
                 statusManager.shopDebuffOn();
+                _gameModeManager.UpdateFilelessButton();
                 return "Multiplying Augment is active. : Augment conditions is not triggered.\n";
             }
             else if (winScreenActive && !loseScreenActive)
@@ -107,6 +111,7 @@ public class sdRewardsManager : MonoBehaviour
                                  }
                              }*/
                 statusManager.shopDebuffOff();
+                _gameModeManager.UpdateFilelessButton();
                 return "Multiplying Augment in effect! : Obtained additional Fragments!\n";
             }
         }
@@ -119,7 +124,12 @@ public class sdRewardsManager : MonoBehaviour
         {
             augmentManager.isHollowingOnEffect = true;
             statusManager.shopDebuffOff();
+            _gameModeManager.UpdateFilelessButton();
             return "Hollowing Augment in effect! : No buffs or debuffs granted!\n";
+        }
+        else
+        {
+            _gameModeManager.UpdateFilelessButton();
         }
         return "";
     }
@@ -131,11 +141,13 @@ public class sdRewardsManager : MonoBehaviour
             if (winScreenActive && !loseScreenActive)
             {
                 statusManager.shopDebuffOff();
+                _gameModeManager.UpdateFilelessButton();
                 return "Augmentless : No punishments triggered!\n";
             }
             else if (loseScreenActive && !winScreenActive)
             {
                 statusManager.shopDebuffOn();
+                _gameModeManager.UpdateFilelessButton();
                 return "Augmentless : Punishments triggered!\n";
             }
         }

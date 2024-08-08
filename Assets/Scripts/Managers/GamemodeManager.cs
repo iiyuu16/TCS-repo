@@ -11,40 +11,33 @@ public class GameModeManager : MonoBehaviour
     private const string FILELESS_MALWARE_DONE_KEY = "FilelessMalwareDone";
     private const string ADWARE_DONE_KEY = "AdwareDone";
 
-    public GameObject filelessMalwareButton;
+    public GameObject filelessButton;
     public GameObject adwareButton;
-
-    public Color enabledColor;
-    public Color disabledColor;
-
-    public Color enabledTextColor;
-    public Color disabledTextColor;
 
     private void Awake()
     {
         instance = this;
 
-        LoadBooleans();
-        InvokeRepeating("UpdateFilelessMalwareButton", 1f, 1f);
+        LoadGMProgress();
+        InvokeRepeating("UpdateFilelessButton", 1f, 1f);
         InvokeRepeating("UpdateAdwareButton", 1f, 1f);
     }
 
-    public void LoadBooleans()
+
+    public void LoadGMProgress()
     {
         filelessMalwareDone = PlayerPrefs.GetInt(FILELESS_MALWARE_DONE_KEY, 0) == 1;
         adwareDone = PlayerPrefs.GetInt(ADWARE_DONE_KEY, 0) == 1;
     }
 
-    public void SaveBooleans()
+    public void SaveGMProgress()
     {
         PlayerPrefs.SetInt(FILELESS_MALWARE_DONE_KEY, filelessMalwareDone ? 1 : 0);
         PlayerPrefs.SetInt(ADWARE_DONE_KEY, adwareDone ? 1 : 0);
         PlayerPrefs.Save();
-
-        Debug.Log("Boolean values saved");
     }
 
-    public void ResetBooleans()
+    public void ResetGMProgress()
     {
         filelessMalwareDone = false;
         adwareDone = false;
@@ -56,59 +49,21 @@ public class GameModeManager : MonoBehaviour
         Debug.Log("Boolean values reset");
     }
 
-    public void UpdateFilelessMalwareButton()
+    public void UpdateButton(GameObject buttonGameObject, bool booleanValue)
     {
-        if (filelessMalwareDone)
-        {
-            filelessMalwareButton.GetComponent<Image>().color = disabledColor;
-            filelessMalwareButton.GetComponent<Button>().interactable = false;
-            UpdateFilelessMalwareTextColor(true);
-        }
-        else
-        {
-            filelessMalwareButton.GetComponent<Image>().color = enabledColor;
-            filelessMalwareButton.GetComponent<Button>().interactable = true;
-            UpdateFilelessMalwareTextColor(false);
-        }
+        Button buttonComponent = buttonGameObject.GetComponent<Button>();
+
+        buttonComponent.interactable = !booleanValue;
+        SaveGMProgress();
+    }
+
+    public void UpdateFilelessButton()
+    {
+        UpdateButton(filelessButton, filelessMalwareDone);
     }
 
     public void UpdateAdwareButton()
     {
-        if (adwareDone)
-        {
-            adwareButton.GetComponent<Image>().color = disabledColor;
-            adwareButton.GetComponent<Button>().interactable = false;
-            UpdateAdwareTextColor(true);
-        }
-        else
-        {
-            adwareButton.GetComponent<Image>().color = enabledColor;
-            adwareButton.GetComponent<Button>().interactable = true;
-            UpdateAdwareTextColor(false);
-        }
-    }
-
-    public void UpdateButtonTextColor(GameObject button, bool booleanValue)
-    {
-        Text textComponent = button.GetComponentInChildren<Text>();
-
-        if (booleanValue)
-        {
-            textComponent.color = disabledTextColor;
-        }
-        else
-        {
-            textComponent.color = enabledTextColor;
-        }
-    }
-
-    public void UpdateFilelessMalwareTextColor(bool booleanValue)
-    {
-        UpdateButtonTextColor(filelessMalwareButton, booleanValue);
-    }
-
-    public void UpdateAdwareTextColor(bool booleanValue)
-    {
-        UpdateButtonTextColor(adwareButton, booleanValue);
+        UpdateButton(adwareButton, adwareDone);
     }
 }

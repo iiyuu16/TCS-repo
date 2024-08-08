@@ -17,6 +17,10 @@ public class StatusManager : MonoBehaviour
     public static bool shopNormal;
     public static bool noPopups;
 
+    //status icons
+    public GameObject inflationIcon;
+    public GameObject popUpIcon;
+
     public void SaveStatus()
     {
         PlayerPrefs.SetInt("ShopInflation", shopInflation ? 1 : 0);
@@ -42,6 +46,12 @@ public class StatusManager : MonoBehaviour
         shopManager.priceMultiplier = _priceMultiplier;
     }
 
+    public void setToDefaultStatus()
+    {
+        shopDebuffOff();
+        popupDebuffOff();
+    }
+
     private void Awake()
     {
         instance = this;
@@ -61,6 +71,8 @@ public class StatusManager : MonoBehaviour
             return;
         }
 
+        inflationIcon.SetActive(false);
+        popUpIcon.SetActive(false);
         LoadStatus();
     }
 
@@ -90,6 +102,7 @@ public class StatusManager : MonoBehaviour
     {
         shopInflation = true;
         shopNormal = false;
+        inflationIcon.SetActive(true);
         shopManager.priceMultiplier = 1.7f;
         PlayerPrefs.SetInt("ShopInflation", 1);
         PlayerPrefs.SetInt("ShopNormal", 0);
@@ -102,6 +115,7 @@ public class StatusManager : MonoBehaviour
     {
         shopInflation = false;
         shopNormal = true;
+        inflationIcon.SetActive(false);
         shopManager.priceMultiplier = 1.0f;
         PlayerPrefs.SetInt("ShopInflation", 0);
         PlayerPrefs.SetInt("ShopNormal", 1);
@@ -114,6 +128,7 @@ public class StatusManager : MonoBehaviour
     {
         nonStopPopUp = true;
         noPopups = false;
+        popUpIcon.SetActive(true);
         popUpManager.isDebuffTriggered = true;
         PlayerPrefs.SetInt("NonStopPopUp", 1);
         PlayerPrefs.SetInt("NoPopups", 0);
@@ -126,6 +141,7 @@ public class StatusManager : MonoBehaviour
     {
         nonStopPopUp = false;
         noPopups = true;
+        popUpIcon.SetActive(false);
         popUpManager.isDebuffTriggered = false;
         PlayerPrefs.SetInt("NonStopPopUp", 0);
         PlayerPrefs.SetInt("NoPopups", 1);

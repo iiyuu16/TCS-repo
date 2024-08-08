@@ -5,7 +5,7 @@ public class rhythmRewardsManager : MonoBehaviour
 {
     public TextMeshProUGUI statusText;
     private rhythmScoreManager _rhythmScoreManager;
-
+    private GameModeManager _gameModeManager;
     private AugmentManager augmentManager;
     public GameObject failTrigger;
 
@@ -89,12 +89,15 @@ public class rhythmRewardsManager : MonoBehaviour
             augmentManager.isInsuranceOnEffect = true;
             if (loseScreenActive && !winScreenActive)
             {
-                _rhythmScoreManager.BaseScoring();
+                _rhythmScoreManager.BaseScoring();                
+                _gameModeManager.UpdateAdwareButton();
                 return "Insurance Augment in effect! : No punishments received!\n";
+
             }
             else if (winScreenActive && !loseScreenActive)
             {
                 _rhythmScoreManager.BaseScoring();
+                _gameModeManager.UpdateAdwareButton();
                 return "Insurance Augment is active! : Augment skill is not triggered.\n";
             }
         }
@@ -110,6 +113,7 @@ public class rhythmRewardsManager : MonoBehaviour
             {
                 _rhythmScoreManager.BaseScoring();
                 GetRhythmDebuff();
+                _gameModeManager.UpdateAdwareButton();
                 return "Multiplying Augment is active. : Augment conditions is not triggered.\n";
             }
             else if (winScreenActive && !loseScreenActive)
@@ -125,6 +129,7 @@ public class rhythmRewardsManager : MonoBehaviour
                     }
                 }
                 _rhythmScoreManager.MultiplierEffect();
+                _gameModeManager.UpdateAdwareButton();
                 return "Multiplying Augment in effect! : Obtained additional Fragments!\n";
             }
         }
@@ -137,7 +142,13 @@ public class rhythmRewardsManager : MonoBehaviour
         {
             augmentManager.isHollowingOnEffect = true;
             _rhythmScoreManager.BaseScoring();
+            _gameModeManager.UpdateAdwareButton();
             return "Hollowing Augment in effect! : No buffs or debuffs granted!\n";
+        }
+        else
+        {
+            _rhythmScoreManager.BaseScoring();
+            _gameModeManager.UpdateFilelessButton();
         }
         return "";
     }
@@ -149,12 +160,14 @@ public class rhythmRewardsManager : MonoBehaviour
             if (winScreenActive && !loseScreenActive)
             {
                 _rhythmScoreManager.BaseScoring();
+                _gameModeManager.UpdateAdwareButton();
                 return "Augmentless : No punishments triggered!\n";
             }
             else if (loseScreenActive && !winScreenActive)
             {
                 GetRhythmDebuff();
                 _rhythmScoreManager.BaseScoring();
+                _gameModeManager.UpdateAdwareButton();
                 return "Augmentless : Punishments triggered!\n";
             }
         }

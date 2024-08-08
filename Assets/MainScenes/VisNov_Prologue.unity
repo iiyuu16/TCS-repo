@@ -1508,6 +1508,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &214102219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 214102220}
+  - component: {fileID: 214102221}
+  m_Layer: 0
+  m_Name: StatusManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &214102220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214102219}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1619461892}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &214102221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214102219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 370aa6b0e7046b443a4ca05ec5658e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &277290059
 GameObject:
   m_ObjectHideFlags: 0
@@ -5012,12 +5056,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   filelessMalwareDone: 0
   adwareDone: 0
-  filelessMalwareButton: {fileID: 903447688271273870}
-  adwareButton: {fileID: 903447688271273869}
-  enabledColor: {r: 0.23529412, g: 0.37254903, b: 0.37254903, a: 1}
-  disabledColor: {r: 0.35686275, g: 0.13725491, b: 0.14117648, a: 1}
-  enabledTextColor: {r: 0, g: 0, b: 0, a: 0}
-  disabledTextColor: {r: 0, g: 0, b: 0, a: 0}
+  filelessButton: {fileID: 0}
+  adwareButton: {fileID: 0}
 --- !u!1 &908641752
 GameObject:
   m_ObjectHideFlags: 0
@@ -9445,6 +9485,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463652446}
   m_CullTransparentMesh: 1
+--- !u!1 &1499370926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1499370927}
+  - component: {fileID: 1499370928}
+  m_Layer: 0
+  m_Name: PopUpManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1499370927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499370926}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1619461892}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1499370928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499370926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efbf606d00b5a4d44a2d5214bca63272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popUpPrefabs: []
+  canvas: {fileID: 0}
+  spawnInterval: 15
+  numPopUpsToShow: 2
+  maxPopUpCount: 4
+  activePopUps: []
+  isDebuffTriggered: 0
 --- !u!1 &1532817633
 GameObject:
   m_ObjectHideFlags: 0
@@ -10127,6 +10218,8 @@ Transform:
   - {fileID: 1556546639}
   - {fileID: 1020631578}
   - {fileID: 972850541}
+  - {fileID: 1499370927}
+  - {fileID: 214102220}
   - {fileID: 1921838815}
   - {fileID: 871203202}
   - {fileID: 531383324}
@@ -12139,6 +12232,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1499370928}
+        m_TargetAssemblyTypeName: PopUpManager, Assembly-CSharp
+        m_MethodName: OffThisManager
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 214102221}
+        m_TargetAssemblyTypeName: StatusManager, Assembly-CSharp
+        m_MethodName: setToDefaultStatus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2003852115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12659,6 +12776,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1575412928}
     - target: {fileID: 3731112356436443940, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731112356436443940, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731112356436443940, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1575412928}
@@ -12774,16 +12899,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &903447688271273869 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2806600747933647581, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
-  m_PrefabInstance: {fileID: 903447688271273867}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &903447688271273870 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8310732089396420444, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
-  m_PrefabInstance: {fileID: 903447688271273867}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3796526535323968488
 PrefabInstance:
   m_ObjectHideFlags: 0

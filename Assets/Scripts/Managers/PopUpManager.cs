@@ -6,9 +6,9 @@ public class PopUpManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] popUpPrefabs;
     [SerializeField] private GameObject canvas;
-    [SerializeField] private float spawnInterval = 12f;
-    [SerializeField] private int numPopUpsToShow = 3;
-    [SerializeField] private int maxPopUpCount = 12;
+    [SerializeField] private float spawnInterval = 15f;
+    [SerializeField] private int numPopUpsToShow = 2;
+    [SerializeField] private int maxPopUpCount = 4;
     [SerializeField] private List<GameObject> activePopUps = new List<GameObject>();
 
     [SerializeField] public bool isDebuffTriggered = false;
