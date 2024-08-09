@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class AutoDestroyPoolableObject : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float autoDestroyTime = 5f;
+    private const string DisableMethodName = "Disable";
+
+    public virtual void OnEnable()
     {
-        
+        CancelInvoke(DisableMethodName);
+        Invoke(DisableMethodName, autoDestroyTime);
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual void OnDisable()
     {
-        
+        gameObject.SetActive(false);
     }
+    // Start is called before the first frame update
 }

@@ -51,7 +51,7 @@ public class ObjectPool : MonoBehaviour
         }
         else
         {
-            Debug.Log("adw");
+            Debug.LogError("adw");
             return null;
         }
     }

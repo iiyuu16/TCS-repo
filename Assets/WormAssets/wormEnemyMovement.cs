@@ -9,6 +9,7 @@ public class wormEnemyMovement : MonoBehaviour
 {
     public Transform target;
     public float speed = 0.1f;
+    public int seen = 0;
 
     private GameObject[] WPs;
     private NavMeshAgent agent;
@@ -66,6 +67,7 @@ public class wormEnemyMovement : MonoBehaviour
             chase = 1;
             target = other.transform;
             StartCoroutine(FollowTarget());
+            seen = 1;
         }
 
     }
@@ -74,5 +76,6 @@ public class wormEnemyMovement : MonoBehaviour
     {
         chase = 0;
         Debug.Log("Chase over");
+        seen = 0;
     }
 }

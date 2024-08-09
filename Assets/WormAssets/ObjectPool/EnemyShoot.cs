@@ -10,7 +10,7 @@ public class EnemyShoot : MonoBehaviour
 
     private void Awake()
     {
-        bulletPool = ObjectPool.CreateInstance(bulletPrefab, 100); 
+        //bulletPool = ObjectPool.CreateInstance(bulletPrefab, 100); 
     }
 
     private void Start()
