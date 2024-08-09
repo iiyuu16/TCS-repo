@@ -60,6 +60,7 @@ public class AugmentManager : MonoBehaviour
         isAugmentless = PlayerPrefs.GetInt("Augmentless", 0) == 1;
 
         DisplayCurrentAugments();
+        Debug.Log("loaded augs");
     }
 
     public void SaveAugments()
@@ -79,23 +80,11 @@ public class AugmentManager : MonoBehaviour
         PlayerPrefs.SetInt("Augmentless", isAugmentless ? 1 : 0);
 
         PlayerPrefs.Save();
+        Debug.Log("saved augs");
     }
 
     public void ResetAugments()
     {
-        isInsuranceBought = false;
-        isInsuranceActive = false;
-        isInsuranceOnEffect = false;
-
-        isMultiplyingBought = false;
-        isMultiplyingActive = false;
-        isMultiplyingOnEffect = false;
-
-        isHollowingBought = false;
-        isHollowingActive = false;
-        isHollowingOnEffect = false;
-
-        isAugmentless = true;
 
         PlayerPrefs.DeleteKey("InsuranceBought");
         PlayerPrefs.DeleteKey("InsuranceActive");
@@ -110,6 +99,21 @@ public class AugmentManager : MonoBehaviour
         PlayerPrefs.DeleteKey("HollowingOnEffect");
 
         PlayerPrefs.DeleteKey("Augmentless");
+
+        isInsuranceBought = false;
+        isInsuranceActive = false;
+        isInsuranceOnEffect = false;
+
+        isMultiplyingBought = false;
+        isMultiplyingActive = false;
+        isMultiplyingOnEffect = false;
+
+        isHollowingBought = false;
+        isHollowingActive = false;
+        isHollowingOnEffect = false;
+
+        isAugmentless = true;
+        Debug.Log("augs resetted");
     }
 
     public void ActivateAugment(string augmentName)

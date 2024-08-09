@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class StatusManager : MonoBehaviour
@@ -31,7 +32,6 @@ public class StatusManager : MonoBehaviour
         PlayerPrefs.SetFloat("PriceMultiplier", shopManager.priceMultiplier);
 
         PlayerPrefs.Save();
-        Debug.Log("Statuses saved");
     }
 
     public void LoadStatus()
@@ -55,8 +55,11 @@ public class StatusManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+    }
 
-        shopManager = FindObjectOfType<ShopManager>();
+    public void Start()
+    {
+        shopManager = ShopManager.instance;
         if (shopManager == null)
         {
             Debug.Log("ShopManager instance not found in the scene.");
@@ -64,12 +67,23 @@ public class StatusManager : MonoBehaviour
         }
         _priceMultiplier = PlayerPrefs.GetFloat("PriceMultiplier", 1.0f);
 
-        popUpManager = FindObjectOfType<PopUpManager>();
+        popUpManager = PopUpManager.instance;
         if (popUpManager == null)
         {
             Debug.Log("PopUpManager instance not found in the scene.");
             return;
         }
+
+        if (inflationIcon != null)
+        {
+            inflationIcon.SetActive(false);
+        }
+
+        if (popUpIcon != null)
+        {
+            popUpIcon.SetActive(false);
+        }
+
 
         inflationIcon.SetActive(false);
         popUpIcon.SetActive(false);
@@ -102,12 +116,16 @@ public class StatusManager : MonoBehaviour
     {
         shopInflation = true;
         shopNormal = false;
-        inflationIcon.SetActive(true);
+
+        if (inflationIcon != null)
+        {
+            inflationIcon.SetActive(true);
+        }
+
         shopManager.priceMultiplier = 1.7f;
         PlayerPrefs.SetInt("ShopInflation", 1);
         PlayerPrefs.SetInt("ShopNormal", 0);
         SaveStatus();
-        Debug.Log("shop debuff is enabled");
         LoadStatus();
     }
 
@@ -115,12 +133,16 @@ public class StatusManager : MonoBehaviour
     {
         shopInflation = false;
         shopNormal = true;
-        inflationIcon.SetActive(false);
+
+        if (inflationIcon != null)
+        {
+            inflationIcon.SetActive(false);
+        }
+
         shopManager.priceMultiplier = 1.0f;
         PlayerPrefs.SetInt("ShopInflation", 0);
         PlayerPrefs.SetInt("ShopNormal", 1);
         SaveStatus();
-        Debug.Log("shop debuff is off");
         LoadStatus();
     }
 
@@ -128,12 +150,16 @@ public class StatusManager : MonoBehaviour
     {
         nonStopPopUp = true;
         noPopups = false;
-        popUpIcon.SetActive(true);
-        popUpManager.isDebuffTriggered = true;
+
+        if (popUpIcon != null)
+        {
+            popUpIcon.SetActive(true);
+        }
+
+        popUpManager.OnThisManager();
         PlayerPrefs.SetInt("NonStopPopUp", 1);
         PlayerPrefs.SetInt("NoPopups", 0);
         SaveStatus();
-        Debug.Log("popup debuff is enabled");
         LoadStatus();
     }
 
@@ -141,12 +167,17 @@ public class StatusManager : MonoBehaviour
     {
         nonStopPopUp = false;
         noPopups = true;
-        popUpIcon.SetActive(false);
-        popUpManager.isDebuffTriggered = false;
+
+        if (popUpIcon != null)
+        {
+            popUpIcon.SetActive(false);
+        }
+
+        popUpManager.OffThisManager();
         PlayerPrefs.SetInt("NonStopPopUp", 0);
         PlayerPrefs.SetInt("NoPopups", 1);
         SaveStatus();
-        Debug.Log("popup debuff is off");
         LoadStatus();
     }
+
 }

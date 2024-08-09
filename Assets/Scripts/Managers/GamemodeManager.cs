@@ -19,10 +19,39 @@ public class GameModeManager : MonoBehaviour
         instance = this;
 
         LoadGMProgress();
-        InvokeRepeating("UpdateFilelessButton", 1f, 1f);
-        InvokeRepeating("UpdateAdwareButton", 1f, 1f);
+
+        if (filelessButton != null)
+        {
+            InvokeRepeating("UpdateFilelessButton", 1f, 1f);
+        }
+        else
+        {
+            filelessMalwareDone = false;
+        }
+
+        if (adwareButton != null)
+        {
+            InvokeRepeating("UpdateAdwareButton", 1f, 1f);
+        }
+        else
+        {
+            adwareDone = false;
+        }
     }
 
+    public void adwareGM_Done()
+    {
+        adwareDone = true;
+        SaveGMProgress();
+        LoadGMProgress();
+    }
+
+    public void filelessGM_Done()
+    {
+        filelessMalwareDone = true;
+        SaveGMProgress();
+        LoadGMProgress();
+    }
 
     public void LoadGMProgress()
     {

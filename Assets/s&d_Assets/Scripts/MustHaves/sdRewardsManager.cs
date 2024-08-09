@@ -3,32 +3,46 @@ using TMPro;
 
 public class sdRewardsManager : MonoBehaviour
 {
+    public static sdRewardsManager instance;
+
     public GameObject winScreen;
     public GameObject loseScreen;
     public TextMeshProUGUI statusText;
 
-    private bool winScreenActive = false;
-    private bool loseScreenActive = false;
+    public bool winScreenActive = false;
+    public bool loseScreenActive = false;
 
-    private GameModeManager _gameModeManager;
     private AugmentManager augmentManager;
     private StatusManager statusManager;
 
     public sdMultiScore[] multiScoreEffects;
 
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
+
     void Start()
     {
-        augmentManager = AugmentManager.instance;
+        augmentManager = FindObjectOfType<AugmentManager>();
         if (augmentManager == null)
         {
-            Debug.LogError("AugmentManager instance is not found in the scene.");
+            Debug.Log("AugmentManager instance is not found in the scene.");
             return;
         }
 
         statusManager = FindObjectOfType<StatusManager>();
         if (statusManager == null)
         {
-            Debug.LogError("StatusManager instance is not found in the scene.");
+            Debug.Log("StatusManager instance is not found in the scene.");
             return;
         }
     }
@@ -65,6 +79,7 @@ public class sdRewardsManager : MonoBehaviour
         if (string.IsNullOrEmpty(effectMessage)) effectMessage = defaultEffects();
 
         statusText.text = effectMessage.Trim();
+        statusText.gameObject.SetActive(true);
     }
 
     private string ApplyInsuranceEffect()
@@ -74,12 +89,10 @@ public class sdRewardsManager : MonoBehaviour
             augmentManager.isInsuranceOnEffect = true;
             if (loseScreenActive && !winScreenActive)
             {
-                _gameModeManager.UpdateFilelessButton();
                 return "Insurance Augment in effect! : No punishments received!\n";
             }
             else if (winScreenActive && !loseScreenActive)
             {
-                _gameModeManager.UpdateFilelessButton();
                 return "Insurance Augment is active! : Augment skill is not triggered.\n";
             }
         }
@@ -95,23 +108,21 @@ public class sdRewardsManager : MonoBehaviour
             if (loseScreenActive && !winScreenActive)
             {
                 statusManager.shopDebuffOn();
-                _gameModeManager.UpdateFilelessButton();
                 return "Multiplying Augment is active. : Augment conditions is not triggered.\n";
             }
             else if (winScreenActive && !loseScreenActive)
             {
-                /*             if (multiScoreEffects != null)
-                             {
-                                 foreach (var multiScore in multiScoreEffects)
-                                 {
-                                     if (multiScore != null)
-                                     {
-                                         multiScore.enabled = true;
-                                     }
-                                 }
-                             }*/
+                if (multiScoreEffects != null)
+                {
+                    foreach (var multiScore in multiScoreEffects)
+                    {
+                        if (multiScore != null)
+                        {
+                            multiScore.enabled = true;
+                        }
+                    }
+                }
                 statusManager.shopDebuffOff();
-                _gameModeManager.UpdateFilelessButton();
                 return "Multiplying Augment in effect! : Obtained additional Fragments!\n";
             }
         }
@@ -124,12 +135,7 @@ public class sdRewardsManager : MonoBehaviour
         {
             augmentManager.isHollowingOnEffect = true;
             statusManager.shopDebuffOff();
-            _gameModeManager.UpdateFilelessButton();
             return "Hollowing Augment in effect! : No buffs or debuffs granted!\n";
-        }
-        else
-        {
-            _gameModeManager.UpdateFilelessButton();
         }
         return "";
     }
@@ -141,13 +147,11 @@ public class sdRewardsManager : MonoBehaviour
             if (winScreenActive && !loseScreenActive)
             {
                 statusManager.shopDebuffOff();
-                _gameModeManager.UpdateFilelessButton();
                 return "Augmentless : No punishments triggered!\n";
             }
             else if (loseScreenActive && !winScreenActive)
             {
                 statusManager.shopDebuffOn();
-                _gameModeManager.UpdateFilelessButton();
                 return "Augmentless : Punishments triggered!\n";
             }
         }

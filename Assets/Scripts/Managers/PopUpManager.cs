@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class PopUpManager : MonoBehaviour
 {
+    public static PopUpManager instance;
+
     [SerializeField] private GameObject[] popUpPrefabs;
     [SerializeField] private GameObject canvas;
     [SerializeField] private float spawnInterval = 15f;
@@ -13,9 +15,9 @@ public class PopUpManager : MonoBehaviour
 
     [SerializeField] public bool isDebuffTriggered = false;
 
-    public static PopUpManager instance;
-
     private float spawnCooldown = 0f;
+
+    private const string POPUP_DEBUFF_KEY = "PopUpDebuff";
 
     private void Awake()
     {
@@ -28,6 +30,8 @@ public class PopUpManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
+        LoadPopUpDebuff();
     }
 
     void Update()
@@ -41,14 +45,16 @@ public class PopUpManager : MonoBehaviour
         spawnCooldown -= Time.deltaTime;
     }
 
-    public void OnThisManager()
-    {
-        isDebuffTriggered = true;
-    }
-
     public void OffThisManager()
     {
         isDebuffTriggered = false;
+        SavePopUpDebuff();
+    }
+
+    public void OnThisManager()
+    {
+        isDebuffTriggered = true;
+        SavePopUpDebuff();
     }
 
     IEnumerator SpawnPopUps()
@@ -73,5 +79,19 @@ public class PopUpManager : MonoBehaviour
 
             yield return new WaitForSeconds(spawnInterval);
         }
+    }
+
+    private void SavePopUpDebuff()
+    {
+        PlayerPrefs.SetInt(POPUP_DEBUFF_KEY, isDebuffTriggered ? 1 : 0);
+        PlayerPrefs.Save();
+        Debug.Log("Pop-up debuff status saved");
+    }
+
+    private void LoadPopUpDebuff()
+    {
+        int debuffStatus = PlayerPrefs.GetInt(POPUP_DEBUFF_KEY, 0);
+        isDebuffTriggered = debuffStatus == 1;
+        Debug.Log("Pop-up debuff status loaded");
     }
 }

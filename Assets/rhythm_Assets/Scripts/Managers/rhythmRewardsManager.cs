@@ -1,12 +1,12 @@
 using UnityEngine;
 using TMPro;
 
-public class rhythmRewardsManager : MonoBehaviour
+public class RhythmRewardsManager : MonoBehaviour
 {
     public TextMeshProUGUI statusText;
     private rhythmScoreManager _rhythmScoreManager;
-    private GameModeManager _gameModeManager;
     private AugmentManager augmentManager;
+    private StatusManager statusManager;
     public GameObject failTrigger;
 
     public GameObject winScreen;
@@ -18,7 +18,7 @@ public class rhythmRewardsManager : MonoBehaviour
 
     private bool scoreTriggered = false;
 
-    void Start()
+    public void Start()
     {
         augmentManager = AugmentManager.instance;
 
@@ -33,6 +33,13 @@ public class rhythmRewardsManager : MonoBehaviour
         if (_rhythmScoreManager == null)
         {
             Debug.LogError("RhythmScoreManager instance not found in the scene.");
+            return;
+        }
+
+        statusManager = StatusManager.instance;
+        if (statusManager == null)
+        {
+            Debug.LogError("StatusManager instance not found in the scene.");
             return;
         }
 
@@ -78,6 +85,13 @@ public class rhythmRewardsManager : MonoBehaviour
             if (string.IsNullOrEmpty(effectMessage)) effectMessage = defaultEffects();
 
             statusText.text = effectMessage.Trim();
+            statusText.gameObject.SetActive(true);
+
+            if (augmentManager.isMultiplyingOnEffect && winScreenActive)
+            {
+                _rhythmScoreManager.MultiplierEffect();
+            }
+
             scoreTriggered = true;
         }
     }
@@ -89,18 +103,14 @@ public class rhythmRewardsManager : MonoBehaviour
             augmentManager.isInsuranceOnEffect = true;
             if (loseScreenActive && !winScreenActive)
             {
-                _rhythmScoreManager.BaseScoring();                
-                _gameModeManager.UpdateAdwareButton();
                 return "Insurance Augment in effect! : No punishments received!\n";
-
             }
             else if (winScreenActive && !loseScreenActive)
             {
-                _rhythmScoreManager.BaseScoring();
-                _gameModeManager.UpdateAdwareButton();
                 return "Insurance Augment is active! : Augment skill is not triggered.\n";
             }
         }
+        _rhythmScoreManager.BaseScoring();
         return "";
     }
 
@@ -113,7 +123,6 @@ public class rhythmRewardsManager : MonoBehaviour
             {
                 _rhythmScoreManager.BaseScoring();
                 GetRhythmDebuff();
-                _gameModeManager.UpdateAdwareButton();
                 return "Multiplying Augment is active. : Augment conditions is not triggered.\n";
             }
             else if (winScreenActive && !loseScreenActive)
@@ -129,7 +138,6 @@ public class rhythmRewardsManager : MonoBehaviour
                     }
                 }
                 _rhythmScoreManager.MultiplierEffect();
-                _gameModeManager.UpdateAdwareButton();
                 return "Multiplying Augment in effect! : Obtained additional Fragments!\n";
             }
         }
@@ -141,15 +149,9 @@ public class rhythmRewardsManager : MonoBehaviour
         if (augmentManager.isHollowingActive)
         {
             augmentManager.isHollowingOnEffect = true;
-            _rhythmScoreManager.BaseScoring();
-            _gameModeManager.UpdateAdwareButton();
             return "Hollowing Augment in effect! : No buffs or debuffs granted!\n";
         }
-        else
-        {
-            _rhythmScoreManager.BaseScoring();
-            _gameModeManager.UpdateFilelessButton();
-        }
+        _rhythmScoreManager.BaseScoring();
         return "";
     }
 
@@ -159,25 +161,28 @@ public class rhythmRewardsManager : MonoBehaviour
         {
             if (winScreenActive && !loseScreenActive)
             {
-                _rhythmScoreManager.BaseScoring();
-                _gameModeManager.UpdateAdwareButton();
                 return "Augmentless : No punishments triggered!\n";
             }
             else if (loseScreenActive && !winScreenActive)
             {
                 GetRhythmDebuff();
-                _rhythmScoreManager.BaseScoring();
-                _gameModeManager.UpdateAdwareButton();
                 return "Augmentless : Punishments triggered!\n";
             }
         }
-
+        _rhythmScoreManager.BaseScoring();
         return "";
     }
 
     public void GetRhythmDebuff()
     {
-        PopUpManager.instance.isDebuffTriggered = true;
-        Debug.Log("pop-ups are now enabled");
+        if (statusManager != null)
+        {
+            statusManager.popupDebuffOn();
+            Debug.Log("pop-ups are now enabled");
+        }
+        else
+        {
+            Debug.LogError("PopUpManager instance is null.");
+        }
     }
 }

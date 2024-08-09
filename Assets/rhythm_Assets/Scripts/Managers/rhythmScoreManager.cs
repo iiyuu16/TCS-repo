@@ -56,7 +56,7 @@ public class rhythmScoreManager : MonoBehaviour
 
     void UpdateResultScoreText()
     {
-        int newScore = Mathf.RoundToInt(comboScore * 1.2f);
+        int newScore = Mathf.RoundToInt(comboScore * 1f);
         for (int i = 0; i < resScoreTexts.Length; i++)
         {
             resScoreTexts[i].text = "Got " + newScore.ToString() + " Frgz.";
@@ -65,7 +65,7 @@ public class rhythmScoreManager : MonoBehaviour
 
     public void BaseScoring()
     {
-        float baseMultiplier = 1.2f;
+        float baseMultiplier = 1f;
         int newScore = Mathf.RoundToInt(comboScore * baseMultiplier);
         Debug.Log("Base score: " + comboScore);
         Debug.Log("Base multiplied score: " + newScore);

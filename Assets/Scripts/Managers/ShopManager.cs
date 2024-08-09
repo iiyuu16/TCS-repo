@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class ShopManager : MonoBehaviour
 {
+    public static ShopManager instance;
+
     private MoneyManager moneyManager;
     private AugmentManager augmentManager;
 
@@ -11,6 +13,19 @@ public class ShopManager : MonoBehaviour
     public GameObject notEnoughMoneyObject;
     public GameObject transactionDeniedObject;
     public GameObject convoManagerObj;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
 
     void Start()
     {

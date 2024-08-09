@@ -1366,7 +1366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6869692330110912021, guid: 4b85b4a0027f2e047bbec7b67143ea42, type: 3}
       propertyPath: m_Name
-      value: WhiteTransition
+      value: alphaupTransition
       objectReference: {fileID: 0}
     - target: {fileID: 6869692330110912021, guid: 4b85b4a0027f2e047bbec7b67143ea42, type: 3}
       propertyPath: m_IsActive

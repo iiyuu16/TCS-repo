@@ -20,7 +20,7 @@ public class sdScoreManager : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void Update()
     {
         UpdateScoreText();
         UpdateObtainedScoreText();
@@ -35,7 +35,7 @@ public class sdScoreManager : MonoBehaviour
 
     public void MultiplierEffect()
     {
-        float multiplier = 1.2f;
+        float multiplier = 2f;
         int newScore = Mathf.RoundToInt(score * multiplier);
         Debug.Log("Base score: " + score);
         score = newScore;
