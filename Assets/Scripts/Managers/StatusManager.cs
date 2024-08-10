@@ -1,77 +1,64 @@
-using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StatusManager : MonoBehaviour
 {
     public static StatusManager instance;
 
     private ShopManager shopManager;
-    private float _priceMultiplier;
+    private float priceMultiplier;
 
     private PopUpManager popUpManager;
 
-    // debuffs (static)
-    public static bool shopInflation;
-    public static bool nonStopPopUp;
+    // debuffs
+    public bool shopInflation;
+    public bool nonStopPopUp;
+
+    // buffs
+    public bool shopDiscount;
 
     // normal states (static)
-    public static bool shopNormal;
-    public static bool noPopups;
+    public bool shopNormal;
+    public bool noPopups;
 
-    //status icons
-    public GameObject inflationIcon;
+    // status icons
+    public GameObject discountIcon; //shop buff
+    public GameObject inflationIcon; // shop debuff
     public GameObject popUpIcon;
-
-    public void SaveStatus()
-    {
-        PlayerPrefs.SetInt("ShopInflation", shopInflation ? 1 : 0);
-        PlayerPrefs.SetInt("NonStopPopUp", nonStopPopUp ? 1 : 0);
-        PlayerPrefs.SetInt("ShopNormal", shopNormal ? 1 : 0);
-        PlayerPrefs.SetInt("NoPopups", noPopups ? 1 : 0);
-
-        PlayerPrefs.SetFloat("PriceMultiplier", shopManager.priceMultiplier);
-
-        PlayerPrefs.Save();
-    }
-
-    public void LoadStatus()
-    {
-        shopInflation = PlayerPrefs.GetInt("ShopInflation", 0) == 1;
-        nonStopPopUp = PlayerPrefs.GetInt("NonStopPopUp", 0) == 1;
-        shopNormal = PlayerPrefs.GetInt("ShopNormal", 0) == 1;
-        noPopups = PlayerPrefs.GetInt("NoPopups", 0) == 1;
-
-        _priceMultiplier = PlayerPrefs.GetFloat("PriceMultiplier", 1.0f);
-
-        shopManager.priceMultiplier = _priceMultiplier;
-    }
-
-    public void setToDefaultStatus()
-    {
-        shopDebuffOff();
-        popupDebuffOff();
-    }
-
     private void Awake()
     {
         instance = this;
-    }
 
-    public void Start()
-    {
-        shopManager = ShopManager.instance;
+        shopManager = FindObjectOfType<ShopManager>();
         if (shopManager == null)
         {
-            Debug.Log("ShopManager instance not found in the scene.");
-            return;
+            Debug.LogWarning("ShopManager instance not found in the scene.");
         }
-        _priceMultiplier = PlayerPrefs.GetFloat("PriceMultiplier", 1.0f);
 
-        popUpManager = PopUpManager.instance;
+        priceMultiplier = PlayerPrefs.GetFloat("PriceMultiplier", 1.0f);
+
+        popUpManager = FindObjectOfType<PopUpManager>();
         if (popUpManager == null)
         {
-            Debug.Log("PopUpManager instance not found in the scene.");
-            return;
+            Debug.LogWarning("PopUpManager instance not found in the scene. PopUpDebuffs will not work.");
+        }
+
+        //reset statuses
+        if (SceneManager.GetActiveScene().name == "VisNov_Prologue")
+        {
+           setToDefaultStatus();
+        }
+
+        //buff icons
+        if (discountIcon != null)
+        {
+            discountIcon.SetActive(false);
+        }
+
+        //debuff icons
+        if (popUpIcon != null)
+        {
+            popUpIcon.SetActive(false);
         }
 
         if (inflationIcon != null)
@@ -79,69 +66,158 @@ public class StatusManager : MonoBehaviour
             inflationIcon.SetActive(false);
         }
 
-        if (popUpIcon != null)
-        {
-            popUpIcon.SetActive(false);
-        }
-
-
-        inflationIcon.SetActive(false);
-        popUpIcon.SetActive(false);
         LoadStatus();
     }
 
-    void Update()
+
+    public void SaveStatus()
+    {
+        //normal states
+        PlayerPrefs.SetInt("ShopNormal", shopNormal ? 1 : 0);
+        PlayerPrefs.SetInt("NoPopups", noPopups ? 1 : 0);
+        //buffs
+        PlayerPrefs.SetInt("ShopDiscount", shopDiscount ? 1 : 0);
+        //debuffs
+        PlayerPrefs.SetInt("ShopInflation", shopInflation ? 1 : 0);
+        PlayerPrefs.SetInt("NonStopPopUp", nonStopPopUp ? 1 : 0);
+
+        if (shopManager != null)
+        {
+            PlayerPrefs.SetFloat("PriceMultiplier", shopManager.shopMultiplier);
+        }
+
+        PlayerPrefs.Save();
+    }
+
+
+    public void LoadStatus()
+    {
+        //normal states
+        shopNormal = PlayerPrefs.GetInt("ShopNormal", 0) == 1;
+        noPopups = PlayerPrefs.GetInt("NoPopups", 0) == 1;
+        //buffs
+        shopDiscount = PlayerPrefs.GetInt("ShopDiscount", 0) == 1;
+        //debuffs
+        shopInflation = PlayerPrefs.GetInt("ShopInflation", 0) == 1;
+        nonStopPopUp = PlayerPrefs.GetInt("NonStopPopUp", 0) == 1;
+
+        if (shopManager != null)
+        {
+            priceMultiplier = PlayerPrefs.GetFloat("PriceMultiplier", shopManager.shopMultiplier);
+        }
+    }
+
+    public void setToDefaultStatus()
+    {
+        shopNormalStatus();
+        popupDebuffOff();
+        Debug.Log("all statuses are resetted");
+    }
+
+    public void Update()
     {
         if (shopInflation)
         {
             shopDebuffOn();
         }
-        else if (shopNormal)
+
+        if (shopDiscount)
         {
-            shopDebuffOff();
+            shopBuffOn();
+        }
+
+        if (shopNormal)
+        {
+            shopNormalStatus();
         }
 
         if (nonStopPopUp)
         {
             popupDebuffOn();
         }
-        else if (noPopups)
+
+        if (noPopups)
         {
             popupDebuffOff();
         }
     }
 
     // functs are called by rewardManagers from different gamemodes
+    public void shopNormalStatus()
+    {
+        shopInflation = false;
+        shopNormal = true;
+        shopDiscount = false;
+
+        PlayerPrefs.SetInt("ShopDiscount", 0);
+        PlayerPrefs.SetInt("ShopInflation", 0);
+        PlayerPrefs.SetInt("ShopNormal", 1);
+
+        if (shopManager != null)
+        {
+            shopManager.shopMultiplier = 1.0f;
+        }
+        else
+        {
+            Debug.LogWarning("ShopManager instance not found. Funct will not work.");
+        }
+
+        SaveStatus();
+        LoadStatus();
+    }
+
     public void shopDebuffOn()
     {
         shopInflation = true;
         shopNormal = false;
+        shopDiscount = false;
 
         if (inflationIcon != null)
         {
             inflationIcon.SetActive(true);
         }
 
-        shopManager.priceMultiplier = 1.7f;
+        PlayerPrefs.SetInt("ShopDiscount", 0);
         PlayerPrefs.SetInt("ShopInflation", 1);
         PlayerPrefs.SetInt("ShopNormal", 0);
+
+        if (shopManager != null)
+        {
+            shopManager.shopMultiplier = 1.7f;
+        }
+        else
+        {
+            Debug.LogWarning("ShopManager instance not found. Funct will not work.");
+        }
+
         SaveStatus();
         LoadStatus();
     }
 
-    public void shopDebuffOff()
+    public void shopBuffOn()
     {
         shopInflation = false;
-        shopNormal = true;
+        shopNormal = false;
+        shopDiscount = true;
 
-        if (inflationIcon != null)
+        if (discountIcon != null)
         {
-            inflationIcon.SetActive(false);
+            discountIcon.SetActive(false);
         }
 
-        shopManager.priceMultiplier = 1.0f;
+        PlayerPrefs.SetInt("ShopDiscount", 1);
         PlayerPrefs.SetInt("ShopInflation", 0);
-        PlayerPrefs.SetInt("ShopNormal", 1);
+        PlayerPrefs.SetInt("ShopNormal", 0);
+
+        if (popUpManager != null)
+        {
+            shopManager.shopMultiplier = 0.85f;
+        }
+        else
+        {
+            Debug.LogWarning("ShopManager instance not found. Funct will not work.");
+        }
+
         SaveStatus();
         LoadStatus();
     }
@@ -156,9 +232,18 @@ public class StatusManager : MonoBehaviour
             popUpIcon.SetActive(true);
         }
 
-        popUpManager.OnThisManager();
+        if (popUpManager != null)
+        {
+            popUpManager.OnThisManager();
+        }
+        else
+        {
+            Debug.LogWarning("PopUpManager instance not found. PopUpDebuffs will not work.");
+        }
+
         PlayerPrefs.SetInt("NonStopPopUp", 1);
         PlayerPrefs.SetInt("NoPopups", 0);
+
         SaveStatus();
         LoadStatus();
     }
@@ -173,11 +258,19 @@ public class StatusManager : MonoBehaviour
             popUpIcon.SetActive(false);
         }
 
-        popUpManager.OffThisManager();
+        if (popUpManager != null)
+        {
+            popUpManager.OffThisManager();
+        }
+        else
+        {
+            Debug.LogWarning("PopUpManager instance not found. PopUpDebuffs will not work.");
+        }
+
         PlayerPrefs.SetInt("NonStopPopUp", 0);
         PlayerPrefs.SetInt("NoPopups", 1);
+
         SaveStatus();
         LoadStatus();
     }
-
 }

@@ -87,10 +87,10 @@ public class RhythmRewardsManager : MonoBehaviour
             statusText.text = effectMessage.Trim();
             statusText.gameObject.SetActive(true);
 
-            if (augmentManager.isMultiplyingOnEffect && winScreenActive)
+/*            if (augmentManager.isMultiplyingOnEffect && winScreenActive)
             {
                 _rhythmScoreManager.MultiplierEffect();
-            }
+            }*/
 
             scoreTriggered = true;
         }
@@ -110,6 +110,7 @@ public class RhythmRewardsManager : MonoBehaviour
                 return "Insurance Augment is active! : Augment skill is not triggered.\n";
             }
         }
+        statusManager.popupDebuffOff();
         _rhythmScoreManager.BaseScoring();
         return "";
     }
@@ -137,6 +138,7 @@ public class RhythmRewardsManager : MonoBehaviour
                         }
                     }
                 }
+                statusManager.popupDebuffOff();
                 _rhythmScoreManager.MultiplierEffect();
                 return "Multiplying Augment in effect! : Obtained additional Fragments!\n";
             }
@@ -148,6 +150,7 @@ public class RhythmRewardsManager : MonoBehaviour
     {
         if (augmentManager.isHollowingActive)
         {
+            statusManager.popupDebuffOff();
             augmentManager.isHollowingOnEffect = true;
             return "Hollowing Augment in effect! : No buffs or debuffs granted!\n";
         }
@@ -161,6 +164,7 @@ public class RhythmRewardsManager : MonoBehaviour
         {
             if (winScreenActive && !loseScreenActive)
             {
+                statusManager.popupDebuffOff();
                 return "Augmentless : No punishments triggered!\n";
             }
             else if (loseScreenActive && !winScreenActive)

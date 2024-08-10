@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameModeManager : MonoBehaviour
 {
@@ -18,25 +19,40 @@ public class GameModeManager : MonoBehaviour
     {
         instance = this;
 
-        LoadGMProgress();
+        if (SceneManager.GetActiveScene().name == "VisNov_Prologue")
+        {
+            ResetGMProgress();
+            Debug.Log("GM:scene name is prologue");
+        }
+        else
+        {
+            LoadGMProgress();
+            Debug.Log("GM:scene name is else");
+        }
 
         if (filelessButton != null)
         {
             InvokeRepeating("UpdateFilelessButton", 1f, 1f);
+            Debug.Log("GM:filessbtn not null");
         }
         else
         {
             filelessMalwareDone = false;
+            Debug.LogError("GM:filessbtn is null");
         }
 
         if (adwareButton != null)
         {
             InvokeRepeating("UpdateAdwareButton", 1f, 1f);
+            Debug.Log("GM:adwarebtn not null");
         }
         else
         {
             adwareDone = false;
+            Debug.LogError("GM:adwarebtn is null");
         }
+
+        UpdateAllBtns();
     }
 
     public void adwareGM_Done()
@@ -75,7 +91,7 @@ public class GameModeManager : MonoBehaviour
         PlayerPrefs.SetInt(ADWARE_DONE_KEY, 0);
         PlayerPrefs.Save();
 
-        Debug.Log("Boolean values reset");
+        Debug.Log("GM:gamemodes progress reset");
     }
 
     public void UpdateButton(GameObject buttonGameObject, bool booleanValue)
@@ -84,6 +100,12 @@ public class GameModeManager : MonoBehaviour
 
         buttonComponent.interactable = !booleanValue;
         SaveGMProgress();
+    }
+
+    public void UpdateAllBtns()
+    {
+        UpdateAdwareButton();
+        UpdateFilelessButton();
     }
 
     public void UpdateFilelessButton()

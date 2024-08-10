@@ -24,12 +24,21 @@ public class AugmentManager : MonoBehaviour
     [Header("Augmentless")]
     public bool isAugmentless = true;
 
+    [Header("Starting Prices")]
+    public static int insuranceStartingPrice = 2000;
+    public static int multiplyingStartingPrice = 1500;
+    public static int hollowingStartingPrice = 1800;
+
+    [Header("Current Prices")]
+    public int insuranceCurrentPrice;
+    public int multiplyingCurrentPrice;
+    public int hollowingCurrentPrice;
+
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -41,6 +50,36 @@ public class AugmentManager : MonoBehaviour
     private void Start()
     {
         LoadAugments();
+    }
+
+    public void ResetAugPrices()
+    {
+        insuranceCurrentPrice = insuranceStartingPrice;
+        multiplyingCurrentPrice = multiplyingStartingPrice;
+        hollowingCurrentPrice = hollowingStartingPrice;
+        Debug.Log("i =" + insuranceCurrentPrice);
+        Debug.Log("m =" + multiplyingCurrentPrice);
+        Debug.Log("h =" + hollowingCurrentPrice);
+    }
+
+    public void SaveAugPrices()
+    {
+        PlayerPrefs.SetInt("InsuranceCurrentPrice", insuranceCurrentPrice);
+        PlayerPrefs.SetInt("MultiplyingCurrentPrice", multiplyingCurrentPrice);
+        PlayerPrefs.SetInt("HollowingCurrentPrice", hollowingCurrentPrice);
+
+        PlayerPrefs.Save();
+        Debug.Log("Augment prices saved");
+    }
+
+    public void LoadAugPrices()
+    {
+        insuranceCurrentPrice = PlayerPrefs.GetInt("InsuranceCurrentPrice", insuranceStartingPrice);
+        multiplyingCurrentPrice = PlayerPrefs.GetInt("MultiplyingCurrentPrice", multiplyingStartingPrice);
+        hollowingCurrentPrice = PlayerPrefs.GetInt("HollowingCurrentPrice", hollowingStartingPrice);
+
+        Debug.Log("Augment prices loaded");
+        SaveAugPrices();
     }
 
     public void LoadAugments()

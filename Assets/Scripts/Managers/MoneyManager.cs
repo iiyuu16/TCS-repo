@@ -13,11 +13,10 @@ public class MoneyManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Destroy(gameObject);  // Destroy duplicate instance
+            Destroy(gameObject);
             return;
         }
     }

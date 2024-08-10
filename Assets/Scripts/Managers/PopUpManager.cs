@@ -85,13 +85,11 @@ public class PopUpManager : MonoBehaviour
     {
         PlayerPrefs.SetInt(POPUP_DEBUFF_KEY, isDebuffTriggered ? 1 : 0);
         PlayerPrefs.Save();
-        Debug.Log("Pop-up debuff status saved");
     }
 
     private void LoadPopUpDebuff()
     {
         int debuffStatus = PlayerPrefs.GetInt(POPUP_DEBUFF_KEY, 0);
         isDebuffTriggered = debuffStatus == 1;
-        Debug.Log("Pop-up debuff status loaded");
     }
 }

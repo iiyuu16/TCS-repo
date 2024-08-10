@@ -551,8 +551,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 370aa6b0e7046b443a4ca05ec5658e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inflationIcon: {fileID: 7180965861715948892, guid: 29112790b2d2afe49acf56d3d852755c, type: 3}
-  popUpIcon: {fileID: 5605028186981554580, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
+  inflationIcon: {fileID: 0}
+  popUpIcon: {fileID: 0}
 --- !u!1 &90612107
 GameObject:
   m_ObjectHideFlags: 0
@@ -2264,6 +2264,7 @@ Transform:
   - {fileID: 378491479}
   - {fileID: 88918222}
   - {fileID: 1485284677}
+  - {fileID: 1792644090}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &415703889
@@ -4678,7 +4679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6761299250728352864, guid: 4b85b4a0027f2e047bbec7b67143ea42, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000030517578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6761299250728352864, guid: 4b85b4a0027f2e047bbec7b67143ea42, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -6080,7 +6081,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: VPN SHIELD
+  m_text: Network integrity
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -6107,8 +6108,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 8.5
+  m_fontSizeBase: 8.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6394,6 +6395,58 @@ LightingSettings:
   m_PVRTiledBaking: 0
   m_NumRaysToShootPerTexel: -1
   m_RespectSceneVisibilityWhenBakingGI: 0
+--- !u!1 &1792644089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1792644090}
+  - component: {fileID: 1792644091}
+  m_Layer: 0
+  m_Name: ShopManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1792644090
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792644089}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 400215470}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1792644091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792644089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2929262c9d912cf41bb85c0981cf284e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priceMultiplier: 1
+  notEnoughMoneyObject: {fileID: 0}
+  transactionDeniedObject: {fileID: 0}
+  convoManagerObj: {fileID: 0}
 --- !u!1 &1807599315
 GameObject:
   m_ObjectHideFlags: 0
@@ -6796,6 +6849,18 @@ PrefabInstance:
       value: AmbienceParticles
       objectReference: {fileID: 0}
     - target: {fileID: 8924462952029160405, guid: 39dcc0813db771e42950b67636b339e4, type: 3}
+      propertyPath: ForceModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924462952029160405, guid: 39dcc0813db771e42950b67636b339e4, type: 3}
+      propertyPath: ForceModule.y.scalar
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924462952029160405, guid: 39dcc0813db771e42950b67636b339e4, type: 3}
+      propertyPath: ForceModule.z.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924462952029160405, guid: 39dcc0813db771e42950b67636b339e4, type: 3}
       propertyPath: ShapeModule.m_Scale.x
       value: 1
       objectReference: {fileID: 0}
@@ -6805,6 +6870,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8924462952029160405, guid: 39dcc0813db771e42950b67636b339e4, type: 3}
       propertyPath: ShapeModule.m_Scale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924462952029160405, guid: 39dcc0813db771e42950b67636b339e4, type: 3}
+      propertyPath: ForceModule.inWorldSpace
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8924462952029160405, guid: 39dcc0813db771e42950b67636b339e4, type: 3}

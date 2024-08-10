@@ -33,6 +33,17 @@ public class sdScoreManager : MonoBehaviour
         UpdateObtainedScoreText();
     }
 
+    public void BaseScoring()
+    {
+        float baseMultiplier = 1f;
+        int newScore = Mathf.RoundToInt(score * baseMultiplier);
+        Debug.Log("Base score: " + score);
+        Debug.Log("Base multiplied score: " + newScore);
+        score = newScore;
+        MoneyManager.instance.UpdateMoneyFromGamemode(newScore);
+        UpdateObtainedScoreText();
+    }
+
     public void MultiplierEffect()
     {
         float multiplier = 2f;

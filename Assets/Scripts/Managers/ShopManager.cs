@@ -1,5 +1,6 @@
-using DialogueEditor;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ShopManager : MonoBehaviour
 {
@@ -8,11 +9,15 @@ public class ShopManager : MonoBehaviour
     private MoneyManager moneyManager;
     private AugmentManager augmentManager;
 
-    public float priceMultiplier = 1;
+    public float shopMultiplier = 1f;
 
     public GameObject notEnoughMoneyObject;
     public GameObject transactionDeniedObject;
     public GameObject convoManagerObj;
+
+    public TextMeshProUGUI insurancePriceText;
+    public TextMeshProUGUI multiplyingPriceText;
+    public TextMeshProUGUI hollowingPriceText;
 
     private void Awake()
     {
@@ -25,17 +30,69 @@ public class ShopManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
+        moneyManager = FindObjectOfType<MoneyManager>();
+        if (moneyManager == null)
+        {
+            Debug.Log("MoneyManager instance not found in the scene. Money-related functions will not work.");
+        }
+
+        augmentManager = FindObjectOfType<AugmentManager>();
+        if (augmentManager == null)
+        {
+            Debug.Log("AugmentManager instance not found in the scene. Augment-related functions will not work.");
+        }
+
+        if (SceneManager.GetActiveScene().name == "VisNov_Prologue")
+        {
+            moneyManager.ResetMoney();
+            augmentManager.ResetAugPrices();
+            augmentManager.LoadAugPrices();
+            Debug.Log("check");
+        }
+        else
+        {
+            augmentManager.LoadAugPrices();
+        }
+    }
+    public void Update()
+    {
+        showPrices();
     }
 
-    void Start()
+    public void showPrices()
     {
-        moneyManager = FindObjectOfType<MoneyManager>();
-        augmentManager = FindObjectOfType<AugmentManager>();
+        if (insurancePriceText != null)
+        {
+            UpdatePriceDisplay(insurancePriceText, augmentManager.insuranceCurrentPrice);
+        }
+        else
+        {
+            Debug.LogWarning("insurancePriceText is not assigned in the Inspector.");
+        }
+
+        if (multiplyingPriceText != null)
+        {
+            UpdatePriceDisplay(multiplyingPriceText, augmentManager.multiplyingCurrentPrice);
+        }
+        else
+        {
+            Debug.LogWarning("multiplyingPriceText is not assigned in the Inspector.");
+        }
+
+        if (hollowingPriceText != null)
+        {
+            UpdatePriceDisplay(hollowingPriceText, augmentManager.hollowingCurrentPrice);
+        }
+        else
+        {
+            Debug.LogWarning("hollowingPriceText is not assigned in the Inspector.");
+        }
     }
 
     public void PurchaseInsurance()
     {
-        int price = GetAdjustedPrice(2000);
+        int price = GetAdjustedPrice(augmentManager.insuranceCurrentPrice);
         Debug.Log("Attempting to purchase Insurance Augment. Price: " + price + ", Current Money: " + moneyManager.GetCurrentMoney());
 
         if (augmentManager.isInsuranceBought)
@@ -68,7 +125,7 @@ public class ShopManager : MonoBehaviour
 
     public void PurchaseMultiplying()
     {
-        int price = GetAdjustedPrice(1200);
+        int price = GetAdjustedPrice(augmentManager.multiplyingCurrentPrice);
         Debug.Log("Attempting to purchase Multiplying Augment. Price: " + price + ", Current Money: " + moneyManager.GetCurrentMoney());
 
         if (augmentManager.isMultiplyingBought)
@@ -101,7 +158,7 @@ public class ShopManager : MonoBehaviour
 
     public void PurchaseHollowing()
     {
-        int price = GetAdjustedPrice(1500);
+        int price = GetAdjustedPrice(augmentManager.hollowingCurrentPrice);
         Debug.Log("Attempting to purchase Hollowing Augment. Price: " + price + ", Current Money: " + moneyManager.GetCurrentMoney());
 
         if (augmentManager.isHollowingBought)
@@ -134,12 +191,26 @@ public class ShopManager : MonoBehaviour
 
     private bool CanAfford(int price)
     {
-        return moneyManager.GetCurrentMoney() >= price;
+        if (moneyManager != null)
+        {
+            return moneyManager.GetCurrentMoney() >= price;
+        }
+        else
+        {
+            Debug.LogWarning("MoneyManager instance not found. Returning false for CanAfford.");
+            return false;
+        }
+    }
+
+    public void UpdatePriceDisplay(TextMeshProUGUI priceText, int basePrice)
+    {
+        int adjustedPrice = GetAdjustedPrice(basePrice);
+        priceText.text = adjustedPrice.ToString();
     }
 
     private int GetAdjustedPrice(int basePrice)
     {
-        return Mathf.RoundToInt(basePrice * priceMultiplier);
+        return Mathf.RoundToInt(basePrice * shopMultiplier);
     }
 
     private void ShowNotEnoughMoney()

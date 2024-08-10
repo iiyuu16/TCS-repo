@@ -14,8 +14,11 @@ public class sdRewardsManager : MonoBehaviour
 
     private AugmentManager augmentManager;
     private StatusManager statusManager;
+    private sdScoreManager _sdScoreManager;
 
     public sdMultiScore[] multiScoreEffects;
+
+    private bool scoreTriggered = false;
 
     private void Awake()
     {
@@ -71,15 +74,25 @@ public class sdRewardsManager : MonoBehaviour
 
     private void ApplyAugmentEffects()
     {
-        string effectMessage = "";
+        if (!scoreTriggered)
+        {
+            string effectMessage = "";
 
-        effectMessage = ApplyInsuranceEffect();
-        if (string.IsNullOrEmpty(effectMessage)) effectMessage = ApplyMultiplyingEffect();
-        if (string.IsNullOrEmpty(effectMessage)) effectMessage = ApplyHollowingEffect();
-        if (string.IsNullOrEmpty(effectMessage)) effectMessage = defaultEffects();
+            effectMessage = ApplyInsuranceEffect();
+            if (string.IsNullOrEmpty(effectMessage)) effectMessage = ApplyMultiplyingEffect();
+            if (string.IsNullOrEmpty(effectMessage)) effectMessage = ApplyHollowingEffect();
+            if (string.IsNullOrEmpty(effectMessage)) effectMessage = defaultEffects();
 
-        statusText.text = effectMessage.Trim();
-        statusText.gameObject.SetActive(true);
+            statusText.text = effectMessage.Trim();
+            statusText.gameObject.SetActive(true);
+
+/*            if (augmentManager.isMultiplyingOnEffect && winScreenActive)
+            {
+                _sdScoreManager.MultiplierEffect();
+            }*/
+
+            scoreTriggered = true;
+        }
     }
 
     private string ApplyInsuranceEffect()
@@ -96,7 +109,8 @@ public class sdRewardsManager : MonoBehaviour
                 return "Insurance Augment is active! : Augment skill is not triggered.\n";
             }
         }
-        statusManager.shopDebuffOff();
+        GetSDBuff();
+        _sdScoreManager.BaseScoring();
         return "";
     }
 
@@ -107,7 +121,8 @@ public class sdRewardsManager : MonoBehaviour
             augmentManager.isMultiplyingOnEffect = true;
             if (loseScreenActive && !winScreenActive)
             {
-                statusManager.shopDebuffOn();
+                _sdScoreManager.BaseScoring();
+                GetSDDebuff();
                 return "Multiplying Augment is active. : Augment conditions is not triggered.\n";
             }
             else if (winScreenActive && !loseScreenActive)
@@ -122,7 +137,8 @@ public class sdRewardsManager : MonoBehaviour
                         }
                     }
                 }
-                statusManager.shopDebuffOff();
+                GetSDBuff();
+                _sdScoreManager.MultiplierEffect();
                 return "Multiplying Augment in effect! : Obtained additional Fragments!\n";
             }
         }
@@ -134,9 +150,10 @@ public class sdRewardsManager : MonoBehaviour
         if (augmentManager.isHollowingActive)
         {
             augmentManager.isHollowingOnEffect = true;
-            statusManager.shopDebuffOff();
+            
             return "Hollowing Augment in effect! : No buffs or debuffs granted!\n";
         }
+        _sdScoreManager.BaseScoring();
         return "";
     }
 
@@ -146,15 +163,44 @@ public class sdRewardsManager : MonoBehaviour
         {
             if (winScreenActive && !loseScreenActive)
             {
-                statusManager.shopDebuffOff();
+                GetSDBuff();
                 return "Augmentless : No punishments triggered!\n";
             }
             else if (loseScreenActive && !winScreenActive)
             {
-                statusManager.shopDebuffOn();
+                GetSDDebuff();
                 return "Augmentless : Punishments triggered!\n";
             }
         }
+        _sdScoreManager.BaseScoring();
         return "";
     }
+
+    public void GetSDDebuff()
+    {
+        if (statusManager != null)
+        {
+            statusManager.shopDebuffOn();
+            Debug.Log("shop inflation is now enabled");
+        }
+        else
+        {
+            Debug.LogError("PopUpManager instance is null.");
+        }
+    }
+
+    public void GetSDBuff()
+    {
+        if (statusManager != null)
+        {
+            statusManager.shopBuffOn();
+
+            Debug.Log("shop discount is now enabled");
+        }
+        else
+        {
+            Debug.LogError("PopUpManager instance is null.");
+        }
+    }
+
 }
