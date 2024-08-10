@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -15,10 +16,15 @@ public class wormEnemyMovement : MonoBehaviour
     private NavMeshAgent agent;
     private int arrived = 1;
     private int chase = 0;
+    //public turretAim turret;
+    public GameObject barrel;
     void Start()
     {
         WPs = GameObject.FindGameObjectsWithTag("Waypoint");
         agent = GetComponent<NavMeshAgent>();
+        //turret = barrel.GetComponent<turretAim>();
+        //turret.enabled = false;
+
     }
 
     // Update is called once per frame
@@ -39,7 +45,7 @@ public class wormEnemyMovement : MonoBehaviour
         if (this.transform.position.x == target.transform.position.x && this.transform.position.z == target.transform.position.z)
         {
             arrived = 1;
-            Debug.Log("ARRIVED");
+            //Debug.Log("ARRIVED");
         }
     }
 
@@ -47,7 +53,7 @@ public class wormEnemyMovement : MonoBehaviour
     {
         WaitForSeconds wait = new WaitForSeconds(speed);
         agent.SetDestination(target.transform.position);
-        Debug.Log(target.gameObject.name);
+        //Debug.Log(target.gameObject.name);
         while (this.transform.position != target.transform.position)
         {
             yield return wait;
@@ -60,22 +66,30 @@ public class wormEnemyMovement : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         //Debug.Log(other.gameObject.name);
-        Debug.Log(other.gameObject.name);
+        //Debug.Log(other.gameObject.name);
         if (other.gameObject.name == "Player")
         {
-            Debug.Log("PLAYER DETECTED");
+            //Debug.Log("PLAYER DETECTED");
             chase = 1;
             target = other.transform;
-            StartCoroutine(FollowTarget());
             seen = 1;
+            barrel.SetActive(true);
+            
+            StartCoroutine(FollowTarget());
+            
         }
 
     }
 
     private void OnTriggerExit(Collider other)
     {
-        chase = 0;
-        Debug.Log("Chase over");
-        seen = 0;
+        if(other.gameObject.name == "Player")
+        {
+            chase = 0;
+            Debug.Log("CHASE OVER");
+            barrel.SetActive(false);
+            seen = 0;
+        }
+        
     }
 }

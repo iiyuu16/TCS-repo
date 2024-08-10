@@ -7,7 +7,7 @@ public class WormMovement : MonoBehaviour
 {
     public static WormMovement instance;
     public float moveSpeed = 5f;
-    public float rotationSpeed = 150f;
+    public float rotationSpeed = 10f;
     public float acceleration = 5f;
     public float deceleration = 10f;
     public float boostSpeed = 10f;
@@ -144,11 +144,11 @@ public class WormMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(0f, -rotationSpeed * Time.deltaTime, 0f);
+            transform.Rotate(0f, -rotationSpeed * Time.deltaTime * currentSpeed, 0f);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0f, rotationSpeed * Time.deltaTime, 0f);
+            transform.Rotate(0f, rotationSpeed * Time.deltaTime * currentSpeed, 0f);
         }
     }
 
