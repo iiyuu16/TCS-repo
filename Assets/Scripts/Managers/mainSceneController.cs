@@ -18,6 +18,17 @@ public class mainSceneController : MonoBehaviour
         {
             Debug.Log("No ParticleTransition found in the scene.");
         }
+
+        if (SceneManager.GetActiveScene().name == "LoadingScreenToADWARE")
+        {
+            ADWARE_gamemode();
+        }
+
+        if (SceneManager.GetActiveScene().name == "LoadingScreenToFLM")
+        {
+            FLM_gamemode();
+        }
+
     }
 
     private void Update()
@@ -87,7 +98,7 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayedObjTransition());
     }
 
-    public void toVisNov_FLM_gamemode()
+    public void FLM_gamemode()
     {
         StartCoroutine(DelayToFLM_gamemode());
         StartCoroutine(DelayedObjTransition());
@@ -99,7 +110,7 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayedObjTransition());
     }
 
-    public void toVisNov_ADWARE_gamemode()
+    public void ADWARE_gamemode()
     {
         StartCoroutine(DelayToADWARE_gamemode());
         StartCoroutine(DelayedObjTransition());

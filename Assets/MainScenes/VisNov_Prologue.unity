@@ -948,6 +948,11 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &156657520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3071825048564964076, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+  m_PrefabInstance: {fileID: 903447688271273867}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &159079199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1552,6 +1557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 370aa6b0e7046b443a4ca05ec5658e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priceMultiplier: 0
   shopInflation: 0
   nonStopPopUp: 0
   shopDiscount: 0
@@ -5650,9 +5656,6 @@ MonoBehaviour:
   notEnoughMoneyObject: {fileID: 1056136634}
   transactionDeniedObject: {fileID: 1404861844}
   convoManagerObj: {fileID: 1085014135}
-  insurancePriceText: {fileID: 1094761426}
-  multiplyingPriceText: {fileID: 1094761425}
-  hollowingPriceText: {fileID: 1094761424}
 --- !u!1 &982779355
 GameObject:
   m_ObjectHideFlags: 0
@@ -6594,6 +6597,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1094761427}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1044798134
 MonoBehaviour:
@@ -8040,6 +8055,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1094761427}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1238184387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8915,6 +8942,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1094761427}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1384935337
 MonoBehaviour:
@@ -11933,16 +11972,22 @@ MonoBehaviour:
   isInsuranceBought: 0
   isInsuranceActive: 0
   isInsuranceOnEffect: 0
+  insuranceStartingPrice: 2000
+  insuranceCurrentPrice: 0
+  insurancePriceText: {fileID: 1094761426}
   isMultiplyingBought: 0
   isMultiplyingActive: 0
   isMultiplyingOnEffect: 0
+  multiplyingStartingPrice: 1500
+  multiplyingCurrentPrice: 0
+  multiplyingPriceText: {fileID: 1094761425}
   isHollowingBought: 0
   isHollowingActive: 0
   isHollowingOnEffect: 0
+  hollowingStartingPrice: 1800
+  hollowingCurrentPrice: 0
+  hollowingPriceText: {fileID: 1094761424}
   isAugmentless: 1
-  insuranceCurrentPrice: 2000
-  multiplyingCurrentPrice: 1500
-  hollowingCurrentPrice: 1800
 --- !u!1 &1945618358
 GameObject:
   m_ObjectHideFlags: 0
@@ -12371,18 +12416,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1921838816}
-        m_TargetAssemblyTypeName: AugmentManager, Assembly-CSharp
-        m_MethodName: ResetAugments
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13013,6 +13046,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1908444243}
     m_Modifications:
+    - target: {fileID: 268555418263543259, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+      propertyPath: objsToHide.Array.data[0]
+      value: 
+      objectReference: {fileID: 156657520}
     - target: {fileID: 736087640484861195, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -13024,10 +13061,6 @@ PrefabInstance:
     - target: {fileID: 828484913333409883, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
       propertyPath: m_Name
       value: Sortie Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 828484913333409883, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1361908834651244528, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -13054,10 +13087,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1575412928}
     - target: {fileID: 3731112356436443940, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3731112356436443940, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1575412928}
@@ -13065,30 +13094,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1575412928}
-    - target: {fileID: 5534993690779873579, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 5467805569962751505, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+      propertyPath: objsToHide.Array.data[0]
       value: 
-      objectReference: {fileID: 1575412928}
-    - target: {fileID: 5534993690779873579, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1020631579}
-    - target: {fileID: 5534993690779873579, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: toVisNov_ADWARE
-      objectReference: {fileID: 0}
-    - target: {fileID: 5534993690779873579, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: mainSceneController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5534993690779873579, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6433306497930042225, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1575412928}
+      objectReference: {fileID: 156657520}
     - target: {fileID: 6939380967896189820, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -13145,10 +13154,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1575412928}
-    - target: {fileID: 8341224345545595344, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

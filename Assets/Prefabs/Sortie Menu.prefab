@@ -150,7 +150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6939380967896189820
 Transform:
   m_ObjectHideFlags: 0
@@ -159,7 +159,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828484913333409883}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1763,8 +1763,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1467fbfb7c04b65419262a218de77ad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objToShow: {fileID: 3309719889489974000}
-  objToHide: {fileID: 3071825048564964076}
+  objsToShow:
+  - {fileID: 3309719889489974000}
+  objsToHide:
+  - {fileID: 3071825048564964076}
 --- !u!1 &2873047686322924303
 GameObject:
   m_ObjectHideFlags: 0
@@ -5504,8 +5506,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1467fbfb7c04b65419262a218de77ad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objToShow: {fileID: 7441192167615028586}
-  objToHide: {fileID: 3071825048564964076}
+  objsToShow:
+  - {fileID: 7441192167615028586}
+  objsToHide:
+  - {fileID: 3071825048564964076}
 --- !u!1 &8341224345545595344
 GameObject:
   m_ObjectHideFlags: 0

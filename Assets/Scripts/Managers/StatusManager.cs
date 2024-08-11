@@ -5,8 +5,8 @@ public class StatusManager : MonoBehaviour
 {
     public static StatusManager instance;
 
+    private AugmentManager augmentManager;
     private ShopManager shopManager;
-    private float priceMultiplier;
 
     private PopUpManager popUpManager;
 
@@ -35,18 +35,23 @@ public class StatusManager : MonoBehaviour
             Debug.LogWarning("ShopManager instance not found in the scene.");
         }
 
-        priceMultiplier = PlayerPrefs.GetFloat("PriceMultiplier", 1.0f);
-
         popUpManager = FindObjectOfType<PopUpManager>();
         if (popUpManager == null)
         {
             Debug.LogWarning("PopUpManager instance not found in the scene. PopUpDebuffs will not work.");
         }
 
+        augmentManager = FindObjectOfType<AugmentManager>();
+        if (augmentManager == null)
+        {
+            Debug.LogWarning("AugmentManager instance not found in the scene. PopUpDebuffs will not work.");
+        }
+
         //reset statuses
         if (SceneManager.GetActiveScene().name == "VisNov_Prologue")
         {
            setToDefaultStatus();
+           SaveStatus();
         }
 
         //buff icons
@@ -81,14 +86,8 @@ public class StatusManager : MonoBehaviour
         PlayerPrefs.SetInt("ShopInflation", shopInflation ? 1 : 0);
         PlayerPrefs.SetInt("NonStopPopUp", nonStopPopUp ? 1 : 0);
 
-        if (shopManager != null)
-        {
-            PlayerPrefs.SetFloat("PriceMultiplier", shopManager.shopMultiplier);
-        }
-
         PlayerPrefs.Save();
     }
-
 
     public void LoadStatus()
     {
@@ -100,11 +99,6 @@ public class StatusManager : MonoBehaviour
         //debuffs
         shopInflation = PlayerPrefs.GetInt("ShopInflation", 0) == 1;
         nonStopPopUp = PlayerPrefs.GetInt("NonStopPopUp", 0) == 1;
-
-        if (shopManager != null)
-        {
-            priceMultiplier = PlayerPrefs.GetFloat("PriceMultiplier", shopManager.shopMultiplier);
-        }
     }
 
     public void setToDefaultStatus()
@@ -153,14 +147,16 @@ public class StatusManager : MonoBehaviour
         PlayerPrefs.SetInt("ShopInflation", 0);
         PlayerPrefs.SetInt("ShopNormal", 1);
 
-        if (shopManager != null)
+        if (inflationIcon != null)
         {
-            shopManager.shopMultiplier = 1.0f;
+            inflationIcon.SetActive(false);
         }
-        else
+
+        if (discountIcon != null)
         {
-            Debug.LogWarning("ShopManager instance not found. Funct will not work.");
+            discountIcon.SetActive(false);
         }
+
 
         SaveStatus();
         LoadStatus();
@@ -177,18 +173,15 @@ public class StatusManager : MonoBehaviour
             inflationIcon.SetActive(true);
         }
 
+        if (discountIcon != null)
+        {
+            discountIcon.SetActive(false);
+        }
+
         PlayerPrefs.SetInt("ShopDiscount", 0);
         PlayerPrefs.SetInt("ShopInflation", 1);
         PlayerPrefs.SetInt("ShopNormal", 0);
 
-        if (shopManager != null)
-        {
-            shopManager.shopMultiplier = 1.7f;
-        }
-        else
-        {
-            Debug.LogWarning("ShopManager instance not found. Funct will not work.");
-        }
 
         SaveStatus();
         LoadStatus();
@@ -200,23 +193,19 @@ public class StatusManager : MonoBehaviour
         shopNormal = false;
         shopDiscount = true;
 
+        if (inflationIcon != null)
+        {
+            inflationIcon.SetActive(false);
+        }
+
         if (discountIcon != null)
         {
-            discountIcon.SetActive(false);
+            discountIcon.SetActive(true);
         }
 
         PlayerPrefs.SetInt("ShopDiscount", 1);
         PlayerPrefs.SetInt("ShopInflation", 0);
         PlayerPrefs.SetInt("ShopNormal", 0);
-
-        if (popUpManager != null)
-        {
-            shopManager.shopMultiplier = 0.85f;
-        }
-        else
-        {
-            Debug.LogWarning("ShopManager instance not found. Funct will not work.");
-        }
 
         SaveStatus();
         LoadStatus();
@@ -234,6 +223,7 @@ public class StatusManager : MonoBehaviour
 
         if (popUpManager != null)
         {
+            popUpManager.gameObject.SetActive(true);
             popUpManager.OnThisManager();
         }
         else
@@ -261,6 +251,7 @@ public class StatusManager : MonoBehaviour
         if (popUpManager != null)
         {
             popUpManager.OffThisManager();
+            popUpManager.gameObject.SetActive(false);
         }
         else
         {

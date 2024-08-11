@@ -415,8 +415,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f4a180dc6122d245b573ffdb23bf478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayTimeToPlay: 6
-  delayTimeToTransition: 5
+  delayTimeToPlay: 3
+  delayTimeToTransition: 2
   objTransition: {fileID: 465120268}
   targetSceneName: rhythmGM
 --- !u!82 &315770321
@@ -431,7 +431,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7965624f48a33ef479ab68f5e67e5e37, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1374,7 +1374,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
+  m_Sprite: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
