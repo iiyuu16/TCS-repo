@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -51,30 +50,38 @@ public class ShopManager : MonoBehaviour
         }
 
         augmentManager = FindObjectOfType<AugmentManager>();
-        if (augmentManager == null)
-        {
-        }
+
+        statusManager = FindObjectOfType<StatusManager>();
+    }
+
+    public void Update()
+    {
+        checkPrices();
+        showPrices();
     }
 
     public void checkPrices()
     {
-        if (statusManager.shopInflation)
+        if (insurancePriceText && multiplyingPriceText && hollowingPriceText)
         {
-            insuranceCurrentPrice = insuranceStartingPrice + 1400;
-            multiplyingCurrentPrice = multiplyingStartingPrice + 1050;
-            hollowingCurrentPrice = hollowingStartingPrice + 1260;
-        }
-        else if (statusManager.shopDiscount)
-        {
-            insuranceCurrentPrice = insuranceStartingPrice - 300;
-            multiplyingCurrentPrice = multiplyingStartingPrice - 225;
-            hollowingCurrentPrice = hollowingStartingPrice - 270;
-        }
-        else
-        {
-            insuranceCurrentPrice = insuranceStartingPrice;
-            multiplyingCurrentPrice = multiplyingStartingPrice;
-            hollowingCurrentPrice = hollowingStartingPrice;
+            if (statusManager.shopInflation)
+            {
+                insuranceCurrentPrice = insuranceStartingPrice + 1400;
+                multiplyingCurrentPrice = multiplyingStartingPrice + 1050;
+                hollowingCurrentPrice = hollowingStartingPrice + 1260;
+            }
+            else if (statusManager.shopDiscount)
+            {
+                insuranceCurrentPrice = insuranceStartingPrice - 300;
+                multiplyingCurrentPrice = multiplyingStartingPrice - 225;
+                hollowingCurrentPrice = hollowingStartingPrice - 270;
+            }
+            else
+            {
+                insuranceCurrentPrice = insuranceStartingPrice;
+                multiplyingCurrentPrice = multiplyingStartingPrice;
+                hollowingCurrentPrice = hollowingStartingPrice;
+            }
         }
     }
 

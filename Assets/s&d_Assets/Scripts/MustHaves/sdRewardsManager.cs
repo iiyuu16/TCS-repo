@@ -31,10 +31,7 @@ public class sdRewardsManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-    }
 
-    void Start()
-    {
         augmentManager = FindObjectOfType<AugmentManager>();
         if (augmentManager == null)
         {
@@ -46,6 +43,13 @@ public class sdRewardsManager : MonoBehaviour
         if (statusManager == null)
         {
             Debug.Log("StatusManager instance is not found in the scene.");
+            return;
+        }
+
+        _sdScoreManager = FindObjectOfType<sdScoreManager>();
+        if (_sdScoreManager == null)
+        {
+            Debug.Log("sdScoreManager instance is not found in the scene.");
             return;
         }
     }
@@ -102,15 +106,17 @@ public class sdRewardsManager : MonoBehaviour
             augmentManager.isInsuranceOnEffect = true;
             if (loseScreenActive && !winScreenActive)
             {
+                GetSDBuff();
+                _sdScoreManager.BaseScoring();
                 return "Insurance Augment in effect! : No punishments received!\n";
             }
             else if (winScreenActive && !loseScreenActive)
             {
+                GetSDBuff();
+                _sdScoreManager.BaseScoring();
                 return "Insurance Augment is active! : Augment skill is not triggered.\n";
             }
         }
-        GetSDBuff();
-        _sdScoreManager.BaseScoring();
         return "";
     }
 
@@ -150,10 +156,9 @@ public class sdRewardsManager : MonoBehaviour
         if (augmentManager.isHollowingActive)
         {
             augmentManager.isHollowingOnEffect = true;
-            
+            _sdScoreManager.BaseScoring();
             return "Hollowing Augment in effect! : No buffs or debuffs granted!\n";
         }
-        _sdScoreManager.BaseScoring();
         return "";
     }
 
@@ -164,15 +169,16 @@ public class sdRewardsManager : MonoBehaviour
             if (winScreenActive && !loseScreenActive)
             {
                 GetSDBuff();
+                _sdScoreManager.BaseScoring();
                 return "Augmentless : No punishments triggered!\n";
             }
             else if (loseScreenActive && !winScreenActive)
             {
                 GetSDDebuff();
+                _sdScoreManager.BaseScoring();
                 return "Augmentless : Punishments triggered!\n";
             }
         }
-        _sdScoreManager.BaseScoring();
         return "";
     }
 

@@ -103,15 +103,18 @@ public class RhythmRewardsManager : MonoBehaviour
             augmentManager.isInsuranceOnEffect = true;
             if (loseScreenActive && !winScreenActive)
             {
+                statusManager.popupDebuffOff();
+                _rhythmScoreManager.BaseScoring();
                 return "Insurance Augment in effect! : No punishments received!\n";
             }
             else if (winScreenActive && !loseScreenActive)
             {
+                statusManager.popupDebuffOff();
+                _rhythmScoreManager.BaseScoring();
                 return "Insurance Augment is active! : Augment skill is not triggered.\n";
             }
         }
-        statusManager.popupDebuffOff();
-        _rhythmScoreManager.BaseScoring();
+
         return "";
     }
 
@@ -152,9 +155,10 @@ public class RhythmRewardsManager : MonoBehaviour
         {
             statusManager.popupDebuffOff();
             augmentManager.isHollowingOnEffect = true;
+            _rhythmScoreManager.BaseScoring();
             return "Hollowing Augment in effect! : No buffs or debuffs granted!\n";
         }
-        _rhythmScoreManager.BaseScoring();
+        
         return "";
     }
 
@@ -165,15 +169,17 @@ public class RhythmRewardsManager : MonoBehaviour
             if (winScreenActive && !loseScreenActive)
             {
                 statusManager.popupDebuffOff();
+                _rhythmScoreManager.BaseScoring();
                 return "Augmentless : No punishments triggered!\n";
             }
             else if (loseScreenActive && !winScreenActive)
             {
                 GetRhythmDebuff();
+                _rhythmScoreManager.BaseScoring();
                 return "Augmentless : Punishments triggered!\n";
             }
         }
-        _rhythmScoreManager.BaseScoring();
+        
         return "";
     }
 

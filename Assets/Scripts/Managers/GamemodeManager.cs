@@ -15,8 +15,17 @@ public class GameModeManager : MonoBehaviour
     public GameObject filelessButton;
     public GameObject adwareButton;
 
+    public GameObject malwareFL;
+    public GameObject malwareADWARE;
+
     private void Awake()
     {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         instance = this;
 
         if (SceneManager.GetActiveScene().name == "VisNov_Prologue")
@@ -38,7 +47,7 @@ public class GameModeManager : MonoBehaviour
         else
         {
             filelessMalwareDone = false;
-            Debug.LogError("GM:filessbtn is null");
+            Debug.LogWarning("GM:filessbtn is null");
         }
 
         if (adwareButton != null)
@@ -49,7 +58,23 @@ public class GameModeManager : MonoBehaviour
         else
         {
             adwareDone = false;
-            Debug.LogError("GM:adwarebtn is null");
+            Debug.LogWarning("GM:adwarebtn is null");
+        }
+
+        //icon check
+        if (malwareFL != null)
+        {
+            if (filelessMalwareDone)
+            {
+                malwareFL.SetActive(true);
+            }
+        }
+        if (malwareADWARE != null)
+        {
+            if (adwareDone)
+            {
+                malwareADWARE.SetActive(true);
+            }
         }
 
         UpdateAllBtns();
@@ -60,6 +85,7 @@ public class GameModeManager : MonoBehaviour
         adwareDone = true;
         SaveGMProgress();
         LoadGMProgress();
+        Debug.LogWarning("check GM bools: adware: "+adwareDone+ ", fl: "+filelessMalwareDone);
     }
 
     public void filelessGM_Done()
@@ -67,12 +93,14 @@ public class GameModeManager : MonoBehaviour
         filelessMalwareDone = true;
         SaveGMProgress();
         LoadGMProgress();
+        Debug.LogWarning("check GM bools: adware: " + adwareDone + ", fl: " + filelessMalwareDone);
     }
 
     public void LoadGMProgress()
     {
         filelessMalwareDone = PlayerPrefs.GetInt(FILELESS_MALWARE_DONE_KEY, 0) == 1;
         adwareDone = PlayerPrefs.GetInt(ADWARE_DONE_KEY, 0) == 1;
+        SaveGMProgress();
     }
 
     public void SaveGMProgress()
@@ -100,6 +128,7 @@ public class GameModeManager : MonoBehaviour
 
         buttonComponent.interactable = !booleanValue;
         SaveGMProgress();
+        LoadGMProgress();
     }
 
     public void UpdateAllBtns()

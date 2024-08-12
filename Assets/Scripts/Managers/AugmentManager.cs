@@ -155,7 +155,7 @@ public class AugmentManager : MonoBehaviour
         isHollowingOnEffect = false;
 
         isAugmentless = true;
-
+        DisplayCurrentAugments();
         SaveAugments();
     }
 
@@ -193,6 +193,7 @@ public class AugmentManager : MonoBehaviour
         isHollowingOnEffect = PlayerPrefs.GetInt("HollowingOnEffect", 0) == 1;
 
         isAugmentless = PlayerPrefs.GetInt("Augmentless", 0) == 1;
+        DisplayCurrentAugments();
         SaveAugments();
     }
 }
