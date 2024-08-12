@@ -5,6 +5,7 @@ using UnityEngine;
 public class playerHP : MonoBehaviour
 {
     public BoxCollider collide;
+    public int HP = 10;
 
     private int playerHealth = 10;
     // Start is called before the first frame update
@@ -21,9 +22,13 @@ public class playerHP : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "bullet")
+        if(other.gameObject.tag == "Bullet")
         {
-            Debug.Log("ENEMY HIT PLAYER");
+            HP--;
+            if (HP < 1)
+            {
+                this.gameObject.SetActive(false);
+            }
         }
     }
 }

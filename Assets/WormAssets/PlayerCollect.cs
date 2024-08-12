@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerCollect : MonoBehaviour
 {
     public int collected = 0;
+    public int timesHit = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +30,14 @@ public class PlayerCollect : MonoBehaviour
         if(other.gameObject.tag == "Enemy")
         {
             collected = 0;
-            Debug.Log("HIT ENEMY");
+            timesHit++;
+            if(timesHit == 2)
+            {
+                other.gameObject.SetActive(false);
+                Debug.Log("ENEMY DOWN RIP BOZO PEACE OUT YALL");
+            }
+            
+            //Debug.Log("HIT ENEMY");
         }
     }
 

@@ -21,7 +21,7 @@ public class Collectible : MonoBehaviour
     {
         if(other.gameObject.name == "Player")
         {
-            Debug.Log("PLAYER DETECTED");
+            //Debug.Log("PLAYER DETECTED");
             collected = other.GetComponent<PlayerCollect>().collected;
             if(collected == 0)
             {

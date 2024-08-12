@@ -25,4 +25,20 @@ public class Bullet : AutoDestroyPoolableObject
         base.OnDisable();
         rigidbody.velocity = Vector3.zero;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.name == "Player")
+        {
+            Debug.Log("I HIT PLAYER");
+            this.gameObject.SetActive(false);
+        }
+
+        if(other.gameObject.tag == "Ground")
+        {
+            Debug.Log("I HIT GROUND");
+            this.gameObject.SetActive(false);
+        }
+        
+    }
 }
