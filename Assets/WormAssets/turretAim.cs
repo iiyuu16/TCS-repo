@@ -19,11 +19,6 @@ public class turretAim : MonoBehaviour
         StartCoroutine(fire());
     }
 
-    private void Awake()
-    {
-        //StartCoroutine(fire());
-        Debug.Log("FIRING AGAIN");
-    }
 
     private void Update()
     {
