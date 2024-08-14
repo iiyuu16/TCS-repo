@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Waypoint
+  - Gun
+  - Collectible
+  - Enemy
+  - Ground
+  - Bullet
   layers:
   - Default
   - TransparentFX
