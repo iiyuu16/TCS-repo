@@ -6,6 +6,7 @@ public class sdTimer : MonoBehaviour
     public float timeValue = 60;
     public TextMeshProUGUI timeText;
     public GameObject gameOverScreen;
+    public GameObject[] objectsToDisable;
 
     private void Start()
     {
@@ -40,10 +41,19 @@ public class sdTimer : MonoBehaviour
 
     private void gameOverTrigger()
     {
-        Time.timeScale = 0;
         if (gameOverScreen != null)
         {
             gameOverScreen.SetActive(true);
+        }
+
+        DisableGameObjects();
+    }
+
+    private void DisableGameObjects()
+    {
+        foreach (GameObject obj in objectsToDisable)
+        {
+            obj.SetActive(false);
         }
     }
 }

@@ -85,6 +85,7 @@ public class sdPlayerMovement : MonoBehaviour
             currentSpeed = 0f;
 
             recoveryCoroutine = StartCoroutine(RecoveryState());
+
         }
     }
 
@@ -112,7 +113,9 @@ public class sdPlayerMovement : MonoBehaviour
         isStunned = false;
         Debug.Log("Player recovered");
         currHP = maxHP;
+        sliderHP.value = maxHP;
         UpdateBoostIndicator();
+
     }
 
     public void OnHealthChanged(float value)

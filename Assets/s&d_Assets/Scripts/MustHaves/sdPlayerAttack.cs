@@ -50,19 +50,19 @@ public class sdPlayerAttack : MonoBehaviour
     {
         if (other.CompareTag("Bullet"))
         {
-            sdScoreManager.instance.AddScore(100);
+            sdScoreManager.instance.AddScore(1);
         }
         else if (other.CompareTag("Shield"))
         {
-            sdScoreManager.instance.AddScore(500);
+            sdScoreManager.instance.AddScore(0);
         }
         else if (other.CompareTag("Target"))
         {
-            sdScoreManager.instance.AddScore(1500);
+            sdScoreManager.instance.AddScore(10);
         }
         else if (other.CompareTag("Turret"))
         {
-            sdScoreManager.instance.AddScore(1000);
+            sdScoreManager.instance.AddScore(5);
         }
     }
 }

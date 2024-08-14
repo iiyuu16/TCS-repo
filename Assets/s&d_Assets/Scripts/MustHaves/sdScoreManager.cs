@@ -4,7 +4,7 @@ using TMPro;
 public class sdScoreManager : MonoBehaviour
 {
     public static sdScoreManager instance;
-    public int score = 0;
+    private int score = 0;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI obtainedScoreText;
 
@@ -20,10 +20,38 @@ public class sdScoreManager : MonoBehaviour
         }
     }
 
+    public void Update()
+    {
+        UpdateScoreText();
+        UpdateObtainedScoreText();
+    }
+
     public void AddScore(int points)
     {
         score += points;
         UpdateScoreText();
+        UpdateObtainedScoreText();
+    }
+
+    public void BaseScoring()
+    {
+        float baseMultiplier = 1f;
+        int newScore = Mathf.RoundToInt(score * baseMultiplier);
+        Debug.Log("Base score: " + score);
+        Debug.Log("Base multiplied score: " + newScore);
+        score = newScore;
+        MoneyManager.instance.UpdateMoneyFromGamemode(newScore);
+        UpdateObtainedScoreText();
+    }
+
+    public void MultiplierEffect()
+    {
+        float multiplier = 2f;
+        int newScore = Mathf.RoundToInt(score * multiplier);
+        Debug.Log("Base score: " + score);
+        score = newScore;
+        Debug.Log("Multiplied score: " + score);
+        MoneyManager.instance.UpdateMoneyFromGamemode(newScore);
         UpdateObtainedScoreText();
     }
 
@@ -39,13 +67,14 @@ public class sdScoreManager : MonoBehaviour
     {
         if (obtainedScoreText != null)
         {
-            obtainedScoreText.text = "Obtained " + FormatScore(score) + " Fr.";
+            obtainedScoreText.text = "Got " + FormatScore(score) + " Frgz.";
         }
     }
 
     private string FormatScore(int score)
     {
         string scoreStr = score.ToString();
-        return scoreStr.PadLeft(8, ' ');
+        int paddingLength = Mathf.Max(1, scoreStr.Length);
+        return scoreStr.PadRight(paddingLength);
     }
 }

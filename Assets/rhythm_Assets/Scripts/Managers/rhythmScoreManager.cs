@@ -3,30 +3,31 @@ using TMPro;
 
 public class rhythmScoreManager : MonoBehaviour
 {
-    public static rhythmScoreManager Instance;
+    public static rhythmScoreManager instance;
+
     public AudioSource hitSFX;
     public AudioSource missSFX;
     public TextMeshPro scoreTextMesh;
-    public TextMeshProUGUI resScoreText;
+    public TextMeshProUGUI[] resScoreTexts;
     public static int comboScore;
     public int healthDeduction = 10;
 
-    void Start()
+    private void Awake()
     {
-        Instance = this;
+        instance = this;
         comboScore = 0;
     }
 
     public static void Hit()
     {
-        comboScore += 1;
-        Instance.hitSFX.Play();
+        comboScore++;
+        instance.hitSFX.Play();
     }
 
     public static void Miss()
     {
         comboScore = 0;
-        Instance.missSFX.Play();
+        instance.missSFX.Play();
         DeductHealthOnMiss();
     }
 
@@ -34,11 +35,11 @@ public class rhythmScoreManager : MonoBehaviour
     {
         if (rhythmHealthManager.Instance != null)
         {
-            rhythmHealthManager.Instance.DeductHealth(Instance.healthDeduction);
+            rhythmHealthManager.Instance.DeductHealth(instance.healthDeduction);
         }
         else
         {
-            Debug.LogWarning("HealthManager instance not found.");
+            Debug.LogWarning("rhythmHealthManager instance not found.");
         }
     }
 
@@ -55,6 +56,34 @@ public class rhythmScoreManager : MonoBehaviour
 
     void UpdateResultScoreText()
     {
-        resScoreText.text = rhythmScoreManager.comboScore.ToString();
+        int newScore = Mathf.RoundToInt(comboScore * 1f);
+        for (int i = 0; i < resScoreTexts.Length; i++)
+        {
+            resScoreTexts[i].text = "Got " + newScore.ToString() + " Frgz.";
+        }
+    }
+
+    public void BaseScoring()
+    {
+        float baseMultiplier = 1f;
+        int newScore = Mathf.RoundToInt(comboScore * baseMultiplier);
+        Debug.Log("Base score: " + comboScore);
+        Debug.Log("Base multiplied score: " + newScore);
+
+        MoneyManager.instance.UpdateMoneyFromGamemode(newScore);
+        UpdateResultScoreText();
+    }
+
+    public void MultiplierEffect()
+    {
+        float augmentMultiplier = 2f;
+        float totalMultiplier = augmentMultiplier;
+
+        int newScore = Mathf.RoundToInt(comboScore * totalMultiplier);
+        Debug.Log("Base score: " + comboScore);
+        Debug.Log("Multiplied score: " + newScore);
+
+        MoneyManager.instance.UpdateMoneyFromGamemode(newScore);
+        UpdateResultScoreText();
     }
 }

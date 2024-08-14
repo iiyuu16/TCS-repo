@@ -4,6 +4,7 @@ public class sdWinConditionManager : MonoBehaviour
 {
     public GameObject[] targetGameObjects;
     public GameObject winScreen;
+    public GameObject[] objectsToDisable;
 
     private bool hasWon = false;
 
@@ -14,10 +15,11 @@ public class sdWinConditionManager : MonoBehaviour
             if (winScreen != null)
             {
                 winScreen.SetActive(true);
-                Time.timeScale = 0f;
             }
 
+            DisableGameObjects();
             hasWon = true;
+
         }
     }
 
@@ -31,5 +33,13 @@ public class sdWinConditionManager : MonoBehaviour
             }
         }
         return true;
+    }
+
+    private void DisableGameObjects()
+    {
+        foreach (GameObject obj in objectsToDisable)
+        {
+            obj.SetActive(false);
+        }
     }
 }

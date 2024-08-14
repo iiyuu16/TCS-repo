@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -10,18 +11,24 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text messageText;
     public RectTransform bgBox;
 
-    Message[] currentMessages;
-    Actor[] currentActors;
-    int activeMessage = 0;
+    private Message[] currentMessages;
+    private Actor[] currentActors;
+    private int activeMessage = 0;
     public static bool isActive = false;
 
     private Coroutine textAnimationCoroutine;
+
+    public event Action OnDialogueCompleted;
+
+    private bool dialogueCompleted = false;
+    public bool DialogueCompleted => dialogueCompleted;
 
     public void OpenDialogue(Message[] messages, Actor[] actors)
     {
         currentMessages = messages;
         currentActors = actors;
         activeMessage = 0;
+        dialogueCompleted = false; // Reset at the start of dialogue
 
         Debug.Log("Started Convo! Loaded messages: " + messages.Length);
         DisplayMessages();
@@ -67,6 +74,8 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.Log("End of Convo");
             bgBox.LeanScale(Vector3.zero, 0.1f).setEaseInOutExpo();
+            dialogueCompleted = true;
+            OnDialogueCompleted?.Invoke();
         }
     }
 
