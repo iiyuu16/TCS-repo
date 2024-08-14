@@ -3528,6 +3528,7 @@ MonoBehaviour:
   speed: 0.1
   seen: 0
   barrel: {fileID: 1624380328}
+  collection: {fileID: 1176808822}
 --- !u!195 &1869981744
 NavMeshAgent:
   m_ObjectHideFlags: 0

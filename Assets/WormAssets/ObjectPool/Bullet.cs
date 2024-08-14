@@ -20,11 +20,11 @@ public class Bullet : AutoDestroyPoolableObject
 
     }
 
-    public override void OnDisable()
-    {
-        base.OnDisable();
-        rigidbody.velocity = Vector3.zero;
-    }
+    //public override void OnDisable()
+    //{
+        //base.OnDisable();
+        //rigidbody.velocity = Vector3.zero;
+    //}
 
     private void OnTriggerEnter(Collider other)
     {

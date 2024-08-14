@@ -18,6 +18,8 @@ public class wormEnemyMovement : MonoBehaviour
     private int chase = 0;
     //public turretAim turret;
     public GameObject barrel;
+
+    public PlayerCollect collection;
     void Start()
     {
         WPs = GameObject.FindGameObjectsWithTag("Waypoint");
@@ -46,6 +48,11 @@ public class wormEnemyMovement : MonoBehaviour
         {
             arrived = 1;
             //Debug.Log("ARRIVED");
+        }
+
+        if(collection.timesHit == 2)
+        {
+            this.gameObject.SetActive(false);
         }
     }
 

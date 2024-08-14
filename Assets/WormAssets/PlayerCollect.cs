@@ -21,23 +21,26 @@ public class PlayerCollect : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //Debug.Log("COLLIDED WITH SOMETHING");
-        if(other.gameObject.tag == "Collectible")
+        if(other.gameObject.tag == "Collectible" && collected == 0)
         {
             collected = 1;
             //Debug.Log("COLLECTED");
         }
 
-        if(other.gameObject.tag == "Enemy")
+        if (collected == 1)
         {
-            collected = 0;
-            timesHit++;
-            if(timesHit == 2)
+            if (other.gameObject.tag == "Enemy")
             {
-                other.gameObject.SetActive(false);
-                Debug.Log("ENEMY DOWN RIP BOZO PEACE OUT YALL");
+                collected = 0;
+                timesHit++;
+                if (timesHit == 2)
+                {
+                    other.gameObject.SetActive(false);
+                    Debug.Log("ENEMY DOWN RIP BOZO PEACE OUT YALL");
+                }
+
+                //Debug.Log("HIT ENEMY");
             }
-            
-            //Debug.Log("HIT ENEMY");
         }
     }
 

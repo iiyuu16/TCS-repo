@@ -8,6 +8,7 @@ public class playerHP : MonoBehaviour
     public int HP = 10;
 
     private int playerHealth = 10;
+
     // Start is called before the first frame update
     void Start()
     {
