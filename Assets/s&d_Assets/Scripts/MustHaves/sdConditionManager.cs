@@ -1,25 +1,32 @@
 using UnityEngine;
+using TMPro;
 
-public class sdWinConditionManager : MonoBehaviour
+public class SdWinConditionManager : MonoBehaviour
 {
     public GameObject[] targetGameObjects;
     public GameObject winScreen;
     public GameObject[] objectsToDisable;
+    public TextMeshProUGUI statusText; // Add this line to reference your TMP component
 
     private bool hasWon = false;
 
     private void Update()
     {
-        if (!hasWon && AreAllTargetsDestroyed())
+        if (!hasWon)
         {
-            if (winScreen != null)
+            // Update the status text
+            UpdateStatusText();
+
+            if (AreAllTargetsDestroyed())
             {
-                winScreen.SetActive(true);
+                if (winScreen != null)
+                {
+                    winScreen.SetActive(true);
+                }
+
+                DisableGameObjects();
+                hasWon = true;
             }
-
-            DisableGameObjects();
-            hasWon = true;
-
         }
     }
 
@@ -40,6 +47,25 @@ public class sdWinConditionManager : MonoBehaviour
         foreach (GameObject obj in objectsToDisable)
         {
             obj.SetActive(false);
+        }
+    }
+
+    private void UpdateStatusText()
+    {
+        if (statusText != null)
+        {
+            int totalTargets = targetGameObjects.Length;
+            int missingTargets = 0;
+
+            foreach (GameObject target in targetGameObjects)
+            {
+                if (target == null)
+                {
+                    missingTargets++;
+                }
+            }
+
+            statusText.text = $"Targets Destroyed: {missingTargets}/{totalTargets}";
         }
     }
 }

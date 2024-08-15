@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: slidetxt
+  m_Name: reverseslidetxt
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -24,15 +24,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: -68.247406
-        outSlope: -68.247406
+        inSlope: 0
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.14049639
+        inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 30
-        value: -4500
+        value: 4500
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -93,15 +93,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: -68.247406
-        outSlope: -68.247406
+        inSlope: 0
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.14049639
+        inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 30
-        value: -4500
+        value: 4500
         inSlope: 0
         outSlope: 0
         tangentMode: 0
