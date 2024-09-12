@@ -173,49 +173,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 43
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":27.5,"yPos":117},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Let''s
-    Go?>-","parentUIDs":[30],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":255.5,"yPos":116},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"-<More
-    briefing!>- (Recommended!) :>","parentUIDs":[30,38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":40}],"EditorInfo":{"isRoot":false,"xPos":27.5,"yPos":302},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"-<No
-    need, I''d definitely win!>-","parentUIDs":[38],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":253,"yPos":381},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"-<You
-    will definitely regret this.>-","parentUIDs":[40],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":true,"xPos":29.5,"yPos":-1078},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
-    hey, it''s you! What can I get for ya?","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":42}],"EditorInfo":{"isRoot":false,"xPos":30,"yPos":-989},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"","parentUIDs":[9],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":4,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":265,"yPos":-1081},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Nothing
-    actually. By the way, did you send this commission?","parentUIDs":[0],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":21.5,"yPos":-886},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah,
-    it''s not big of a deal anyways. So what''s supposed to be the problem?","parentUIDs":[42],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":266.5,"yPos":-895},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Right!
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":270,"yPos":338},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Let''s
+    Go?>-","parentUIDs":[30],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":498,"yPos":337},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"-<More
+    briefing!>- (Recommended!) :>","parentUIDs":[30,38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":40}],"EditorInfo":{"isRoot":false,"xPos":270,"yPos":523},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"-<No
+    need, I''d definitely win!>-","parentUIDs":[38],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":495.5,"yPos":602},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"-<You
+    will definitely regret this.>-","parentUIDs":[40],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":true,"xPos":270,"yPos":-857},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
+    hey, it''s you! What can I get for ya?","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":42}],"EditorInfo":{"isRoot":false,"xPos":272.5,"yPos":-768},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"","parentUIDs":[9],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":4,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":507.5,"yPos":-860},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Nothing
+    actually. By the way, did you send this commission?","parentUIDs":[0],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":264,"yPos":-665},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah,
+    it''s not big of a deal anyways. So what''s supposed to be the problem?","parentUIDs":[42],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":509,"yPos":-674},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Right!
     It''s my computer. One time I was checking the shop email and received this violation
-    about missing permits.","parentUIDs":[11],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":254.5,"yPos":-792},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    even triple checked my permits, but everything seems fine and complete!","parentUIDs":[15],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":28.5,"yPos":-691},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"It
-    was a weird email though, and I was relieved that my permits are up to legitimate!...","parentUIDs":[13],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":26.5,"yPos":-793},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    about missing permits.","parentUIDs":[11],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":497,"yPos":-571},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    even triple checked my permits, but everything seems fine and complete!","parentUIDs":[15],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":271,"yPos":-470},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"It
+    was a weird email though, and I was relieved that my permits are up to legitimate!...","parentUIDs":[13],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":269,"yPos":-572},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     was so shocked that I opened the email without thinking. Then I clicked the link
-    in it, to see what permit that I''ve been missing.","parentUIDs":[12],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":254.5,"yPos":-694},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"But...
-    I just brushed it off, and just turned off the computer. Ehe~","parentUIDs":[14],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":29.5,"yPos":-593},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"And
+    in it, to see what permit that I''ve been missing.","parentUIDs":[12],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":497,"yPos":-473},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"But...
+    I just brushed it off, and just turned off the computer. Ehe~","parentUIDs":[14],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":272,"yPos":-372},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"And
     when I opened the computer again, It was operating itself! There were new apps
-    added which I didn''t install! I tried to stop it, but it was not responding!","parentUIDs":[16],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":252.5,"yPos":-591},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"Worst
+    added which I didn''t install! I tried to stop it, but it was not responding!","parentUIDs":[16],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":495,"yPos":-370},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"Worst
     of all, I stored my permits at my computer! If my permits would be lost, I would
-    have to go through all of those long processes!","parentUIDs":[17],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":26.5,"yPos":-491},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    have to go through all of those long processes!","parentUIDs":[17],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":269,"yPos":-270},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     can''t afford to lose my permits now! I don''t have the Frags and time to go
-    all over again!","parentUIDs":[20],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":252.5,"yPos":-492},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    see, Roux. In that case, may I check your computer?","parentUIDs":[21],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":25.5,"yPos":-393},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure,
+    all over again!","parentUIDs":[20],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":495,"yPos":-271},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    see, Roux. In that case, may I check your computer?","parentUIDs":[21],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":268,"yPos":-172},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure,
     please fix my computer! Also I have to fetch something at this hour, would you
-    mind leaving the shop to you? I''ll just close it in the meantime.","parentUIDs":[22],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":252.5,"yPos":-390},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah,
-    no problem. I''ll be finished when you come back. I''ll see you later.","parentUIDs":[23],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":29.5,"yPos":-293},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah,
-    that''s reassuring! Oh shoot! I''ll better go now!","parentUIDs":[24],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":30.5,"yPos":-192},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"Really?
-    How so?","parentUIDs":[28],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":253.5,"yPos":-292},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"Wolf,
-    based on Roux''s case, I think we are encountering Fileless Malware here.","parentUIDs":[25],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":252.5,"yPos":-190},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"While
+    mind leaving the shop to you? I''ll just close it in the meantime.","parentUIDs":[22],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":495,"yPos":-169},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah,
+    no problem. I''ll be finished when you come back. I''ll see you later.","parentUIDs":[23],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":272,"yPos":-72},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah,
+    that''s reassuring! Oh shoot! I''ll better go now!","parentUIDs":[24],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":273,"yPos":29},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"Really?
+    How so?","parentUIDs":[28],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":496,"yPos":-71},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"Wolf,
+    based on Roux''s case, I think we are encountering Fileless Malware here.","parentUIDs":[25],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":495,"yPos":31},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"While
     Roux was talking to you, I took a quick peek at the computer''s signals.  Then
-    I saw heaps of data executions all at once! ","parentUIDs":[27],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":34},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":29.5,"yPos":8},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"Hmm,
+    I saw heaps of data executions all at once! ","parentUIDs":[27],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":34},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":272,"yPos":229},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"Hmm,
     ok. This is just a typical phishing scam we got here, Let''s wrap this up, shall
-    we?","parentUIDs":[32],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":29.5,"yPos":-90},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    we?","parentUIDs":[32],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":272,"yPos":131},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     tried to find the source, and it led back to the email the Roux opened. But the
-    controller was nowhere to be found in this computer.","parentUIDs":[29],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":251.5,"yPos":-90},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    controller was nowhere to be found in this computer.","parentUIDs":[29],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":494,"yPos":131},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     believe the email was embedded with a self-executing script to perform this kind
-    of dirty work.","parentUIDs":[31],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":25.5,"yPos":195},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"Are
-    you sure you want to just dive in? Let me just brief you a bit.","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":41}],"EditorInfo":{"isRoot":false,"xPos":255.5,"yPos":279},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"Suit
-    yourself then.","parentUIDs":[39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":263,"yPos":-987},"ID":42,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
+    of dirty work.","parentUIDs":[31],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":268,"yPos":416},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"Warning!
+    You are about to engage without proper briefing. Please reconsider your choice.","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":41}],"EditorInfo":{"isRoot":false,"xPos":498,"yPos":500},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"Suit
+    yourself then.","parentUIDs":[39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":505.5,"yPos":-766},"ID":42,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
     me alright! I didn''t expect that you would accept this commission of mine!","parentUIDs":[8],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0}]}'
   saveVersion: 110
   DefaultName: ???
   DefaultSprite: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
-  DefaultFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  DefaultFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   NodeSerializedDataList:
   - {fileID: 16529660}
   - {fileID: 16529659}
@@ -246,23 +246,11 @@ MonoBehaviour:
   - {fileID: 16529633}
   - {fileID: 16529632}
   - {fileID: 16529661}
-  ContinueFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
-  EndConversationFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  ContinueFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
+  EndConversationFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1020631579}
-        m_TargetAssemblyTypeName: mainSceneController, Assembly-CSharp
-        m_MethodName: toLoadingSceneFLM
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &16529630
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,7 +339,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 41
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &16529633
@@ -370,7 +358,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 40
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529634
@@ -389,7 +377,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 39
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &16529635
@@ -408,7 +396,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 38
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529636
@@ -439,7 +427,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 35
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &16529637
@@ -458,7 +446,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 34
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &16529638
@@ -477,7 +465,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 32
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529639
@@ -496,7 +484,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 31
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529640
@@ -515,7 +503,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 30
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529641
@@ -534,7 +522,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 29
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529642
@@ -553,7 +541,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 28
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529643
@@ -572,7 +560,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 27
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529644
@@ -591,7 +579,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 25
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529645
@@ -610,7 +598,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 24
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529646
@@ -629,7 +617,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 23
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529647
@@ -648,7 +636,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 22
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529648
@@ -667,7 +655,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 21
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529649
@@ -686,7 +674,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 20
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529650
@@ -705,7 +693,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 17
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529651
@@ -724,7 +712,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 16
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529652
@@ -743,7 +731,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 15
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529653
@@ -762,7 +750,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 14
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529654
@@ -781,7 +769,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 13
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529655
@@ -800,7 +788,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 12
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529656
@@ -819,7 +807,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 11
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529658
@@ -838,7 +826,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 9
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529659
@@ -869,7 +857,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   NodeID: 8
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529660
@@ -900,7 +888,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 0
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &16529661
@@ -931,7 +919,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 42
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &47896118
@@ -1015,7 +1003,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Augment already bought!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_sharedMaterial: {fileID: -4641946586006214904, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1079,7 +1067,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &47896122
@@ -1771,7 +1759,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1.15
+  m_PixelsPerUnitMultiplier: 2.33
 --- !u!222 &159079202
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1986,8 +1974,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: -<Quit>-
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
+  m_sharedMaterial: {fileID: -8606282389204350942, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2122,8 +2110,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
+  m_sharedMaterial: {fileID: -8606282389204350942, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2147,8 +2135,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2480,7 +2468,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Not enough Fragments!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_sharedMaterial: {fileID: -4641946586006214904, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2544,7 +2532,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &277290063
@@ -3363,22 +3351,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 11
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":206,"yPos":382},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[8],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":true,"xPos":207.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Let''s
-    see here...","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":208,"yPos":260},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright,
-    let''s go to the shop right away.","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":207,"yPos":133},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh!
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":297.5,"yPos":382},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[8],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":true,"xPos":299,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Let''s
+    see here...","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":299.5,"yPos":260},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright,
+    let''s go to the shop right away.","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":298.5,"yPos":133},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh!
     It looks like this commission from Roux! It says here she''s having problems
     with her computer.","parentUIDs":[0],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0}]}'
   saveVersion: 110
   DefaultName: ???
   DefaultSprite: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
-  DefaultFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  DefaultFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   NodeSerializedDataList:
   - {fileID: 1236818840}
   - {fileID: 1236818839}
   - {fileID: 1236818838}
   - {fileID: 1236818837}
-  ContinueFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
-  EndConversationFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  ContinueFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
+  EndConversationFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -3656,15 +3644,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: OPTIONS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fd0dc079e67fc0748a8505e992a49ff3, type: 2}
+  m_sharedMaterial: {fileID: -3863337167644747772, guid: fd0dc079e67fc0748a8505e992a49ff3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286688724
-  m_fontColor: {r: 0.83137256, g: 0.67967767, b: 0.5058824, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 0
   m_fontColorGradient:
@@ -3937,8 +3925,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: -<Main Menu>-
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
+  m_sharedMaterial: {fileID: -8606282389204350942, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4749,7 +4737,6 @@ GameObject:
   - component: {fileID: 750564820}
   - component: {fileID: 750564819}
   - component: {fileID: 750564818}
-  - component: {fileID: 750564817}
   - component: {fileID: 750564816}
   - component: {fileID: 750564815}
   - component: {fileID: 750564814}
@@ -4810,7 +4797,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 21
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &750564808
@@ -4829,7 +4816,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 20
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &750564809
@@ -4848,7 +4835,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 19
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &750564810
@@ -4867,7 +4854,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 18
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &750564811
@@ -4886,7 +4873,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 17
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &750564812
@@ -4905,7 +4892,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 16
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &750564813
@@ -4924,7 +4911,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 14
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &750564814
@@ -4943,7 +4930,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 13
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &750564815
@@ -4962,7 +4949,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 12
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &750564816
@@ -4981,26 +4968,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 11
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
-  Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &750564817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750564805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 10
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &750564818
@@ -5019,7 +4987,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 9
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &750564819
@@ -5038,7 +5006,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 8
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &750564820
@@ -5057,9 +5025,111 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 0
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
+--- !u!1001 &750690346
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1994594265}
+    m_Modifications:
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 155.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -18.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 135
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744290505026599932, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_Name
+      value: arrowTxt
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+--- !u!224 &750690347 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+  m_PrefabInstance: {fileID: 750690346}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &751623415
 GameObject:
   m_ObjectHideFlags: 0
@@ -5164,6 +5234,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766334468}
   m_CullTransparentMesh: 1
+--- !u!1001 &767215994
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1070395419}
+    m_Modifications:
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 175.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -29.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 135
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744290505026599932, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+      propertyPath: m_Name
+      value: arrowTxt
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+--- !u!224 &767215995 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2747219773624443699, guid: 416b98e22c0660f4da9cc8521f9f9eee, type: 3}
+  m_PrefabInstance: {fileID: 767215994}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &768327345
 GameObject:
   m_ObjectHideFlags: 0
@@ -5304,7 +5476,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: got augment name!!!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_sharedMaterial: {fileID: -4641946586006214904, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5368,7 +5540,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!95 &791818507
@@ -5739,10 +5911,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: volume
+  m_text: Volume
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
+  m_sharedMaterial: {fileID: -8606282389204350942, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6525,10 +6697,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -<return>-
+  m_text: -<Resume>-
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
+  m_sharedMaterial: {fileID: -8606282389204350942, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6552,7 +6724,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.8
+  m_fontSize: 20.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7037,6 +7209,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2042394546}
+  - {fileID: 767215995}
   m_Father: {fileID: 2079545504}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7536,7 +7709,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Objective: Check out the shop and see Roux''s problem.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_sharedMaterial: {fileID: -4641946586006214904, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7600,7 +7773,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1192013260
@@ -7867,7 +8040,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   NodeID: 10
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1236818838
@@ -7886,7 +8059,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 9
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1236818839
@@ -7905,7 +8078,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 8
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1236818840
@@ -7924,7 +8097,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 0
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &1238184384
@@ -8581,7 +8754,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8606,8 +8779,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.95
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
@@ -8645,7 +8818,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1383239240
@@ -8918,7 +9091,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Optional: Purchase an Augment.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_sharedMaterial: {fileID: -4641946586006214904, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8982,7 +9155,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1394550942
@@ -9301,8 +9474,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Base
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
+  m_sharedMaterial: {fileID: -8606282389204350942, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9326,8 +9499,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.95
-  m_fontSizeBase: 36
+  m_fontSize: 20.3
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
@@ -10072,39 +10245,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 22
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":308.5,"yPos":-369},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Wait,
-    run it again please.>-","parentUIDs":[19],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":303.5,"yPos":234},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Let''s
-    go!>-","parentUIDs":[19],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":true,"xPos":-182.5,"yPos":-383},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Ok,
-    Wolf. Here''s how you do this.","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":-182,"yPos":-270},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"At
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":394,"yPos":184},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Wait,
+    run it again please.>-","parentUIDs":[19],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":389,"yPos":787},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Let''s
+    go!>-","parentUIDs":[19],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":true,"xPos":-97,"yPos":170},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Ok,
+    Wolf. Here''s how you do this.","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":21.5,"yPos":287},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"At
     the source of this Malware, there are SCRIPT CORES present also with its defensive
-    mechanisms.","parentUIDs":[9],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":57,"yPos":-382},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"ASWD
+    mechanisms.","parentUIDs":[9],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":142.5,"yPos":171},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"ASWD
     to move, L.Shift to Boost and dodge projectiles, Left Click to attack, and Right
-    Click is scan and reveal.","parentUIDs":[0,20],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":56.5,"yPos":-269},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"These
-    cores look like reddish cubes and protected by a shield, and the cores are somewhat
-    connected with one another.","parentUIDs":[8],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":-182.5,"yPos":-30},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Now
-    against its defense mechanisms, it shoots different bullet types. ","parentUIDs":[14],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":55.5,"yPos":-28},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"The
+    Click is scan and reveal.","parentUIDs":[0,20],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":-96,"yPos":523},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Now
+    against its defense mechanisms, it shoots different bullet types. ","parentUIDs":[14],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":141,"yPos":525},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"The
     LIGHTER bullets can be destroyed by your attacks while the DARKER bullets are
-    more dangerous and can''t be destroyed.","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":-188.5,"yPos":-149},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"To
+    more dangerous and can''t be destroyed.","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":-101,"yPos":404},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"To
     destroy these cores, you need to FIND and REVEAL them first. It could be HIDING
     around the area, so keep a sharp eye!\nAs the core gets revealed, you have to
-    destroy its shield.","parentUIDs":[10],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":45.5,"yPos":-146},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"If
+    destroy its shield.","parentUIDs":[8],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":131,"yPos":407},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"If
     the core or the shield goes INVISIBLE or INVULNERABLE again, REPOSITION yourself
     and use your SCANNER to make it vulnerable. That way, you should be able to destroy
-    the cores.","parentUIDs":[13],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":-188.5,"yPos":91},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    the cores.","parentUIDs":[13],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":-103,"yPos":644},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     almost forgot! Once you get in the Malware source, the cores will start executing
-    its PURGE function.","parentUIDs":[12],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":52.5,"yPos":91},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Maybe
-    it''s around 5 minutes or less til the cores successfully purged the computer.","parentUIDs":[16],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":-186.5,"yPos":210},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"So
-    to sum it all up, find the cores and destroy it in under 5 minutes.","parentUIDs":[17],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":55.5,"yPos":213},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"So,
+    its PURGE function.","parentUIDs":[12],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":138,"yPos":644},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Maybe
+    it''s around 5 minutes or less til the cores successfully purged the computer.","parentUIDs":[16],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":-101,"yPos":763},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"So
+    to sum it all up, find the cores and destroy it in under 5 minutes.","parentUIDs":[17],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":141,"yPos":766},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"So,
     are you ready?","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: ???
   DefaultSprite: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
-  DefaultFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  DefaultFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   NodeSerializedDataList:
   - {fileID: 750564820}
   - {fileID: 750564819}
   - {fileID: 750564818}
-  - {fileID: 750564817}
   - {fileID: 750564816}
   - {fileID: 750564815}
   - {fileID: 750564814}
@@ -10115,23 +10285,11 @@ MonoBehaviour:
   - {fileID: 750564809}
   - {fileID: 750564808}
   - {fileID: 750564807}
-  ContinueFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
-  EndConversationFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  ContinueFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
+  EndConversationFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1020631579}
-        m_TargetAssemblyTypeName: mainSceneController, Assembly-CSharp
-        m_MethodName: toLoadingSceneFLM
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1669370268
 GameObject:
   m_ObjectHideFlags: 0
@@ -10204,8 +10362,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: -<Let's hear out Roux's problem...>-
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
-  m_sharedMaterial: {fileID: -4641946586006214904, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
+  m_sharedMaterial: {fileID: -8606282389204350942, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10235,7 +10393,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -10268,7 +10426,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1669370272
@@ -10599,7 +10757,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Mission Hub
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -10624,8 +10782,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -10663,7 +10821,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1748918703
@@ -10685,6 +10843,10 @@ PrefabInstance:
     - target: {fileID: 723581457010983511, guid: a92ad0a25d28d9547ad928f3a9391faf, type: 3}
       propertyPath: m_Name
       value: alphadownTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 723581457010983511, guid: a92ad0a25d28d9547ad928f3a9391faf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6288685253984972358, guid: a92ad0a25d28d9547ad928f3a9391faf, type: 3}
       propertyPath: m_Pivot.x
@@ -11371,6 +11533,7 @@ Transform:
   - {fileID: 412696334}
   - {fileID: 331069277}
   - {fileID: 120706584}
+  - {fileID: 750690347}
   m_Father: {fileID: 1908444243}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2031065922
@@ -11426,6 +11589,10 @@ PrefabInstance:
     - target: {fileID: 3900108755062758285, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_Name
       value: ConversationManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755062758285, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_Pivot.x
@@ -11600,8 +11767,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Mission Start: \n-<Fileless Malware: Attack on Malware!>-"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
-  m_sharedMaterial: {fileID: -4641946586006214904, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
+  m_sharedMaterial: {fileID: -8606282389204350942, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11631,7 +11798,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535

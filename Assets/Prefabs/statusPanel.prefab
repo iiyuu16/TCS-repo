@@ -776,6 +776,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Augment prices are reduced by 15%.
       objectReference: {fileID: 0}
+    - target: {fileID: 4158188543742966292, guid: 1f72c949aa9337746b5f02628fa887d4, type: 3}
+      propertyPath: m_fontSize
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5439472225349899384, guid: 1f72c949aa9337746b5f02628fa887d4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1189,6 +1193,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2861181562749273184}
     m_Modifications:
+    - target: {fileID: 2897678868376216133, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
+      propertyPath: m_fontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897678868376216133, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
     - target: {fileID: 3153631343007865201, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
       propertyPath: objsToShow.Array.size
       value: 1

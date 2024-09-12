@@ -142,7 +142,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Augment prices are raised by 70%.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_sharedMaterial: {fileID: -4641946586006214904, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
+  m_fontSize: 12
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0

@@ -296,13 +296,13 @@ namespace DialogueEditor
 
                 case eState.ScrollingText:
                     {
-                        SetColorAlpha(DialogueText, .7f);
+                        SetColorAlpha(DialogueText, 1f);
                     }
                     break;
 
                 case eState.TransitioningOptionsOn:
                     {
-                        SetColorAlpha(DialogueText, .7f);
+                        SetColorAlpha(DialogueText, 1f);
 
                         CreateUIOptions();
 
@@ -429,7 +429,7 @@ namespace DialogueEditor
             for (int i = 0; i < m_uiOptions.Count; i++)
                 m_uiOptions[i].SetAlpha(1 - t);
 
-            SetColorAlpha(DialogueText, .7f - t);
+            SetColorAlpha(DialogueText, 1f - t);
         }
 
         private void TransitioningDialogueBoxOff_Update()
