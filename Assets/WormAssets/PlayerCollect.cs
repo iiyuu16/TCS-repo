@@ -24,7 +24,7 @@ public class PlayerCollect : MonoBehaviour
         if(other.gameObject.tag == "Collectible" && collected == 0)
         {
             collected = 1;
-            //Debug.Log("COLLECTED");
+            Debug.Log("COLLECTED");
         }
 
         if (collected == 1)
@@ -33,13 +33,13 @@ public class PlayerCollect : MonoBehaviour
             {
                 collected = 0;
                 timesHit++;
-                if (timesHit == 2)
+                if (timesHit == 5)
                 {
                     other.gameObject.SetActive(false);
                     Debug.Log("ENEMY DOWN RIP BOZO PEACE OUT YALL");
                 }
 
-                //Debug.Log("HIT ENEMY");
+                Debug.Log("HIT ENEMY");
             }
         }
     }
