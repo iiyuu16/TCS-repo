@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d2acc0503a473224d97402921bf723dd
+guid: 251d8be853f6c7443ad9fbd006b3ce44
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Astral Delight
+  - Pixel Operator
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
