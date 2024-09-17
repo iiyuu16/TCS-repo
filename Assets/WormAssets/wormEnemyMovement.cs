@@ -50,7 +50,7 @@ public class wormEnemyMovement : MonoBehaviour
             //Debug.Log("ARRIVED");
         }
 
-        if(collection.timesHit == 2)
+        if(collection.timesHit == 5)
         {
             this.gameObject.SetActive(false);
         }

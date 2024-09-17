@@ -144,11 +144,13 @@ public class WormMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(0f, -rotationSpeed * Time.deltaTime * currentSpeed, 0f);
+            //transform.Rotate(0f, -rotationSpeed * Time.deltaTime * currentSpeed, 0f);
+            transform.Rotate(0f, -rotationSpeed * Time.deltaTime, 0f);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0f, rotationSpeed * Time.deltaTime * currentSpeed, 0f);
+            //transform.Rotate(0f, rotationSpeed * Time.deltaTime * currentSpeed, 0f);
+            transform.Rotate(0f, rotationSpeed * Time.deltaTime, 0f);
         }
     }
 
