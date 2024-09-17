@@ -156,7 +156,6 @@ MonoBehaviour:
   fireFX: {fileID: 7400505939360035016}
   smokeFX: {fileID: 2978159421293515754}
   col: {fileID: 2791938642567101861}
-  sfx: {fileID: 0}
 --- !u!1001 &783379755794453445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -215,6 +214,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1529877004657202564, guid: b4672481c52497640ad2b5315d55a38b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8312949633595202691, guid: b4672481c52497640ad2b5315d55a38b, type: 3}
+      propertyPath: ShapeModule.type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8312949633595202691, guid: b4672481c52497640ad2b5315d55a38b, type: 3}
+      propertyPath: ShapeModule.radiusThickness
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8955249024813096651, guid: b4672481c52497640ad2b5315d55a38b, type: 3}

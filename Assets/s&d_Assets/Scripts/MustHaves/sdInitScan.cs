@@ -1,6 +1,7 @@
-using System;
-using System.Collections;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.Events;
+using System;
 
 public class sdInitScan : MonoBehaviour
 {
@@ -8,11 +9,13 @@ public class sdInitScan : MonoBehaviour
     public event Action<float> OnRevealDurationOver;
     public ParticleSystem scanner;
     public float scanDuration = 3f;
-    public float revealDuration = 3f;
+    public float revealDuration = 5f;
     public float maxSize = 30;
     public float growthRate = 1f;
     public float startingSize = 0.1f;
     public Material newMaterial;
+
+    public float cooldownDuration = 0.5f;
 
     private SphereCollider sphereCollider;
     private bool isExpanding = false;
@@ -23,6 +26,8 @@ public class sdInitScan : MonoBehaviour
 
     public KeyCode Scan;
     public sdSoundSource sfx;
+
+    private float nextScanTime;
 
     void Start()
     {
@@ -41,18 +46,17 @@ public class sdInitScan : MonoBehaviour
             Debug.LogWarning("Target does not have a Renderer component.");
         }
 
-        // Get reference to PlayerMovement script
         playerMovement = FindObjectOfType<sdPlayerMovement>();
     }
 
     void Update()
     {
-        // Check if player is not stunned and scan input is pressed
-        if (!playerMovement.isStunned && Input.GetKeyDown(Scan))
+        if (!playerMovement.isStunned && Input.GetKeyDown(Scan) && Time.time >= nextScanTime)
         {
             scanner.Play();
             sfx.scanSFX();
             StartExpanding();
+            nextScanTime = Time.time + cooldownDuration;
         }
 
         if (isExpanding)
