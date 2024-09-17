@@ -33,7 +33,7 @@ public class PlayerCollect : MonoBehaviour
             {
                 collected = 0;
                 timesHit++;
-                if (timesHit == 5)
+                if (timesHit > 4)
                 {
                     other.gameObject.SetActive(false);
                     Debug.Log("ENEMY DOWN RIP BOZO PEACE OUT YALL");

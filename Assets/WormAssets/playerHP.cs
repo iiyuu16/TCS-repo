@@ -47,7 +47,7 @@ public class playerHP : MonoBehaviour
             }
             
             HealthBar.value = HP;
-            Debug.Log(HealthBar.value);
+            //Debug.Log(HealthBar.value);
         }
     }
 }
