@@ -270,7 +270,7 @@ namespace DialogueEditor
                     m_selectedOption = null;
                     break;
                 case eState.TransitioningDialogueBoxOn:
-                    SetColorAlpha(DialogueBackground, .7f);
+                    SetColorAlpha(DialogueBackground, .8f);
                     SetColorAlpha(NpcIcon, 1);
                     SetColorAlpha(NameText, 1);
                     break;
@@ -443,7 +443,7 @@ namespace DialogueEditor
                 return;
             }
 
-            SetColorAlpha(DialogueBackground, -7f - t);
+            SetColorAlpha(DialogueBackground, .8f - t);
             SetColorAlpha(NpcIcon, 1 - t);
             SetColorAlpha(NameText, 1 - t);
         }
