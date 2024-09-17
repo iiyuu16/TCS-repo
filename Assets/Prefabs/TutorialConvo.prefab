@@ -100,7 +100,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   NodeID: 0
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 44a490bb0c84c6f4c9b1ccdf6f13c5ab, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &4725601786136667396
@@ -155,7 +155,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 10
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1588972368419408875
@@ -174,7 +174,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 11
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &3265679200301555141
@@ -193,7 +193,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 12
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &6009749191635149080
@@ -212,7 +212,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 13
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &4745287748084772571
@@ -231,7 +231,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 14
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &5891145847243695278
@@ -250,7 +250,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 19
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &7819559053432299834
@@ -269,7 +269,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 20
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &6734827720066345524
@@ -288,7 +288,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 21
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &4572019953507658057
@@ -307,7 +307,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 22
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &8655838054632349796
@@ -350,7 +350,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   NodeID: 24
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &4098535206745100922
@@ -369,7 +369,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 25
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &4347524993206811996
@@ -388,7 +388,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 26
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &5153928636169916097
@@ -407,7 +407,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 27
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2651855685329687274
@@ -426,7 +426,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 29
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &7145461018692166994
@@ -445,7 +445,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 30
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &7046568578225476696
@@ -464,7 +464,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 31
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &3727959319993670319
@@ -483,7 +483,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 32
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &5740455601920655757
@@ -526,7 +526,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   NodeID: 33
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &8679903478080572090
@@ -545,7 +545,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 34
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &4147861617194498364
@@ -564,7 +564,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 35
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &5751026564599541033
@@ -583,7 +583,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 36
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &879258421737118531
@@ -602,7 +602,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 37
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &8401145828060845312
@@ -621,7 +621,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 38
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &140934689870861156
@@ -640,7 +640,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 39
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &5543954361187251157
@@ -659,7 +659,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 40
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &7620432919841905266
@@ -678,7 +678,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 41
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &7586932814202515541
@@ -745,7 +745,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 43
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &2112218454492454828
@@ -764,7 +764,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 44
-  TMPFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: -524767992, guid: 33f75d887c70f02499005718e9e2d0f3, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &3008187703647995537
@@ -817,40 +817,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 46
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":179.5,"yPos":-40},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"-<No>-","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":482.5,"yPos":-44},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":221.5,"yPos":134},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Again,
-    please.>-","parentUIDs":[19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":779.5,"yPos":-44},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":778.5,"yPos":121},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Proceed>-","parentUIDs":[22],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":558.5,"yPos":431},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Again,
-    please.>-","parentUIDs":[29],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":1078.5,"yPos":-43},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[29],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":1079.5,"yPos":125},"ID":33,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Proceed>-","parentUIDs":[32],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":814.5,"yPos":734},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Again,
-    please.>-","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":41}],"EditorInfo":{"isRoot":false,"xPos":1334.5,"yPos":-48},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[38],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":1337.5,"yPos":125},"ID":43,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Proceed>-","parentUIDs":[41],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":true,"xPos":339.5,"yPos":-146},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"This
-    is the tutorial segment, would you like to proceed? ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":478.5,"yPos":19},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Welcome
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-304,"yPos":-212},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"-<No>-","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":-1,"yPos":-216},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":-262,"yPos":-38},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Again,
+    please.>-","parentUIDs":[19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":296,"yPos":-216},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":295,"yPos":-51},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Proceed>-","parentUIDs":[22],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":75,"yPos":259},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Again,
+    please.>-","parentUIDs":[29],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":595,"yPos":-215},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[29],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":596,"yPos":-47},"ID":33,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Proceed>-","parentUIDs":[32],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":331,"yPos":562},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Again,
+    please.>-","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":41}],"EditorInfo":{"isRoot":false,"xPos":851,"yPos":-220},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[38],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":854,"yPos":-47},"ID":43,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Proceed>-","parentUIDs":[41],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":true,"xPos":-144,"yPos":-318},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"This
+    is the tutorial segment, would you like to proceed? ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":-5,"yPos":-153},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Welcome
     to The Cyber Sentinel! I am b.a.i.t.o, your Built-in AI Tutorial Overlay!\nI
-    will tell you how things work here!","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.1,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":482.5,"yPos":120},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"So
-    first is the Base, this is where you check your progress in your game! ","parentUIDs":[12,20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":479.5,"yPos":217},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    will tell you how things work here!","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.1,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":-1,"yPos":-52},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"So
+    first is the Base, this is where you check your progress in your game! ","parentUIDs":[12,20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":-4,"yPos":45},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"You
     can only check the description of a malware after you''ve encountered from your
-    missions!","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":479.5,"yPos":318},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Did
-    you get all of that? I can repeat it again if you want to.","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":780.5,"yPos":20},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
-    to know! Ok moving on to the Shop!","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":781.5,"yPos":199},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"Here
+    missions!","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":-4,"yPos":146},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    can state it again if you''re still confused. Shall we continue to the next part?","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":297,"yPos":-152},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
+    to know! Ok moving on to the Shop!","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":298,"yPos":27},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"Here
     we are at the Shop! The shop allows you to purchase Augments before missions!
-    Augments can give unique abilities and would need certain conditions to be effective.","parentUIDs":[24,30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":782.5,"yPos":302},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"In
+    Augments can give unique abilities and would need certain conditions to be effective.","parentUIDs":[24,30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":299,"yPos":130},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"In
     purchasing Augments, you need Fragments or Frags for short. This your main in-game
-    currency and can be obtained after missions!","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":781.5,"yPos":420},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"Augments
-    can be pretty expensive, so you better get a lot of it to buy one!","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":30},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":779.5,"yPos":532},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"Did
-    you get all of that? I can repeat it again if you want to.","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":33}],"EditorInfo":{"isRoot":false,"xPos":1076.5,"yPos":26},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
-    to know! Lastly, moving on to the Mission Hub!","parentUIDs":[31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":1079.5,"yPos":197},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"Here
+    currency and can be obtained after missions!","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":298,"yPos":248},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"Augments
+    can be pretty expensive, so you better get a lot of it to buy one!","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":30},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":295,"yPos":361},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    can state it again if you''re still confused. Shall we continue to the next part?","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":33}],"EditorInfo":{"isRoot":false,"xPos":593,"yPos":-146},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
+    to know! Lastly, moving on to the Mission Hub!","parentUIDs":[31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":596,"yPos":25},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"Here
     we are at the Mission Hub! This is where you can select missions and complete
-    them!","parentUIDs":[33,39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":44}],"EditorInfo":{"isRoot":false,"xPos":1080.5,"yPos":294},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    them!","parentUIDs":[33,39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":44}],"EditorInfo":{"isRoot":false,"xPos":597,"yPos":122},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"You
     could also see the Augment equipped with you, and probably switch Augments you
-    prefer!","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":1079.5,"yPos":500},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"So
+    prefer!","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":596,"yPos":328},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"So
     each missions can give you status effects depending on the outcome of a mission,
-    it may make your gameplay less burden or make it miserable!","parentUIDs":[44],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":1078.5,"yPos":603},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"So
-    give it your all when taking what mission to choose!","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":40}],"EditorInfo":{"isRoot":false,"xPos":1076.5,"yPos":714},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"Did
-    you get all of that? I can repeat it again if you want to.","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":1336.5,"yPos":24},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
-    great! I guess that everything for now! See ya!","parentUIDs":[40],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":36}],"EditorInfo":{"isRoot":false,"xPos":1084,"yPos":403},"ID":44,"ParamActions":[],"TMPFontGUID":null,"Text":"Speaking
+    it may make your gameplay less burden or make it miserable!","parentUIDs":[44],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":595,"yPos":431},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"So
+    give it your all when taking what mission to choose!","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":40}],"EditorInfo":{"isRoot":false,"xPos":593,"yPos":542},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    can state it again if you''re still confused. Shall we continue to the next part?","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":853,"yPos":-148},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
+    great! I guess that everything for now! See ya!","parentUIDs":[40],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":36}],"EditorInfo":{"isRoot":false,"xPos":600.5,"yPos":231},"ID":44,"ParamActions":[],"TMPFontGUID":null,"Text":"Speaking
     of Augments in your missions, it will be discarded once the mission is finished.
     Even if the mission was a failure or a success.","parentUIDs":[35],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: ???
   DefaultSprite: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
-  DefaultFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  DefaultFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   NodeSerializedDataList:
   - {fileID: 2243254134837413607}
   - {fileID: 4725601786136667396}
@@ -881,8 +881,8 @@ MonoBehaviour:
   - {fileID: 7620432919841905266}
   - {fileID: 7586932814202515541}
   - {fileID: 2112218454492454828}
-  ContinueFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
-  EndConversationFont: {fileID: 11400000, guid: 43aa00bd0b556084d97932daf2fe38f5, type: 2}
+  ContinueFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
+  EndConversationFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Event:
     m_PersistentCalls:
       m_Calls: []
