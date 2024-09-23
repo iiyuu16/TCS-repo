@@ -1122,7 +1122,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 2.31
+  m_PixelsPerUnitMultiplier: 4
 --- !u!222 &159079202
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6690,9 +6690,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SoundSource, Assembly-CSharp
-        m_MethodName: click1
+      - m_Target: {fileID: 1575412928}
+        m_TargetAssemblyTypeName: mainSoundSource, Assembly-CSharp
+        m_MethodName: click2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11077,8 +11077,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: vnSceneController, Assembly-CSharp
+      - m_Target: {fileID: 1020631579}
+        m_TargetAssemblyTypeName: mainSceneController, Assembly-CSharp
         m_MethodName: toMainMenu
         m_Mode: 1
         m_Arguments:
@@ -11089,8 +11089,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SoundSource, Assembly-CSharp
+      - m_Target: {fileID: 1575412928}
+        m_TargetAssemblyTypeName: mainSoundSource, Assembly-CSharp
         m_MethodName: click2
         m_Mode: 1
         m_Arguments:
@@ -12211,8 +12211,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
+      - m_Target: {fileID: 1020631579}
+        m_TargetAssemblyTypeName: mainSceneController, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -12223,9 +12223,9 @@ MonoBehaviour:
           m_StringArgument: Quit
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SoundSource, Assembly-CSharp
-        m_MethodName: click1
+      - m_Target: {fileID: 1575412928}
+        m_TargetAssemblyTypeName: mainSoundSource, Assembly-CSharp
+        m_MethodName: click3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
