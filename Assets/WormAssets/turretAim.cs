@@ -11,6 +11,8 @@ public class turretAim : MonoBehaviour
     public GameObject bullet;
     public float projectileSpeed = 1.0f;
     private int fireProjectile = 0;
+
+    public AudioSource audio;
     
     // Start is called before the first frame update
     void Start()
@@ -49,6 +51,7 @@ public class turretAim : MonoBehaviour
     {
         while (true)
         {
+            audio.Play();
             Debug.Log("FIREFIREFIRE");
             yield return new WaitForSeconds(0.5f);
             Rigidbody p = Instantiate(rb, transform.position, transform.rotation);

@@ -39,6 +39,8 @@ public class PlayerCollect : MonoBehaviour
                 {
                     other.gameObject.SetActive(false);
                     Debug.Log("ENEMY DOWN RIP BOZO PEACE OUT YALL");
+
+                    //Win Condition
                 }
 
                 Debug.Log("HIT ENEMY");
