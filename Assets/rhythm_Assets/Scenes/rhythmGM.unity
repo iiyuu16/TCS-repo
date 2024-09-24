@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657516, g: 0.49641144, b: 0.5748149, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657516, g: 0.4964115, b: 0.5748149, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3981,7 +3981,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Challenge Complete!
+  m_text: 'Challenge Failed!
 
     The ad outbreak has successfully breached your
     network and flooded your system. Advertisements will continue to overflow your
