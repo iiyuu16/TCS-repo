@@ -33,6 +33,8 @@ public class WormMovement : MonoBehaviour
     public KeyCode BoostKey;
     public sdSoundSource sfx;
 
+    public AudioSource audio;
+
     private void Awake()
     {
         if (instance == null)
@@ -125,7 +127,9 @@ public class WormMovement : MonoBehaviour
         {
             if (!isBraking)
             {
+                //audio.Play();
                 currentSpeed += acceleration * Time.deltaTime;
+
             }
             else
             {
