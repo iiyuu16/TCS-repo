@@ -7953,14 +7953,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2095110759}
     m_Modifications:
-    - target: {fileID: 214443211310144397, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 323563756806554326, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
     - target: {fileID: 397199148967747091, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -7973,10 +7965,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_Target
       value: 
       objectReference: {fileID: 2139722191}
-    - target: {fileID: 619270920600199720, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
     - target: {fileID: 619270920600199720, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8082,42 +8070,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1042759754069303253, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: json
-      value: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":539,"yPos":593},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[20],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":true,"xPos":292.5,"yPos":34},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah
-        crap, the network''s has been breached! The computer won''t respond anymore!","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":532,"yPos":32},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"...Huh?
-        The computer is back to normal! Could this be a bogus breach? Are we being
-        trolled by someone?","parentUIDs":[0],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":295,"yPos":141},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Something''s
-        off. The network breach suddenly went silent. Also, I don''t think this is
-        just a prank by someone. Probably a DDoS attack that is targetted to the
-        area.","parentUIDs":[10],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":525,"yPos":134},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
-        my gut is telling me that was just bogus signals! DDoS attacks can''t be
-        this fast, it could take days or weeks! ","parentUIDs":[11],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":291,"yPos":368},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Even
-        so, we gotta be carefulllllllllllllll-","parentUIDs":[15],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":72,"yPos":248},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Unless
-        if its being run with a large corpo servers... Then we are doomed, it could
-        affect the area in a long term too.","parentUIDs":[12],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":526,"yPos":245},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Bogus
-        or not, we could detect that instantly! I''ve checked the network again and
-        it seems clean.","parentUIDs":[21],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":528.5,"yPos":371},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Woah
-        Vi! You ok? What''s happening?","parentUIDs":[13],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":288.5,"yPos":479},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"tTHheEe
-        nEettwO0orRkkKK!11 bBBuUrrrSstT oO0ffF daaAtaAAAAaaa","parentUIDs":[17],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":531.5,"yPos":477},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Eventually,
-        the network in Wolf''s area has been disrupted. Leading a cataclysm of data
-        that crashed devices.","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":282.5,"yPos":579},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"V.I.R.U.S.
-        stopped responding....temporarily.","parentUIDs":[19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":298.5,"yPos":253},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"But
-        still! We have to strengthen our defenses by having some defensive softwares.
-        Also we''ve got to close or block unwanted ad just to be safe,","parentUIDs":[14],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0}]}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1042759754069303253, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: DefaultFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 1042759754069303253, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: ContinueFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 1042759754069303253, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: EndConversationFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 1042759754069303253, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 524550233}
@@ -8129,18 +8081,6 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 2095064861}
-    - target: {fileID: 1087546460549241418, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 1146227737815487232, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 1999669968423780200, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
     - target: {fileID: 1999669968423780200, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8153,99 +8093,10 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 2095064861}
-    - target: {fileID: 2618815705460946842, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: json
-      value: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":409.5,\"yPos\":432},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"-<Continue>-\",\"parentUIDs\":[8],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":295.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Vi!
-        It seems the network breach is dissipating! The coputer's back to normal
-        too!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":520,\"yPos\":27},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Good!
-        Don't let your guard down yet, that network breach was something else.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":67,\"yPos\":128},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"For
-        now, let's strengthen our network defenses in case this happens again.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":528,\"yPos\":128},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"And
-        most of all... DO. NOT. PRESS. WEIRD. SITES. WILL. YA? Especially with \\\"SALES\\\"!\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":295,\"yPos\":225},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"This
-        has happened a lot now! It's hella weird that you as a hacker, can get into
-        these kinds of traps! Are you really braindead into discounts or something?\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":526,\"yPos\":227},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hehe,
-        can't help it, sorry. Sales and discounts are rare nowadays. I'll totally
-        be careful next time!\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":294,\"yPos\":326},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Whatever,
-        you keep saying that, and I am not helping you next time! \",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":519,\"yPos\":327},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(
-        \xB4 v ` )\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":295.5,\"yPos\":132},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Also,
-        we've got to close or block unwanted ads probably from secured third-party
-        softwares just to be safe.\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0}]}"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2618815705460946842, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3658325793480263403, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 3815440114692760820, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 4110043469887789496, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 4166363078151194274, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 4255843428917706648, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 5421181190357920150, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 5967530029913402735, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 6238935215504509357, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 6459326085911065744, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 6469397710704728428, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 6745197372851411365, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
     - target: {fileID: 7046226687840454700, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
       propertyPath: m_Name
       value: rhythmConvoElements
       objectReference: {fileID: 0}
-    - target: {fileID: 7210020909675234311, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 7862524621952037947, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 7935291391617220173, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 8639808437873682786, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 9022419350371403204, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 9093310974265812206, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
