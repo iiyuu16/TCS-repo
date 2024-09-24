@@ -43,6 +43,7 @@ public class playerHP : MonoBehaviour
             camshake.shakeDuration = 0.7f;
             if (HP < 1)
             {
+                //Lose Condition
                 this.gameObject.SetActive(false);
             }
             
