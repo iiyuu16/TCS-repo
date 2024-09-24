@@ -18,6 +18,11 @@ public class GameModeManager : MonoBehaviour
     public GameObject malwareFL;
     public GameObject malwareADWARE;
 
+    //gatekeep worm properties
+    public bool wormDone;
+    private const string WORM_DONE_KEY = "WormDone";
+    public GameObject wormButton;
+
     private void Awake()
     {
         if (instance != null)
@@ -27,7 +32,7 @@ public class GameModeManager : MonoBehaviour
         }
 
         instance = this;
-
+        //progress restarter
         if (SceneManager.GetActiveScene().name == "VisNov_Prologue")
         {
             ResetGMProgress();
@@ -61,6 +66,18 @@ public class GameModeManager : MonoBehaviour
             Debug.LogWarning("GM:adwarebtn is null");
         }
 
+        //worm properties
+        if (wormButton != null)
+        {
+            InvokeRepeating("UpdateWormButton", 1f, 1f);
+            Debug.Log("GM:wormbtn not null");
+        }
+        else
+        {
+            wormDone = false;
+            Debug.LogWarning("GM:wormbtn is null");
+        }
+
         //icon check
         if (malwareFL != null)
         {
@@ -85,7 +102,6 @@ public class GameModeManager : MonoBehaviour
         adwareDone = true;
         SaveGMProgress();
         LoadGMProgress();
-        Debug.LogWarning("check GM bools: adware: "+adwareDone+ ", fl: "+filelessMalwareDone);
     }
 
     public void filelessGM_Done()
@@ -93,13 +109,24 @@ public class GameModeManager : MonoBehaviour
         filelessMalwareDone = true;
         SaveGMProgress();
         LoadGMProgress();
-        Debug.LogWarning("check GM bools: adware: " + adwareDone + ", fl: " + filelessMalwareDone);
+    }
+
+    //worm properties
+    public void worm_Done()
+    {
+        wormDone = true;
+        SaveGMProgress();
+        LoadGMProgress();
     }
 
     public void LoadGMProgress()
     {
         filelessMalwareDone = PlayerPrefs.GetInt(FILELESS_MALWARE_DONE_KEY, 0) == 1;
         adwareDone = PlayerPrefs.GetInt(ADWARE_DONE_KEY, 0) == 1;
+
+        //worm properties
+        wormDone = PlayerPrefs.GetInt(WORM_DONE_KEY, 0) == 1;
+
         SaveGMProgress();
     }
 
@@ -107,6 +134,10 @@ public class GameModeManager : MonoBehaviour
     {
         PlayerPrefs.SetInt(FILELESS_MALWARE_DONE_KEY, filelessMalwareDone ? 1 : 0);
         PlayerPrefs.SetInt(ADWARE_DONE_KEY, adwareDone ? 1 : 0);
+
+        //worm properties
+        PlayerPrefs.SetInt(WORM_DONE_KEY, wormDone ? 1 : 0);
+
         PlayerPrefs.Save();
     }
 
@@ -118,6 +149,10 @@ public class GameModeManager : MonoBehaviour
         PlayerPrefs.SetInt(FILELESS_MALWARE_DONE_KEY, 0);
         PlayerPrefs.SetInt(ADWARE_DONE_KEY, 0);
         PlayerPrefs.Save();
+
+        //worm properties
+        wormDone = false;
+        PlayerPrefs.SetInt(WORM_DONE_KEY, 0);
 
         Debug.Log("GM:gamemodes progress reset");
     }
@@ -135,6 +170,9 @@ public class GameModeManager : MonoBehaviour
     {
         UpdateAdwareButton();
         UpdateFilelessButton();
+
+        //worm
+        UpdateWormButton();
     }
 
     public void UpdateFilelessButton()
@@ -145,5 +183,11 @@ public class GameModeManager : MonoBehaviour
     public void UpdateAdwareButton()
     {
         UpdateButton(adwareButton, adwareDone);
+    }
+
+    //worm
+    public void UpdateWormButton()
+    {
+        UpdateButton(wormButton, wormDone);
     }
 }
