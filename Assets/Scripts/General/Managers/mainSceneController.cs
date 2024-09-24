@@ -29,6 +29,11 @@ public class mainSceneController : MonoBehaviour
             FLM_gamemode();
         }
 
+        if (SceneManager.GetActiveScene().name == "LoadingScreenToWORM")
+        {
+            WORM_gamemode();
+        }
+
     }
 
     private void Update()
@@ -92,6 +97,11 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayedObjTransition());
     }
 
+    public void toLoadingSceneWORM()
+    {
+        StartCoroutine(DelayToLoadingSceneWORM());
+        StartCoroutine(DelayedObjTransition());
+    }
     public void toVisNov_FLM()
     {
         StartCoroutine(DelayToFLM());
@@ -116,6 +126,18 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayedObjTransition());
     }
 
+    public void toVisNov_WORM()
+    {
+        StartCoroutine(DelayToWORM());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    public void WORM_gamemode()
+    {
+        StartCoroutine(DelayToWORM_gamemode());
+        StartCoroutine(DelayedObjTransition());
+    }
+
     IEnumerator DelayToVNMain()
     {
         yield return new WaitForSeconds(delayTimeToPlay);
@@ -132,6 +154,11 @@ public class mainSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("LoadingScreenToADWARE");
+    }
+    IEnumerator DelayToLoadingSceneWORM()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("LoadingScreenToWORM");
     }
 
     IEnumerator DelayToFLM()
@@ -156,6 +183,18 @@ public class mainSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("rhythmGM");
+    }
+
+    IEnumerator DelayToWORM()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("VisNov_WORM");
+    }
+
+    IEnumerator DelayToWORM_gamemode()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("wormGM");
     }
 
     IEnumerator DelayedSceneTransition()
