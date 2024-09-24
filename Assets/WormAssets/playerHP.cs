@@ -49,5 +49,10 @@ public class playerHP : MonoBehaviour
             HealthBar.value = HP;
             //Debug.Log(HealthBar.value);
         }
+
+        if (other.gameObject.tag == "Collectible")
+        {
+            HP = HP + 3;
+        }
     }
 }
