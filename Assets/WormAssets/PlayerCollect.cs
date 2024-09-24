@@ -6,6 +6,7 @@ public class PlayerCollect : MonoBehaviour
 {
     public int collected = 0;
     public int timesHit = 0;
+    public AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +33,7 @@ public class PlayerCollect : MonoBehaviour
             if (other.gameObject.tag == "Enemy")
             {
                 collected = 0;
+                audio.Play();
                 timesHit++;
                 if (timesHit > 4)
                 {
