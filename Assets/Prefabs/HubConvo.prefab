@@ -67,7 +67,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e6dced83fefc2a943917eb13bba32de2, type: 3}
 --- !u!114 &209812166184814623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
   NodeID: 1
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: bd81e738416497c4082089920bdcebaf, type: 3}
 --- !u!114 &2578863108889879672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +126,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 8
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
@@ -144,7 +156,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 9
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 0}
@@ -167,7 +191,7 @@ MonoBehaviour:
   NodeID: 10
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 52b1c79a0323ac1438fcfd671950c5ba, type: 3}
 --- !u!114 &1345910097401039002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,6 +226,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -257,12 +293,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 13
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-126,"yPos":214},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Let''s
-    go!>-","parentUIDs":[1],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":329,"yPos":220},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Not
-    yet!>-","parentUIDs":[1],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":104.5,"yPos":328},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[10],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":100,"yPos":80},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright,
-    let''s get to work now!","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":106,"yPos":194},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"It
-    looks like everything is good to go. Are you ready to cyberdive?","parentUIDs":[0],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":2,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":328,"yPos":298},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Right
-    when you''re ready.","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":72,"yPos":155},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Let''s
+    go!>-","parentUIDs":[1],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":527,"yPos":161},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Not
+    yet!>-","parentUIDs":[1],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":302.5,"yPos":269},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[10],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":295,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright,
+    let''s get to work now!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0.5},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":309,"yPos":135},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"It
+    looks like everything is good to go. Are you ready to cyberdive?","parentUIDs":[0],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":2,"Volume":0.5},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":526,"yPos":239},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Right
+    when you''re ready.","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.5}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
@@ -278,28 +314,4 @@ MonoBehaviour:
   EndConversationFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []

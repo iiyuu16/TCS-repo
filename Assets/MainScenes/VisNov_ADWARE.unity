@@ -172,30 +172,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 43
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":-39.5,"yPos":246},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Nah,
-    I''m pumped up! Let''s go already.>-","parentUIDs":[25],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-276.5,"yPos":232},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Do
-    I have to?>-","parentUIDs":[25,38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":40}],"EditorInfo":{"isRoot":false,"xPos":-43.5,"yPos":340},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"-<No
-    need, I''d definitely win!>-","parentUIDs":[38],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-39,"yPos":443},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"-<You
-    will definitely regret this.>-","parentUIDs":[40],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":true,"xPos":-281.5,"yPos":-508},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah...
-    So comfy. *clicks* Ooh a great discounted sale of a DLC card!! Let''s see here...","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":-276,"yPos":-387},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"","parentUIDs":[9],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":6,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":-46,"yPos":-512},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Ugh,
-    theres so many ads in this site! As long I can have sweet DLC, then this is nothing!","parentUIDs":[0],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":-51.5,"yPos":-384},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Finally
-    in the website...","parentUIDs":[8],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":-288.5,"yPos":-261},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"What
-    a bummer, it''s still expensive. I''ll probably go sleep.","parentUIDs":[12],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":-55.5,"yPos":-258},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"No
-    way! It''s getting a lot of ads! My computer is getting slow! Darn, its not responding
-    at all. I am so screwed.","parentUIDs":[15],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":-283.5,"yPos":-105},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
-    Wolf, I''ve been searching for you. Wait what''s wrong with the computer? You
-    better not opening those \"weird\" files again!","parentUIDs":[17],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":-48.5,"yPos":-108},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"No!
-    No! Don''t get the wrong idea! I accidentally clicked an ad while browsing discounted
-    DLCs! Then these pop-ups keep showing up!","parentUIDs":[20],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":-292.5,"yPos":-3},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah,
-    sure. Pressed it \"accidentally\", huh. Anyways, the reason I''m searching for
-    you because there is a major outbreak on advertisements. ","parentUIDs":[21],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":-49.5,"yPos":2},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"Now
-    that it affected our network here, let''s take care of this now before this gets
-    any worse.","parentUIDs":[22],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":-279.5,"yPos":121},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright,
-    I''m good to go now.","parentUIDs":[23],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":35},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":-50.5,"yPos":116},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"Ok,
-    let me brief you first about this.","parentUIDs":[24],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":-274.5,"yPos":321},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"Warning!
-    You are about to engage without proper briefing. Please reconsider your choice.","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":41}],"EditorInfo":{"isRoot":false,"xPos":-272.5,"yPos":429},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"Suit
-    yourself then.","parentUIDs":[39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  CurrentIDCounter: 44
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":452,\"yPos\":805},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"-<Nah,
+    I'm pumped up! Let's go already.>-\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":218,\"yPos\":805},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"-<Do
+    I have to?>- Recommended :>\",\"parentUIDs\":[25,38],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":451,\"yPos\":913},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"-<No
+    need, I'd definitely win!>-\",\"parentUIDs\":[38],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":455.5,\"yPos\":1016},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"-<You
+    will definitely regret this.>-\",\"parentUIDs\":[40],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":213,\"yPos\":70},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ah\u2026
+    So comfy.*clicks* No way! Beast Trapper: Hinterlands is greatly discounted! Let\u2019s
+    see here\u2026\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":10,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":218.5,\"yPos\":186},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":5,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":449.5,\"yPos\":61},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Huh,
+    there's so many ads on this site! As long as I can have this game now, then this
+    is nothing!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":10,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":443,\"yPos\":189},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Finally
+    in the website...\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":10,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":85,\"yPos\":322},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Darn
+    it, it\u2019s just a troll site. I\u2019ll just search for something else.\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":10,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":612,\"yPos\":327},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What?!
+    It's getting a lot of ads! My computer is getting slow! Darn, it's not responding
+    at all. I am so screwed.\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":10,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":211,\"yPos\":468},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hey
+    Wolf, I've been searching for you. Wait what's wrong with the computer? You better
+    not open those \\\"weird\\\" sites again!\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":10,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":447,\"yPos\":464},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No!
+    No! Don't get the wrong idea! Maybe I just accidentally clicked an ad while browsing
+    this discounted game! Then these pop-ups keep showing up!\",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":10,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":202,\"yPos\":570},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yeah,
+    sure. Pressed it \\\"accidentally\\\", huh. Anyways, the reason I'm searching
+    for you is because there is a major outbreak of advertisements. \",\"parentUIDs\":[21],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":10,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":445,\"yPos\":575},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Now
+    that it affected our network here, let's take care of this now before this gets
+    any worse.\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":10,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":215,\"yPos\":695},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Alright,
+    I'm good to go now.\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"Wolf\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":10,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":444,\"yPos\":689},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ok,
+    let me brief you first about this.\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":true,\"IconGUID\":null,\"Name\":\"V.I.R.U.S.\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":3,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":220,\"yPos\":894},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Warning!
+    You are about to engage without proper briefing. Please reconsider your choice.\",\"parentUIDs\":[34],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"V.I.R.U.S\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":41}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":222,\"yPos\":1002},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Suit
+    yourself then.\",\"parentUIDs\":[39],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"V.I.R.U.S\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.5},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":346,\"yPos\":320},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"After
+    some time...\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: ???
   DefaultSprite: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
@@ -219,14 +222,27 @@ MonoBehaviour:
   - {fileID: 16529634}
   - {fileID: 16529633}
   - {fileID: 16529632}
+  - {fileID: 16529661}
   ContinueFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   EndConversationFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1020631579}
-        m_TargetAssemblyTypeName: mainSceneController, Assembly-CSharp
-        m_MethodName: toLoadingSceneADWARE
+      - m_Target: {fileID: 113302501}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 113302503}
+        m_TargetAssemblyTypeName: PopUpManager, Assembly-CSharp
+        m_MethodName: OffThisManager
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -263,6 +279,7 @@ GameObject:
   - component: {fileID: 16529634}
   - component: {fileID: 16529633}
   - component: {fileID: 16529632}
+  - component: {fileID: 16529661}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -334,7 +351,7 @@ MonoBehaviour:
   NodeID: 40
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 8c0012d999771044e93dcdc2a3242896, type: 3}
 --- !u!114 &16529634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,13 +405,25 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2038222677}
-        m_TargetAssemblyTypeName: DialogueEditor.ConversationManager, Assembly-CSharp
-        m_MethodName: StartConversation
-        m_Mode: 2
+      - m_Target: {fileID: 1806313297}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
-          m_ObjectArgument: {fileID: 1666634808}
-          m_ObjectArgumentAssemblyTypeName: DialogueEditor.NPCConversation, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1085014135}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -626,6 +655,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2038222676}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   NodeID: 12
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 0157dd2bc2296d44ab7af5ff64b2de5e, type: 3}
@@ -734,6 +775,37 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &16529661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16529630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2038222676}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 43
+  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
+  Icon: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &47896118
 GameObject:
@@ -2534,8 +2606,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 11
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":8,"yPos":146},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":true,"xPos":4.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I''m
-    hella bored, I guess I''ll go take a look at the computer at the Base.","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0}]}'
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":295.5,"yPos":146},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":true,"xPos":292,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I''m
+    hella bored, I guess I''ll go take a look at the computer at the Base.","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1}]}'
   saveVersion: 110
   DefaultName: ???
   DefaultSprite: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
@@ -2547,55 +2619,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 120706583}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1918103871}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1145310376}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1918103872}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &513937055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2718,7 +2742,6 @@ Transform:
   m_Children:
   - {fileID: 479904247}
   - {fileID: 14931160}
-  - {fileID: 1666634807}
   - {fileID: 688096222}
   - {fileID: 1871524876}
   m_Father: {fileID: 1619461892}
@@ -3782,209 +3805,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6869692330110912021, guid: 4b85b4a0027f2e047bbec7b67143ea42, type: 3}
   m_PrefabInstance: {fileID: 689829884}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &750564805
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 750564806}
-  - component: {fileID: 750564820}
-  - component: {fileID: 750564819}
-  - component: {fileID: 750564818}
-  - component: {fileID: 750564817}
-  - component: {fileID: 750564810}
-  - component: {fileID: 750564809}
-  - component: {fileID: 750564808}
-  - component: {fileID: 750564807}
-  m_Layer: 0
-  m_Name: ConversationEventInfo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &750564806
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750564805}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -400, y: -224.86772, z: 0}
-  m_LocalScale: {x: 1.0582011, y: 1.0582011, z: 1.0582011}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1666634807}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &750564807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750564805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1020631579}
-        m_TargetAssemblyTypeName: mainSceneController, Assembly-CSharp
-        m_MethodName: toLoadingSceneADWARE
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  NodeID: 21
-  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &750564808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750564805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 20
-  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &750564809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750564805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 19
-  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-  Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &750564810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750564805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 18
-  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-  Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &750564817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750564805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 10
-  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-  Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &750564818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750564805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 9
-  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-  Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &750564819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750564805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 8
-  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-  Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &750564820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750564805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 0
-  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-  Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
-  Audio: {fileID: 0}
 --- !u!1 &751623415
 GameObject:
   m_ObjectHideFlags: 0
@@ -7045,11 +6865,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6288685253984972358, guid: a92ad0a25d28d9547ad928f3a9391faf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000030517578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6288685253984972358, guid: a92ad0a25d28d9547ad928f3a9391faf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000015258789
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6288685253984972358, guid: a92ad0a25d28d9547ad928f3a9391faf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7487,87 +7307,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654234178}
   m_CullTransparentMesh: 1
---- !u!1 &1666634806
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1666634807}
-  - component: {fileID: 1666634808}
-  m_Layer: 5
-  m_Name: Convo3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1666634807
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666634806}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.78625, y: 0.78625, z: 0.78625}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 750564806}
-  m_Father: {fileID: 531383324}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 314.5, y: 177}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1666634808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666634806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentIDCounter: 22
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":516.5,"yPos":23},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Wait,
-    run it again please.>-","parentUIDs":[19],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":520.5,"yPos":263},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Let''s
-    go!>-","parentUIDs":[19],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":true,"xPos":4.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah
-    of course! So here''s how you do this.","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":5,"yPos":135},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Prepare
-    the keys D, F, J, K since this will be our data channels for interrupting the
-    incoming signals.","parentUIDs":[9],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":246,"yPos":17},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"You
-    are going to intercept incoming data signals from the network, nulllifying its
-    damages.","parentUIDs":[0,20],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":243.5,"yPos":136},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Do
-    your best to mitigate damages and protect the computer! It may take some time,
-    and you must complete the whole signal wave.","parentUIDs":[8],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":2.5,"yPos":241},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"So
-    to sum it all up, press the corresponding key when the data signal is within
-    the line! Basically, a rhythm game!","parentUIDs":[10],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":242.5,"yPos":245},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"So,
-    are you ready?","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
-  saveVersion: 110
-  DefaultName: ???
-  DefaultSprite: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
-  DefaultFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-  NodeSerializedDataList:
-  - {fileID: 750564820}
-  - {fileID: 750564819}
-  - {fileID: 750564818}
-  - {fileID: 750564817}
-  - {fileID: 750564810}
-  - {fileID: 750564809}
-  - {fileID: 750564808}
-  - {fileID: 750564807}
-  ContinueFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-  EndConversationFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1669370268
 GameObject:
   m_ObjectHideFlags: 0
@@ -7836,6 +7575,176 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volSlider: {fileID: 1747055578}
+--- !u!1001 &1806313295
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1908444243}
+    m_Modifications:
+    - target: {fileID: 54715519625316138, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940521543613649154, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_text
+      value: "Game Conditions:\n\nLose Condition: Network integrity reached 0.\nFailing
+        results in: Advertisement Pop-ups\n - Pop-ups will show consistently the
+        whole game.\n\nWin Condition: Network integrity is greater than 0.\nWinning
+        results in: Worm Debuff\n-Enter description here."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1940521543613649154, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2124600277323683835, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_text
+      value: 'Controls:
+
+
+        Space - Tap'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2186263579930126143, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424438766269096908, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_text
+      value: Missing a signal deducts your network integrity and resets your score.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453057452288614753, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_text
+      value: V.I.R.U.S. will mimic the incoming beat signals.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635013744665068597, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_text
+      value: Press Space to hit the signals.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689652456552208362, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_Name
+      value: instructionsTab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689652456552208362, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5228726156698552042, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_text
+      value: Even the network integrity has reached 0, you still need to finish the
+        game.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913363705971178444, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080392798782823014, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8675899082012709231, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1020631579}
+    - target: {fileID: 8675899082012709231, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: toLoadingSceneADWARE
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+--- !u!224 &1806313296 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+  m_PrefabInstance: {fileID: 1806313295}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1806313297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4689652456552208362, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+  m_PrefabInstance: {fileID: 1806313295}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1838872250
 GameObject:
   m_ObjectHideFlags: 0
@@ -8226,6 +8135,7 @@ RectTransform:
   - {fileID: 428760952}
   - {fileID: 333460333}
   - {fileID: 2038222675}
+  - {fileID: 1806313296}
   - {fileID: 689829885}
   - {fileID: 1540584113}
   m_Father: {fileID: 0}
@@ -8985,6 +8895,11 @@ PrefabInstance:
 --- !u!224 &2038222675 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+  m_PrefabInstance: {fileID: 2038222674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2038222676 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3900108755062758274, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
   m_PrefabInstance: {fileID: 2038222674}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2038222677 stripped

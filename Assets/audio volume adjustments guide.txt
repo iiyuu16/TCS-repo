@@ -1,0 +1,12 @@
+audio volume adjustments guide
+
+main menu:
+bgm = .1
+sfx = .2
+
+visnov:
+bgm = .08
+sfx = .3
+wolf = 1
+virus = .5
+roux = .2
