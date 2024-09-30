@@ -44,7 +44,7 @@ Material:
     - _GlossyReflections: 0
     - _Parallax: 0.005
     m_Colors:
-    - _EmissionColor: {r: 0, g: 2.8383505, b: 5.216476, a: 1}
+    - _EmissionColor: {r: 0, g: 0.81510204, b: 1.4980391, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &5229726341791685876
 MonoBehaviour:
