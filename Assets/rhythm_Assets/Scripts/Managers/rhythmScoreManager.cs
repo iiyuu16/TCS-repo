@@ -56,27 +56,30 @@ public class rhythmScoreManager : MonoBehaviour
 
     void UpdateResultScoreText()
     {
-        int newScore = Mathf.RoundToInt(comboScore * 1f);
+        int newScore = Mathf.RoundToInt(comboScore * 8f);
         for (int i = 0; i < resScoreTexts.Length; i++)
         {
             resScoreTexts[i].text = "Got " + newScore.ToString() + " Frgz.";
+            Debug.Log("score is:" +newScore);
         }
     }
 
     public void BaseScoring()
     {
-        float baseMultiplier = 1f;
+        float baseMultiplier = 8f;
         int newScore = Mathf.RoundToInt(comboScore * baseMultiplier);
         Debug.Log("Base score: " + comboScore);
         Debug.Log("Base multiplied score: " + newScore);
 
         MoneyManager.instance.UpdateMoneyFromGamemode(newScore);
         UpdateResultScoreText();
+        Debug.Log("base score is:" +newScore);
+
     }
 
     public void MultiplierEffect()
     {
-        float augmentMultiplier = 2f;
+        float augmentMultiplier = 12f;
         float totalMultiplier = augmentMultiplier;
 
         int newScore = Mathf.RoundToInt(comboScore * totalMultiplier);
@@ -85,5 +88,7 @@ public class rhythmScoreManager : MonoBehaviour
 
         MoneyManager.instance.UpdateMoneyFromGamemode(newScore);
         UpdateResultScoreText();
+        Debug.Log("multiplied score is:" + newScore);
+
     }
 }
